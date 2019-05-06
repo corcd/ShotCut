@@ -1,28 +1,37 @@
 <template>
   <div class="items">
-    <img>
+    <img alt="bmp" :src="src">
     <p>{{instruction}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'items',
+  name: "items",
   props: {
-    instruction: String
+    instruction: String,
+    src: String
   }
 };
 </script>
 
 <style lang="scss">
 .items {
+  width: 217px;
+  height: 150px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   img {
     width: 217px;
     height: 122px;
+    background-color: gray;
   }
 
   p {
-    text-align: center;
+    text-align: left;
     width: 205px;
   }
 }

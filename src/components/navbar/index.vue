@@ -2,8 +2,8 @@
   <div class="navbar">
     <div class="generalbar">
       <div class="logo">
-        <img alt="logo">
-        <span class="brand">短秀</span>
+        <img class="img_logo" alt="logo" src="../../assets/logo.png">
+        <img class="img_brand" alt="brand" src="../../assets/brand.png">
       </div>
       <div class="searchbar">
         <el-row>
@@ -19,14 +19,49 @@
         <el-button icon="el-icon-user" circle></el-button>
       </div>
     </div>
-    <div></div>
+    <div class="menubar">
+      <ul class="menu">
+        <li class="active">
+          <a>
+            <span>首页</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span>今日热门</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span>月度排行</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span>时尚热度</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span>最佳笑点</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span>青春短剧</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "navbar",
-  props: {},
+  props: {
+    activeitem: Array
+  },
   data() {
     return {
       searchContent: ""
@@ -60,21 +95,22 @@ export default {
     justify-content: center;
 
     .logo {
+      height: 40px;
       position: fixed;
       left: 140px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
 
-      img {
-        width: 44px;
+      .img_logo {
+        width: 30px;
         height: 30px;
       }
 
-      span {
+      .img_brand {
         width: 48px;
-        height: 23px;
-        font-size: 24px;
-        font-family: SourceHanSansCN-Light;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 1);
+        height: 30px;
+        margin-left: 24px;
       }
     }
 
@@ -85,10 +121,15 @@ export default {
       input {
         width: 380px;
         height: 40px;
-        background: rgba(153, 153, 153, 1);
-        opacity: 0.25;
+        color: #fff !important;
+        background: rgba(153, 153, 153, 0.25);
+        opacity: 0.6;
         border: 0;
         border-radius: 20px;
+
+        &::placeholder {
+          color: #fff;
+        }
       }
 
       button {
@@ -116,6 +157,52 @@ export default {
       background: rgba(204, 238, 255, 1);
       border-radius: 50%;
       border: 0;
+    }
+  }
+
+  .menubar {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+
+    ul {
+      width: 100%;
+      height: 30px;
+      position: fixed;
+      left: 140px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .active {
+        margin-top: 2px;
+        border-bottom: 2px solid;
+        border-bottom-color: rgba(255, 127, 0, 1);
+
+        a {
+          span {
+            color: rgba(255, 127, 0, 1);
+          }
+        }
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 29px;
+
+        a {
+          span {
+            height: 15px;
+            font-size: 16px;
+            font-family: MicrosoftYaHei;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
     }
   }
 }

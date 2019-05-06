@@ -70,7 +70,7 @@
         </el-col>
         <el-col :span="6">
           <ul>
-            <img class="QRcode" alt="QRcode">
+            <img class="QRcode" alt="QR code" src="../../assets/QR.png">
           </ul>
         </el-col>
       </el-row>
@@ -139,6 +139,7 @@ export default {
         .QRcode {
           width: 120px;
           height: 120px;
+          margin-top: 20px;
         }
       }
     }

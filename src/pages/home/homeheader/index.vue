@@ -26,7 +26,7 @@ export default {
   .navbar {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
   }
 
   .el-carousel {
@@ -62,7 +62,7 @@ export default {
     position: absolute;
     top: 100px;
     right: 0;
-    z-index: 3;
+    z-index: 2;
   }
 }
 </style>
