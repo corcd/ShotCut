@@ -1,6 +1,6 @@
 <template>
-  <div class="items">
-    <img alt="bmp" :src="src">
+  <div class="items" :id="'example'" @click="getDetails()">
+    <img alt="bmp" :src="data">
     <p>{{instruction}}</p>
   </div>
 </template>
@@ -9,8 +9,13 @@
 export default {
   name: "items",
   props: {
-    instruction: String,
-    src: String
+    data: Object,
+    instruction: String
+  },
+  methods: {
+    getDetails() {
+      console.log(this.$refs.id);
+    }
   }
 };
 </script>

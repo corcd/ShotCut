@@ -3,13 +3,15 @@ import frame from './frame'
 import footbar from './footbar'
 import navbar from './navbar'
 import newslist from './newslist'
+import aboutframe from './aboutframe'
 
 const components = {
   items,
   frame,
   footbar,
   navbar,
-  newslist
+  newslist,
+  aboutframe
 }
 
 const install = (Vue, options = {}) => {

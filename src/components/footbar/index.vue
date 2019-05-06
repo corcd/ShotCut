@@ -7,7 +7,7 @@
             <li>
               <h3>关于我们</h3>
             </li>
-            <li>
+            <li @click="linkTo('/about')">
               <a>
                 <span>关于我们</span>
               </a>
@@ -91,7 +91,11 @@ export default {
     };
   },
   created() {},
-  methods: {}
+  methods: {
+    linkTo(path) {
+      this.$router.push(path);
+    }
+  }
 };
 </script>
 

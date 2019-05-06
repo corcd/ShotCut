@@ -84,6 +84,7 @@ export default {
     .link-more {
       width: 41px;
       height: 15px;
+      margin-left: 10px;
       font-size: 14px;
       font-family: MicrosoftYaHei;
       font-weight: 400;
