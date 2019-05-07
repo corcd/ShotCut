@@ -1,14 +1,15 @@
 <template>
-  <div class="home-page">
+  <div class="rank-page">
     <div class="header">
-      <homeheader></homeheader>
+      <navbar></navbar>
     </div>
     <div class="container">
-      <div class="hottags" v-if="hot"></div>
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame :title="'怪咖一休哥'">
+        <div>
+          <videoitem></videoitem>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -21,9 +22,12 @@
 <script>
 export default {
   components: {},
+  props: {
+    title: String
+  },
   data() {
     return {
-      hot: false
+      testTitle: "热门短视频"
     };
   },
   methods: {}

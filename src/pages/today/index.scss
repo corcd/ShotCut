@@ -1,0 +1,55 @@
+.home-page {
+    width: 100%;
+    min-width: 1050px;
+    height: 100%;
+  
+    .header {
+      width: 100%;
+
+      .hottags {
+          width: 100%;
+          margin-top: 55px;
+      }
+    }
+  
+    .container {
+      width: 100%;
+  
+      .left,
+      .right {
+        width: 7%;
+        height: 0;
+        position: absolute;
+      }
+  
+      .left {
+        left: 0;
+        //background-color: blue;
+        background-color: #FFF;
+      }
+  
+      .right {
+        right: 0;
+        //background-color: red;
+        background-color: #FFF;
+      }
+  
+      .main {
+        margin: 55px 7%;
+        height: 100%;
+      }
+    }
+  
+    .footer {
+      width: 100%;
+  
+      .line {
+        width: 100%;
+        height: 2px;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 85, 0, 1);
+      }
+    }
+  }
+  

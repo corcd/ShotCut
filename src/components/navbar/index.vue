@@ -1,9 +1,18 @@
 <template>
-  <div class="navbar">
+  <div class="navbar navbar_default" v-bind:class="{'navbar_dynamic':dynamic}">
     <div class="generalbar">
       <div class="logo">
-        <img class="img_logo" alt="logo" src="../../assets/logo.png">
-        <img class="img_brand" alt="brand" src="../../assets/brand.png">
+        <img class="img-logo" alt="logo" src="../../assets/logo.png">
+        <img class="img-brand" alt="brand" src="../../assets/brand.png">
+        <div class="aggergationbar" v-show="dynamic">
+          <a @click="linkTo('/')">
+            <span>首页</span>
+          </a>
+          <a>
+            <span>栏目</span>
+            <i class="icon-column" src></i>
+          </a>
+        </div>
       </div>
       <div class="searchbar">
         <el-row>
@@ -19,34 +28,34 @@
         <el-button icon="el-icon-user" circle></el-button>
       </div>
     </div>
-    <div class="menubar">
+    <div class="menubar" v-show="!dynamic">
       <ul class="menu">
-        <li class="active">
+        <li class="active" @click="linkTo('/')">
           <a>
             <span>首页</span>
           </a>
         </li>
-        <li>
+        <li @click="linkTo('/today')">
           <a>
             <span>今日热门</span>
           </a>
         </li>
-        <li>
+        <li @click="linkTo('/')">
           <a>
             <span>月度排行</span>
           </a>
         </li>
-        <li>
+        <li @click="linkTo('/')">
           <a>
             <span>时尚热度</span>
           </a>
         </li>
-        <li>
+        <li @click="linkTo('/')">
           <a>
             <span>最佳笑点</span>
           </a>
         </li>
-        <li>
+        <li @click="linkTo('/')">
           <a>
             <span>青春短剧</span>
           </a>
@@ -64,10 +73,32 @@ export default {
   },
   data() {
     return {
+      dynamic: false,
       searchContent: ""
     };
   },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
   methods: {
+    linkTo(path) {
+      this.$router.push(path);
+    },
+    handleScroll() {
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      //console.log(scrollTop);
+      if (scrollTop > 600 - 60 - 10) {
+        this.dynamic = true;
+      } else {
+        this.dynamic = false;
+      }
+    },
     getSearch() {
       //搜索
       if (this.searchContent) {
@@ -79,19 +110,32 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar {
-  width: 100%;
+.navbar_default {
   height: 120px;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.8) 100%
   );
+}
+
+.navbar_dynamic {
+  height: 60px;
+  background: rgba(26, 26, 26, 1);
+}
+
+.navbar_temp {
+  height: 100px;
+  background: rgba(26, 26, 26, 1);
+}
+
+.navbar {
+  width: 100%;
 
   .generalbar {
     width: 100%;
     margin-top: 10px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 
     .logo {
@@ -102,15 +146,39 @@ export default {
       justify-content: center;
       align-items: center;
 
-      .img_logo {
+      .img-logo {
         width: 30px;
         height: 30px;
       }
 
-      .img_brand {
+      .img-brand {
         width: 48px;
         height: 30px;
         margin-left: 24px;
+      }
+
+      .aggergationbar {
+        margin-left: 48px;
+
+        a {
+          margin-left: 15px;
+          margin-right: 15px;
+
+          span {
+            font: {
+              size: 16px;
+              family: MicrosoftYaHei;
+              weight: 400;
+            }
+            height: 16px;
+            color: rgba(255, 255, 255, 1);
+          }
+
+          .icon-column {
+            width: 20px;
+            height: 20px;
+          }
+        }
       }
     }
 
@@ -163,7 +231,7 @@ export default {
   .menubar {
     width: 100%;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
 
     ul {
       width: 100%;
@@ -200,6 +268,18 @@ export default {
             font-family: MicrosoftYaHei;
             font-weight: 400;
             color: rgba(255, 255, 255, 1);
+          }
+        }
+
+        &:hover {
+          margin-top: 2px;
+          border-bottom: 2px solid;
+          border-bottom-color: rgba(255, 186, 116, 0.8);
+
+          a {
+            span {
+              color: rgba(255, 186, 116, 0.8);
+            }
           }
         }
       }

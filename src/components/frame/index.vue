@@ -6,29 +6,29 @@
       <a class="link-more">更多></a>
     </div>
     <div class="content">
-      <div class="left-content" v-if="isvideo">
-        
-      </div>
+      <div class="left-content" v-if="isvideo"></div>
       <div class="right-content">
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
-        <items :instruction="'hello'"></items>
+        <div class="items-row">
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+          <items :instruction="'hello'"></items>
+        </div>
       </div>
     </div>
   </div>
@@ -84,7 +84,6 @@ export default {
     .link-more {
       width: 41px;
       height: 15px;
-      margin-left: 10px;
       font-size: 14px;
       font-family: MicrosoftYaHei;
       font-weight: 400;
@@ -97,9 +96,15 @@ export default {
     .left-content,
     .right-content {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
+
+      .items-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+      }
     }
   }
 }

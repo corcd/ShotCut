@@ -1,5 +1,5 @@
 <template>
-  <div class="items" :id="'example'" @click="getDetails()">
+  <div class="items" ref="items" id="example" @click="getDetails()">
     <img alt="bmp" :src="data">
     <p>{{instruction}}</p>
   </div>
@@ -14,7 +14,8 @@ export default {
   },
   methods: {
     getDetails() {
-      console.log(this.$refs.id);
+      let ele = this.$refs.items;
+      console.log(ele.id);
     }
   }
 };
@@ -24,7 +25,7 @@ export default {
 .items {
   width: 217px;
   height: 150px;
-  margin: 5px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

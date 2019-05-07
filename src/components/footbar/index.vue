@@ -7,12 +7,12 @@
             <li>
               <h3>关于我们</h3>
             </li>
-            <li @click="linkTo('/about')">
+            <li @click="linkTo('/aboutus')">
               <a>
                 <span>关于我们</span>
               </a>
             </li>
-            <li>
+            <li @click="linkTo('/aboutshotcut')">
               <a>
                 <span>关于短秀</span>
               </a>

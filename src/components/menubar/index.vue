@@ -47,7 +47,7 @@ export default {
 .menubar {
   width: 100%;
   height: 30px;
-  margin-top: 15px;
+  margin-top: 10px;
 
   .marker {
     width: 31px;

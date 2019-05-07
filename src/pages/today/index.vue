@@ -2,9 +2,9 @@
   <div class="home-page">
     <div class="header">
       <homeheader></homeheader>
+      <hottags></hottags>
     </div>
     <div class="container">
-      <div class="hottags" v-if="hot"></div>
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
@@ -21,11 +21,6 @@
 <script>
 export default {
   components: {},
-  data() {
-    return {
-      hot: false
-    };
-  },
   methods: {}
 };
 </script>

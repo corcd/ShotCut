@@ -1,17 +1,27 @@
 import items from './items'
 import frame from './frame'
+import homeheader from "./homeheader";
 import footbar from './footbar'
 import navbar from './navbar'
 import newslist from './newslist'
 import aboutframe from './aboutframe'
+import hottags from './hottags'
+import videoitem from './videoitem'
+import discuss from './discuss'
+import recommend from './recommend'
 
 const components = {
   items,
   frame,
+  homeheader,
   footbar,
   navbar,
   newslist,
-  aboutframe
+  aboutframe,
+  hottags,
+  videoitem,
+  discuss,
+  recommend
 }
 
 const install = (Vue, options = {}) => {
