@@ -69,10 +69,12 @@
 export default {
   name: "navbar",
   props: {
-    activeitem: Array
+    activeitemid: Array, //活跃的标签 ID
+    status: String  //三种形态：default、dynamic、temp
   },
   data() {
     return {
+      item: [false,false,false,false,false,false],
       dynamic: false,
       searchContent: ""
     };
@@ -103,6 +105,13 @@ export default {
       //搜索
       if (this.searchContent) {
         //...
+      }
+    }
+  },
+  watch: {
+    activeitemid(activeitemid){
+      if(activeitemid){
+        this.item[activeitemid] = true;
       }
     }
   }

@@ -2,13 +2,13 @@
   <div class="recommend">
     <h3>推荐视频</h3>
     <div class="recommend-list">
-      <div class="recommend-item">
+      <div class="recommend-item" v-for="item in testItems" :key="item.id">
         <el-row>
           <el-col :span="12">
             <img alt="video-picture">
           </el-col>
           <el-col :span="12">
-            <p>111</p>
+            <p>{{item.content}}</p>
           </el-col>
         </el-row>
       </div>
@@ -18,7 +18,15 @@
 
 <script>
 export default {
-  name: "recommend"
+  name: "recommend",
+  data() {
+    return {
+      testItems: [
+        { id: 1, src: "#", content: "1" },
+        { id: 2, src: "#", content: "2" }
+      ]
+    };
+  }
 };
 </script>
 
@@ -41,22 +49,21 @@ export default {
 
     .recommend-item {
       .el-col {
-        margin-right: 20px;
-      }
-
-      img {
-        width: 240px;
-        height: 135px;
-      }
-
-      p {
-        font: {
-          size: 16px;
-          family: MicrosoftYaHei;
-          weight: 400;
+        img {
+          width: 240px;
+          height: 135px;
         }
-        color: rgba(51, 51, 51, 1);
-        line-height: 30px;
+
+        p {
+          font: {
+            size: 16px;
+            family: MicrosoftYaHei;
+            weight: 400;
+          }
+          margin-left: 10px;
+          color: rgba(51, 51, 51, 1);
+          line-height: 30px;
+        }
       }
     }
   }

@@ -1,10 +1,10 @@
 <template>
   <div class="discuss">
     <h3>评论</h3>
-    <div class="discuss-login">
+    <div class="discuss-login" v-if="!isLogin">
       <p>
         点击此处
-        <a>
+        <a @click="setLoginStatus()">
           <span class="discuss-login-link">登录</span>
         </a> 后方可发布评论
       </p>
@@ -14,7 +14,18 @@
         <img alt="sina">
       </div>
     </div>
-    <div class="discuss-input" v-if="isLogin"></div>
+    <div class="discuss-input" v-if="isLogin">
+      <img class="discuss-input-profile" alt="profile">
+      <el-input
+        type="textarea"
+        class="discuss-input-inputarea"
+        :autosize="{ minRows: 3, maxRows: 3 }"
+        maxlength="200"
+        placeholder="说两句吧..."
+        v-model="inputtext"
+        show-word-limit
+      ></el-input>
+    </div>
     <div class="discuss-details">
       <p>暂无评论</p>
     </div>
@@ -27,8 +38,14 @@ export default {
   props: {},
   data() {
     return {
-      isLogin: false
+      isLogin: false,
+      inputtext: ""
     };
+  },
+  methods: {
+    setLoginStatus() {
+      this.isLogin = true;
+    }
   }
 };
 </script>
@@ -84,6 +101,33 @@ export default {
         }
         color: rgba(179, 179, 179, 1);
         line-height: 20px;
+      }
+    }
+  }
+
+  .discuss-input {
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    border: 0px solid rgba(204, 204, 204, 1);
+    border-radius: 2px;
+
+    .discuss-input-profile {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    }
+
+    .discuss-input-inputarea {
+      margin-left: 22px;
+      width: 100%;
+      height: 80px;
+
+      .el-input__count {
+        margin-bottom: 1px; //修复计数器与边框重叠问题
       }
     }
   }
