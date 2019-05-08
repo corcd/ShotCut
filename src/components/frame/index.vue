@@ -3,31 +3,15 @@
     <div class="title">
       <div class="icon"></div>
       <span class="title-name">{{title}}</span>
-      <a class="link-more">更多></a>
+      <a class="link-more" @click="linkTo('/index')">更多></a>
     </div>
     <div class="content">
-      <div class="left-content" v-if="isvideo"></div>
+      <div class="left-content" v-if="isvideo">
+        <items></items>
+      </div>
       <div class="right-content">
         <div class="items-row">
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
+          <items v-for="item in testItems" :key="item.id" :instruction="item.title" :id="item.id"></items>
         </div>
       </div>
     </div>
@@ -38,12 +22,27 @@
 export default {
   name: "frame",
   props: {
-    title: String
+    title: String,
+    items: Array
   },
   data() {
     return {
-      isvideo: false
+      isvideo: false,
+      testItems: [
+        { id: 1, url: "#", title: "11111111" },
+        { id: 2, url: "#", title: "22222222" },
+        { id: 3, url: "#", title: "22222222" },
+        { id: 4, url: "#", title: "22222222" },
+        { id: 5, url: "#", title: "22222222" },
+        { id: 6, url: "#", title: "22222222" },
+        { id: 7, url: "#", title: "22222222" }
+      ]
     };
+  },
+  methods: {
+    linkTo(path) {
+      this.$router.push(path);
+    }
   }
 };
 </script>

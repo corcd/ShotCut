@@ -1,16 +1,19 @@
 <template>
-  <div class="navbar navbar_default" v-bind:class="{'navbar_dynamic':dynamic}">
+  <div
+    class="navbar navbar_default"
+    v-bind:class="[{'navbar_shade':shade_visiable},{'navbar_extend':extend}]"
+  >
     <div class="generalbar">
       <div class="logo">
         <img class="img-logo" alt="logo" src="../../assets/logo.png">
         <img class="img-brand" alt="brand" src="../../assets/brand.png">
-        <div class="aggergationbar" v-show="dynamic">
+        <div class="aggergationbar" v-show="btn_visiable">
           <a @click="linkTo('/')">
             <span>首页</span>
           </a>
-          <a>
+          <a @click="toggleMenu()" v-bind:class="{'a_selected':btn_selected}">
             <span>栏目</span>
-            <i class="icon-column" src></i>
+            <img class="icon-column" src="../../assets/icon_column.png">
           </a>
         </div>
       </div>
@@ -28,34 +31,34 @@
         <el-button icon="el-icon-user" circle></el-button>
       </div>
     </div>
-    <div class="menubar" v-show="!dynamic">
+    <div class="menubar" v-show="menu_visiable">
       <ul class="menu">
-        <li class="active" @click="linkTo('/')">
+        <li @click="linkTo('/')" v-bind:class="{'active':item[0]}">
           <a>
             <span>首页</span>
           </a>
         </li>
-        <li @click="linkTo('/today')">
+        <li @click="linkTo('/today')" v-bind:class="{'active':item[1]}">
           <a>
             <span>今日热门</span>
           </a>
         </li>
-        <li @click="linkTo('/')">
+        <li @click="linkTo('/rank')" v-bind:class="{'active':item[2]}">
           <a>
             <span>月度排行</span>
           </a>
         </li>
-        <li @click="linkTo('/')">
+        <li @click="linkTo('/')" v-bind:class="{'active':item[3]}">
           <a>
             <span>时尚热度</span>
           </a>
         </li>
-        <li @click="linkTo('/')">
+        <li @click="linkTo('/')" v-bind:class="{'active':item[4]}">
           <a>
             <span>最佳笑点</span>
           </a>
         </li>
-        <li @click="linkTo('/')">
+        <li @click="linkTo('/')" v-bind:class="{'active':item[5]}">
           <a>
             <span>青春短剧</span>
           </a>
@@ -69,21 +72,43 @@
 export default {
   name: "navbar",
   props: {
-    activeitemid: Array, //活跃的标签 ID
-    status: String  //三种形态：default、dynamic、temp
+    activeitem: Array, //活跃的标签
+    menu_v: Boolean, //下栏导航栏
+    btn_v: Boolean, //上栏附加按钮
+    style_shade: Boolean, //背景渐变
+    scroll: Boolean, //滚动响应
+    extend: Boolean //扩展型
   },
   data() {
     return {
-      item: [false,false,false,false,false,false],
-      dynamic: false,
+      item: this.activeitem,
+      menu_visiable: this.menu_v,
+      btn_visiable: this.btn_v,
+      shade_visiable: this.style_shade,
+      btn_selected: false,
       searchContent: ""
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    console.log(this.scroll);
+    if (this.scroll) {
+      this.menu_visiable = true;
+      this.btn_visiable = false;
+      window.addEventListener("scroll", this.handleScroll);
+    } else {
+      this.menu_visiable = false;
+      this.btn_visiable = true;
+    }
+
+    if (this.extend) {
+      this.menu_visiable = true;
+      this.btn_visiable = false;
+    }
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    if (this.scroll) {
+      window.removeEventListener("scroll", this.handleScroll);
+    }
   },
   methods: {
     linkTo(path) {
@@ -96,9 +121,22 @@ export default {
         document.body.scrollTop;
       //console.log(scrollTop);
       if (scrollTop > 600 - 60 - 10) {
-        this.dynamic = true;
+        this.btn_visiable = true;
+        this.menu_visiable = false;
+        this.shade_visiable = false;
       } else {
-        this.dynamic = false;
+        this.btn_visiable = false;
+        this.menu_visiable = true;
+        this.shade_visiable = true;
+      }
+    },
+    toggleMenu() {
+      if (this.menu_visiable) {
+        this.menu_visiable = false;
+        this.btn_selected = false;
+      } else {
+        this.menu_visiable = true;
+        this.btn_selected = true;
       }
     },
     getSearch() {
@@ -109,8 +147,8 @@ export default {
     }
   },
   watch: {
-    activeitemid(activeitemid){
-      if(activeitemid){
+    activeitemid(activeitemid) {
+      if (activeitemid) {
         this.item[activeitemid] = true;
       }
     }
@@ -119,38 +157,49 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar_default {
-  height: 120px;
+.a_selected {
+  background: rgba(51, 51, 51, 1) !important;
+}
+
+.navbar_shade {
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.8) 100%
-  );
+  ) !important;
+
+  .menubar {
+    background: rgba(26, 26, 26, 0) !important;
+  }
 }
 
-.navbar_dynamic {
+.navbar_default {
   height: 60px;
-  background: rgba(26, 26, 26, 1);
 }
-
-.navbar_temp {
-  height: 100px;
+.navbar_extend {
   background: rgba(26, 26, 26, 1);
+
+  .menubar {
+    background: rgba(26, 26, 26, 1) !important;
+    opacity: 1 !important;
+  }
 }
 
 .navbar {
   width: 100%;
+  background: rgba(26, 26, 26, 1);
 
   .generalbar {
     width: 100%;
-    margin-top: 10px;
+    height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .logo {
-      height: 40px;
+      height: 60px;
       position: fixed;
-      left: 140px;
+      left: 7%;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -167,11 +216,22 @@ export default {
       }
 
       .aggergationbar {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-left: 48px;
 
         a {
-          margin-left: 15px;
-          margin-right: 15px;
+          width: 80px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background: rgba(51, 51, 51, 1);
+          }
 
           span {
             font: {
@@ -179,24 +239,28 @@ export default {
               family: MicrosoftYaHei;
               weight: 400;
             }
-            height: 16px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: rgba(255, 255, 255, 1);
           }
 
-          .icon-column {
+          img {
             width: 20px;
             height: 20px;
+            margin-left: 5px;
           }
         }
       }
     }
 
     .searchbar {
-      width: 460px;
+      width: 24%;
       height: 40px;
 
       input {
-        width: 380px;
+        width: 100%;
         height: 40px;
         color: #fff !important;
         background: rgba(153, 153, 153, 0.25);
@@ -226,7 +290,7 @@ export default {
 
   .user {
     position: fixed;
-    right: 140px;
+    right: 7%;
 
     button {
       width: 40px;
@@ -239,14 +303,16 @@ export default {
 
   .menubar {
     width: 100%;
-    height: 30px;
-    margin-top: 10px;
+    height: 40px;
+    background: rgba(51, 51, 51, 1);
+    opacity: 0.8;
 
     ul {
       width: 100%;
       height: 30px;
+      padding-top: 10px;
       position: fixed;
-      left: 140px;
+      left: 7%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;

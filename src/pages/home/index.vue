@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <div class="header">
-      <homeheader></homeheader>
+      <homeheader :scroll="true" :style_shade="true" :activeitem="activeitem"></homeheader>
     </div>
     <div class="container">
       <div class="hottags" v-if="hot"></div>
@@ -23,7 +23,8 @@ export default {
   components: {},
   data() {
     return {
-      hot: false
+      hot: false,
+      activeitem: [true,"","","","","",""]
     };
   },
   methods: {}

@@ -1,7 +1,7 @@
 <template>
   <div class="about-page">
     <div class="header">
-      <navbar></navbar>
+      <navbar :scroll="false"></navbar>
     </div>
     <div class="container">
       <div class="about-title">

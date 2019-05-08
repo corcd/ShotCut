@@ -1,7 +1,7 @@
 <template>
   <div class="player-page">
     <div class="header">
-      <navbar></navbar>
+      <navbar :scroll="false" :style_shade="false" :menu_v="false" :extend="false" :activeitem="activeitem"></navbar>
       <div class="play-area">
         <div class="play-player"></div>
         <div class="play-info">
@@ -58,7 +58,8 @@ export default {
   },
   data() {
     return {
-      testTitle: "想追我弟，先过我这关"
+      testTitle: "想追我弟，先过我这关",
+      activeitem: ["","","","","","",""]
     };
   },
   methods: {}
@@ -75,11 +76,9 @@ export default {
 
     .navbar {
       width: 100%;
-      height: 90px;
       position: fixed;
       top: 0;
       z-index: 3;
-      background: rgba(26, 26, 26, 1);
 
       .aggergationbar {
         display: inline;

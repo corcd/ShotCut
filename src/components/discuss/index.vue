@@ -26,6 +26,8 @@
         show-word-limit
       ></el-input>
     </div>
+    <el-button class="discuss-btn" v-show="isNotEmpty" round>发布评论</el-button>
+
     <div class="discuss-details">
       <p>暂无评论</p>
     </div>
@@ -39,12 +41,23 @@ export default {
   data() {
     return {
       isLogin: false,
-      inputtext: ""
+      inputtext: "",
+      isNotEmpty: false
     };
   },
   methods: {
     setLoginStatus() {
       this.isLogin = true;
+    }
+  },
+  watch: {
+    inputtext(inputtext) {
+      console.log(inputtext);
+      if (inputtext != "") {
+        this.isNotEmpty = true;
+      } else {
+        this.isNotEmpty = false;
+      }
     }
   }
 };
@@ -129,6 +142,27 @@ export default {
       .el-input__count {
         margin-bottom: 1px; //修复计数器与边框重叠问题
       }
+    }
+  }
+
+  .discuss-btn {
+    width: 18%;
+    float: right;
+    background: linear-gradient(
+      30deg,
+      rgba(255, 85, 51, 1) 0%,
+      rgba(255, 108, 0, 1) 100%
+    );
+    border: 0;
+
+    span {
+      font: {
+        size: 14px;
+        family: MicrosoftYaHei;
+        weight: 400;
+      }
+      color: rgba(255, 255, 255, 1);
+      line-height: 20px;
     }
   }
 

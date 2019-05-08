@@ -1,7 +1,13 @@
 <template>
   <div class="index-page">
     <div class="header">
-      <navbar></navbar>
+      <navbar
+        :scroll="false"
+        :style_shade="false"
+        :menu_v="false"
+        :extend="false"
+        :activeitem="activeitem"
+      ></navbar>
       <div class="index-title">
         <p>{{testTitle}}</p>
       </div>
@@ -11,25 +17,7 @@
       <div class="right"></div>
       <div class="main">
         <div class="items-row">
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
-          <items :instruction="'hello'"></items>
+          <items v-for="item in testItems" :key="item.id" :instruction="item.title" :id="item.id"></items>
         </div>
       </div>
     </div>
@@ -44,11 +32,25 @@
 export default {
   components: {},
   props: {
-    title: String
+    title: String,
+    items: Array
   },
   data() {
     return {
-      testTitle: "怪咖一休哥"
+      testTitle: "怪咖一休哥",
+      activeitem: ["", "", "", "", "", "", ""],
+      testItems: [
+        { id: 1, url: "#", title: "11111111" },
+        { id: 2, url: "#", title: "22222222" },
+        { id: 3, url: "#", title: "22222222" },
+        { id: 4, url: "#", title: "22222222" },
+        { id: 5, url: "#", title: "22222222" },
+        { id: 6, url: "#", title: "22222222" },
+        { id: 7, url: "#", title: "22222222" },
+        { id: 8, url: "#", title: "22222222" },
+        { id: 9, url: "#", title: "22222222" },
+        { id: 10, url: "#", title: "22222222" }
+      ]
     };
   },
   methods: {}

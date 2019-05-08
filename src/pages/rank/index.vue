@@ -1,7 +1,7 @@
 <template>
   <div class="rank-page">
     <div class="header">
-      <navbar></navbar>
+      <navbar :scroll="false" :menu_v="true" :style_shade="false" :extend="true" :activeitem="activeitem"></navbar>
     </div>
     <div class="container">
       <div class="left"></div>
@@ -27,7 +27,8 @@ export default {
   },
   data() {
     return {
-      testTitle: "热门短视频"
+      testTitle: "热门短视频",
+      activeitem: ["","",true,"","","",""]
     };
   },
   methods: {}

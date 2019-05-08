@@ -1,6 +1,6 @@
 <template>
   <div class="home-header">
-    <navbar></navbar>
+    <navbar :scroll="scroll" :style_shade="style_shade" :activeitem="activeitem"></navbar>
     <el-carousel>
       <el-carousel-item v-for="item in 4" :key="item">
         <h3>{{ item }}</h3>
@@ -13,6 +13,14 @@
 <script>
 export default {
   name: "homeheader",
+  props: {
+    scroll: Boolean,
+    style_shade: Boolean,
+    activeitem: Array
+  },
+  data() {
+    return {};
+  },
   methods: {}
 };
 </script>
@@ -35,11 +43,9 @@ export default {
     width: 100%;
     height: 600px;
     z-index: 1;
-
     .el-carousel__container {
       width: 100%;
       height: 600px;
-
       .el-carousel__item h3 {
         color: #475669;
         font-size: 18px;
@@ -47,11 +53,9 @@ export default {
         line-height: 600px;
         margin: 0;
       }
-
       .el-carousel__item:nth-child(2n) {
         background-color: #99a9bf;
       }
-
       .el-carousel__item:nth-child(2n + 1) {
         background-color: #d3dce6;
       }

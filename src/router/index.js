@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/pages/home'
 import today from '@/pages/today'
-import index from '@/pages/index'
 import rank from '@/pages/rank'
+import index from '@/pages/index'
+import tagindex from '@/pages/tagindex'
 import player from '@/pages/player'
 import aboutus from '@/pages/aboutus'
 import aboutshotcut from '@/pages/aboutshotcut'
@@ -24,14 +25,19 @@ export default new Router({
       component: today
     },
     {
+      path: '/rank',
+      name: 'rank',
+      component: rank
+    },
+    {
       path: '/index',
       name: 'index',
       component: index
     },
     {
-      path: '/rank',
-      name: 'rank',
-      component: rank
+      path: '/tagindex',
+      name: 'tagindex',
+      component: tagindex
     },
     {
       path: '/player',
