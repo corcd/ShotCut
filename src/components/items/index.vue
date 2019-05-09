@@ -48,8 +48,8 @@ export default {
 }
 
 .items {
-  max-width: 217px;
-  max-height: 122px;
+  width: 12%;
+  height: 12%;
   margin: 1.1%;
   display: flex;
   flex-direction: column;

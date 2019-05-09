@@ -1,7 +1,5 @@
 import items from './items'
 import frame from './frame'
-import hotitems from './hotitems'
-import hotframe from './hotframe'
 import homeheader from "./homeheader";
 import footbar from './footbar'
 import navbar from './navbar'
@@ -23,9 +21,7 @@ const components = {
   hottags,
   videoitem,
   discuss,
-  recommend,
-  hotitems,
-  hotframe
+  recommend
 }
 
 const install = (Vue, options = {}) => {
