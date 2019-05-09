@@ -6,11 +6,14 @@ import router from './router'
 import ElementUI from 'element-ui'
 import Vcomp from './components/index'
 import Axios from 'axios'
+import VueVideoPlayer from 'vue-video-player'
 
 import 'element-ui/lib/theme-chalk/index.css'
+import 'video.js/dist/video-js.css'
 import './assets/css/global.scss'
 
 Vue.use(ElementUI)
+Vue.use(VueVideoPlayer)
 Vue.use(Vcomp)
 
 Vue.prototype.$axios = Axios

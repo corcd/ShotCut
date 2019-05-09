@@ -6,7 +6,7 @@
     :id="id"
     :url="url"
     test="test"
-    @click="getDetails($event)"
+    @click="linkToPlayer()"
   >
     <img alt="bmp" :src="src">
     <p>{{instruction}}</p>
@@ -25,11 +25,25 @@ export default {
   },
   methods: {
     getDetails(e) {
-      console.log(e.target.getAttribute('test'));
-      console.log(e.target.getAttribute('url'));
-      console.log(e.target.getAttribute('id'));
+      console.log(e.target.getAttribute("test"));
+      console.log(e.target.getAttribute("url"));
+      console.log(e.target.getAttribute("id"));
       let ele = this.$refs.item;
       console.log(ele.id + "-" + ele.url);
+    },
+    linkToPlayer() {
+      let testData = {
+        title: "鸡你太美",
+        source: [{
+          type: "video/mp4",
+          src:
+            "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4"
+        }]
+      };
+      this.$router.push({
+        name: "player",
+        params: { data: testData }
+      });
     }
   },
   watch: {}
@@ -49,7 +63,6 @@ export default {
 
 .items {
   width: 12%;
-  height: 12%;
   margin: 1.1%;
   display: flex;
   flex-direction: column;

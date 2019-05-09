@@ -10,8 +10,12 @@
       </p>
       <div class="discuss-login-shortcut">
         <span>快捷登录：</span>
-        <img alt="wechat">
-        <img alt="sina">
+        <a>
+          <img alt="wechat" src="../../assets/wechat.png">
+        </a>
+        <a>
+          <img alt="sina" src="../../assets/weibo.png">
+        </a>
       </div>
     </div>
     <div class="discuss-input" v-if="isLogin">
@@ -26,7 +30,7 @@
         show-word-limit
       ></el-input>
     </div>
-    <el-button class="discuss-btn" v-show="isNotEmpty" round>发布评论</el-button>
+    <el-button class="discuss-btn" size="mini" v-show="isNotEmpty" round>发布评论</el-button>
 
     <div class="discuss-details">
       <p>暂无评论</p>
@@ -66,6 +70,7 @@ export default {
 <style lang="scss">
 .discuss {
   width: 100%;
+  padding-right: 60px;
 
   h3 {
     font: {
@@ -104,7 +109,9 @@ export default {
     }
 
     .discuss-login-shortcut {
-      display: inline;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 
       span {
         font: {
@@ -114,6 +121,14 @@ export default {
         }
         color: rgba(179, 179, 179, 1);
         line-height: 20px;
+      }
+
+      a {
+        img {
+          width: 22px;
+          height: 18px;
+          margin: 5px;
+        }
       }
     }
   }

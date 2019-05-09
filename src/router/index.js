@@ -40,7 +40,7 @@ export default new Router({
       component: tagindex
     },
     {
-      path: '/player',
+      path: '/player/:data',
       name: 'player',
       component: player
     },
