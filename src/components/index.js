@@ -1,5 +1,6 @@
 import items from './items'
 import frame from './frame'
+import hotitems from './hotitems'
 import homeheader from "./homeheader";
 import footbar from './footbar'
 import navbar from './navbar'
@@ -13,6 +14,7 @@ import recommend from './recommend'
 const components = {
   items,
   frame,
+  hotitems,
   homeheader,
   footbar,
   navbar,

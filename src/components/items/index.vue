@@ -34,11 +34,13 @@ export default {
     linkToPlayer() {
       let testData = {
         title: "鸡你太美",
-        source: [{
-          type: "video/mp4",
-          src:
-            "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4"
-        }]
+        source: [
+          {
+            type: "video/mp4",
+            src:
+              "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4"
+          }
+        ]
       };
       this.$router.push({
         name: "player",
@@ -63,24 +65,30 @@ export default {
 
 .items {
   width: 12%;
-  margin: 1.1%;
+  margin-right: 1.1%;
+  margin-left: 1.1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 
   img {
     width: 100%;
-    height: 80%;
     background-color: gray;
   }
 
   p {
     width: 100%;
+    height: 42px;
+    word-break: normal;
+    white-space: pre-wrap;
+    word-wrap: break-word;
     text-align: left;
-    width: 206px;
-    font-size: 60%;
-    font-family: MicrosoftYaHei;
-    font-weight: 400;
+    font: {
+      size: 60%;
+      family: MicrosoftYaHei;
+      weight: 400;
+    }
     color: rgba(102, 102, 102, 1);
     line-height: 21px;
   }

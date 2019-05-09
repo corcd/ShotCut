@@ -75,7 +75,7 @@ export default {
         {
           id: 7,
           src: "../../../static/images/test.png",
-          title: "22222222",
+          title: "22222222222222222222222222222",
           source_url: "#"
         },
         {
@@ -129,7 +129,7 @@ export default {
 .frame {
   width: 100%;
   min-height: 200px;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
   background-color: #fff;
   //border: 1px solid #456;
 

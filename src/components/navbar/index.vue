@@ -162,10 +162,11 @@ export default {
 }
 
 .navbar_shade {
+  height: 120px !important;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.9) 100%
   ) !important;
 
   .menubar {
@@ -187,6 +188,7 @@ export default {
 
 .navbar {
   width: 100%;
+  min-width: 1050px;
   background: rgba(26, 26, 26, 1);
 
   .generalbar {
@@ -198,7 +200,7 @@ export default {
 
     .logo {
       height: 60px;
-      position: fixed;
+      position: absolute;
       left: 7%;
       display: inline-flex;
       justify-content: center;
@@ -257,6 +259,7 @@ export default {
 
     .searchbar {
       width: 24%;
+      min-width: 500px;
       height: 40px;
 
       input {
@@ -264,7 +267,7 @@ export default {
         height: 40px;
         color: #fff !important;
         background: rgba(153, 153, 153, 0.25);
-        opacity: 0.6;
+        opacity: 0.7;
         border: 0;
         border-radius: 20px;
 
@@ -289,7 +292,7 @@ export default {
   }
 
   .user {
-    position: fixed;
+    position: absolute;
     right: 7%;
 
     button {
@@ -303,15 +306,15 @@ export default {
 
   .menubar {
     width: 100%;
+    min-width: 1050px;
     height: 40px;
-    background: rgba(51, 51, 51, 1);
-    opacity: 0.8;
+    background: rgba(51, 51, 51, 0.8);
 
     ul {
       width: 100%;
       height: 30px;
       padding-top: 10px;
-      position: fixed;
+      position: absolute;
       left: 7%;
       display: flex;
       flex-direction: row;

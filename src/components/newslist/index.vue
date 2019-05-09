@@ -68,6 +68,8 @@ export default {
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   ul {
     width: 100%;
@@ -86,7 +88,7 @@ export default {
         height: 80px;
         display: flex;
         align-items: center;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 0.7);
         opacity: 1;
 
         a {
