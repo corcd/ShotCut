@@ -48,9 +48,9 @@ export default {
 }
 
 .items {
-  max-width: 217px;
-  max-height: 122px;
-  margin: 1.1%;
+  max-width: 312px;
+  max-height: 416px;
+  margin: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;

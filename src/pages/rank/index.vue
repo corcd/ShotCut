@@ -8,7 +8,7 @@
       <div class="right"></div>
       <div class="main">
         <div>
-          <videoitem></videoitem>
+          <hotframe></hotframe>
         </div>
       </div>
     </div>
