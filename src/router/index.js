@@ -8,6 +8,7 @@ import tagindex from '@/pages/tagindex'
 import player from '@/pages/player'
 import aboutus from '@/pages/aboutus'
 import aboutshotcut from '@/pages/aboutshotcut'
+import test from '@/pages/test'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/aboutshotcut',
       name: 'aboutshotcut',
       component: aboutshotcut
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
     }
   ]
 })

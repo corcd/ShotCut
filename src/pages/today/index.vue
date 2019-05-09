@@ -8,7 +8,7 @@
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame :title="'怪咖一休哥'"></frame>
+        <frame :title="'怪咖一休哥'">
       </div>
     </div>
     <div class="footer">
@@ -25,14 +25,14 @@ export default {
     return {
       activeitem: ["", true, "", "", "", "", ""],
       tags: [
-        { id:1, text: "全部", param: "" },
-        { id:2, text: "美食", param: "" },
-        { id:3, text: "游戏", param: "" },
-        { id:4, text: "时尚", param: "" },
-        { id:5, text: "旅游", param: "" },
-        { id:6, text: "搞笑", param: "" },
-        { id:7, text: "情感", param: "" },
-        { id:8, text: "科技", param: "" }
+        { id: 1, text: "全部", param: "" },
+        { id: 2, text: "美食", param: "" },
+        { id: 3, text: "游戏", param: "" },
+        { id: 4, text: "时尚", param: "" },
+        { id: 5, text: "旅游", param: "" },
+        { id: 6, text: "搞笑", param: "" },
+        { id: 7, text: "情感", param: "" },
+        { id: 8, text: "科技", param: "" }
       ]
     };
   },

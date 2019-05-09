@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import ElementUI from 'element-ui'
 import Vcomp from './components/index'
 import Axios from 'axios'
@@ -16,11 +17,15 @@ Vue.use(ElementUI)
 Vue.use(VueVideoPlayer)
 Vue.use(Vcomp)
 
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0);
+});
 Vue.prototype.$axios = Axios
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: {
     App
