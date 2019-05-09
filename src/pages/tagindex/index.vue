@@ -65,7 +65,7 @@ export default {
         { id: 9, url: "#", title: "22222222" },
         { id: 10, url: "#", title: "22222222" }
       ],
-      currentPage1: 5,
+      currentPage1: 1,
       currentPage2: 5,
       currentPage3: 5,
       currentPage4: 4

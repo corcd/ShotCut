@@ -9,6 +9,10 @@
       <div class="right"></div>
       <div class="main">
         <frame :title="'怪咖一休哥'">
+        <frame :title="'理娱打挺疼'">
+        <frame :title="'时尚前线'">
+        <frame :title="'电视剧透社'">
+        <frame :title="'剧影侠'">
       </div>
     </div>
     <div class="footer">

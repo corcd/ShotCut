@@ -30,12 +30,12 @@ export default new Router({
       component: rank
     },
     {
-      path: '/index',
+      path: '/index/:token',
       name: 'index',
       component: index
     },
     {
-      path: '/tagindex',
+      path: '/tagindex/:token',
       name: 'tagindex',
       component: tagindex
     },

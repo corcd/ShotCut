@@ -4,9 +4,9 @@
       <li>
         <span class="tags-title">#热门标签</span>
       </li>
-      <li v-for="item in testTags" :key="item">
+      <li v-for="item in tags" :key="item.id">
         <a>
-          <span>{{item}}</span>
+          <span>{{item.text}}</span>
         </a>
       </li>
     </ul>
@@ -17,12 +17,10 @@
 export default {
   name: "hottags",
   props: {
-    tags: Object
+    tags: Array
   },
   data() {
-    return {
-      testTags: ["1", "2", "3", "4", "5", "6", "7", "8"]
-    };
+    return {};
   }
 };
 </script>

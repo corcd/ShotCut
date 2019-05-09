@@ -30,6 +30,7 @@
           family: MicrosoftYaHei;
           weight: 400;
         }
+
         margin-left: 7%;
         color: rgba(51, 51, 51, 1);
       }
@@ -67,6 +68,20 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+      }
+
+      .items-paging {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+
+        .el-pagination {
+          .el-pager li.active {
+            color: rgba(255, 85, 51, 1);
+          }
+        }
       }
     }
   }

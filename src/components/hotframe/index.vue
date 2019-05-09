@@ -1,5 +1,5 @@
 <template>
-  <div class="frame">
+  <div class="hotframe">
     <div class="title">
       <div class="icon"></div>
       <span class="title-name">{{title}}</span>
@@ -11,14 +11,7 @@
       </div>
       <div class="right-content">
         <div class="items-row">
-          <items
-            v-for="item in testItems"
-            :key="item.id"
-            :instruction="item.title"
-            :src="item.src"
-            :id="item.id"
-            :url="item.source_url"
-          ></items>
+          <items v-for="item in testItems" :key="item.id" :instruction="item.title" :src="item.src" :id="item.id" :url="item.source_url"></items>
         </div>
       </div>
     </div>
@@ -27,7 +20,7 @@
 
 <script>
 export default {
-  name: "frame",
+  name: "hotframe",
   props: {
     title: String,
     items: Array
@@ -36,66 +29,16 @@ export default {
     return {
       isvideo: false,
       testItems: [
-        {
-          id: 1,
-          src: "../../../static/images/test.png",
-          title: "11111111",
-          source_url: "#"
-        },
-        {
-          id: 2,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 3,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 4,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 5,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 6,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 7,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 8,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 9,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 10,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        }
+        { id: 1, src: "../../../static/images/test.png", title: "11111111", source_url:"#" },
+        { id: 2, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 3, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 4, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 5, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 6, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 7, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 8, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 9, src: "../../../static/images/test.png", title: "22222222", source_url:"#" },
+        { id: 10, src: "../../../static/images/test.png", title: "22222222", source_url:"#" }
       ]
     };
   },
@@ -152,11 +95,9 @@ export default {
     .title-name {
       height: 30px;
       text-align: left !important;
-      font: {
-        size: 30px;
-        family: MicrosoftYaHei;
-        weight: 400;
-      }
+      font-size: 30px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
       color: rgba(51, 51, 51, 1);
       line-height: 42px;
     }
@@ -164,12 +105,9 @@ export default {
     .link-more {
       width: 41px;
       height: 15px;
-      margin-left: 10px;
-      font: {
-        size: 14px;
-        family: MicrosoftYaHei;
-        weight: 400;
-      }
+      font-size: 14px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
       color: rgba(153, 153, 153, 1);
       line-height: 42px;
     }

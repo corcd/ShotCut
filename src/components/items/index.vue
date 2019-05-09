@@ -2,11 +2,13 @@
   <div
     class="items"
     v-bind:class="{'items-large':isLarge}"
-    ref="items"
+    ref="item"
     :id="id"
-    @click="getDetails()"
+    :url="url"
+    test="test"
+    @click="getDetails($event)"
   >
-    <img alt="bmp" src="../../assets/test.png">
+    <img alt="bmp" :src="src">
     <p>{{instruction}}</p>
   </div>
 </template>
@@ -17,16 +19,20 @@ export default {
   props: {
     isLarge: Boolean,
     id: Number,
-    instruction: String
+    instruction: String,
+    src: String,
+    url: String
   },
   methods: {
-    getDetails() {
-      let ele = this.$refs.items;
-      console.log(ele.id);
+    getDetails(e) {
+      console.log(e.target.getAttribute('test'));
+      console.log(e.target.getAttribute('url'));
+      console.log(e.target.getAttribute('id'));
+      let ele = this.$refs.item;
+      console.log(ele.id + "-" + ele.url);
     }
   },
-  watch:{
-  }
+  watch: {}
 };
 </script>
 
