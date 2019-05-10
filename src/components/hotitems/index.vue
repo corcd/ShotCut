@@ -2,7 +2,7 @@
   <div class="hotitems" ref="hotitem" :id="hotdata.rankid" @click="linkToPlayer()">
     <img alt="bmp" :src="hotdata.cover">
     <div class="hot-info">
-      <img alt="index">
+      <rankicon :number="hotdata.rankid"></rankicon>
       <p>{{hotdata.info}}</p>
     </div>
   </div>
@@ -41,6 +41,7 @@ export default {
   width: 18%;
   margin-right: 1%;
   margin-left: 1%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,15 +57,17 @@ export default {
     justify-content: flex-start;
     align-items: center;
 
-    img {
-      width: 30px;
-      height: 42px;
+    .rank-icon {
+      position: relative;
+      top: -20px;
       margin-right: 8px;
     }
 
     p {
-      width: 75%;
+      width: 80%;
       height: 42px;
+      max-height: 42px;
+      margin-top: 4px;
       word-break: normal;
       white-space: pre-wrap;
       word-wrap: break-word;

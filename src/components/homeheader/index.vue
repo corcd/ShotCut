@@ -1,12 +1,82 @@
 <template>
   <div class="home-header">
     <navbar :scroll="scroll" :style_shade="style_shade" :activeitem="activeitem"></navbar>
-    <el-carousel>
-      <el-carousel-item v-for="item in data" :key="item.id">
-        <img alt="bg" :src="item.src">
+    <el-carousel :autoplay="false" arrow="never" ref="carousel">
+      <el-carousel-item v-for="item in items" :key="item.id">
+        <img alt="bg" :src="item.poster">
       </el-carousel-item>
     </el-carousel>
-    <newslist></newslist>
+    <div class="newslist" id="newslist">
+      <ul>
+        <li
+          v-bind:class="{'list-active':items[0].actived}"
+          @mouseover="pauseCounter(0)"
+          @mouseout="recoverCounter(0)"
+        >
+          <a>
+            <span
+              v-bind:class="{'span-active':items[0].actived}"
+              @mouseover="pauseCounter(0)"
+              @mouseout="recoverCounter(0)"
+            >{{items[0].content}}</span>
+          </a>
+        </li>
+        <li
+          v-bind:class="{'list-active':items[1].actived}"
+          @mouseover="pauseCounter(1)"
+          @mouseout="recoverCounter(1)"
+        >
+          <a>
+            <span v-bind:class="{'span-active':items[1].actived}">{{items[1].content}}</span>
+          </a>
+        </li>
+        <li
+          v-bind:class="{'list-active':items[2].actived}"
+          @mouseover="pauseCounter(2)"
+          @mouseout="recoverCounter(2)"
+        >
+          <a>
+            <span v-bind:class="{'span-active':items[2].actived}">{{items[2].content}}</span>
+          </a>
+        </li>
+        <li
+          v-bind:class="{'list-active':items[3].actived}"
+          @mouseover="pauseCounter(3)"
+          @mouseout="recoverCounter(3)"
+        >
+          <a>
+            <span v-bind:class="{'span-active':items[3].actived}">{{items[3].content}}</span>
+          </a>
+        </li>
+        <li
+          v-bind:class="{'list-active':items[4].actived}"
+          @mouseover="pauseCounter(4)"
+          @mouseout="recoverCounter(4)"
+        >
+          <a>
+            <span v-bind:class="{'span-active':items[4].actived}">{{items[4].content}}</span>
+          </a>
+        </li>
+        <li
+          v-bind:class="{'list-active':items[5].actived}"
+          @mouseover="pauseCounter(5)"
+          @mouseout="recoverCounter(5)"
+        >
+          <a>
+            <span v-bind:class="{'span-active':items[5].actived}">{{items[5].content}}</span>
+          </a>
+        </li>
+        <li
+          v-bind:class="{'list-active':items[6].actived}"
+          @mouseover="pauseCounter(6)"
+          @mouseout="recoverCounter(6)"
+        >
+          <a>
+            <span v-bind:class="{'span-active':items[6].actived}">{{items[6].content}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -17,18 +87,125 @@ export default {
     scroll: Boolean,
     style_shade: Boolean,
     activeitem: Array,
-    data: Array
+    data: Array,
+    actived: {
+      type: Number,
+      default: 0
+    }
   },
   data() {
     return {
+      counter: 0,
+      timer: {},
+      items: [
+        {
+          id: 1,
+          content: "女明星都在用的腮红减龄法 ",
+          poster: "../../../static/images/bg/bg1.jpg",
+          actived: false
+        },
+        {
+          id: 2,
+          content: "东皇加张良plus！",
+          poster: "../../../static/images/bg/bg2.jpg",
+          actived: false
+        },
+        {
+          id: 3,
+          content: "震惊！化完妆VS没化妆的差距竟然",
+          poster: "../../../static/images/bg/bg3.jpg",
+          actived: false
+        },
+        {
+          id: 4,
+          content: "拒绝嘴唇干燥起皮，必备润唇膏实用测评",
+          poster: "../../../static/images/bg/bg4.jpg",
+          actived: false
+        },
+        {
+          id: 5,
+          content: "男友习惯性打压你，是什么毛病？看她这样做",
+          poster: "../../../static/images/bg/bg5.jpg",
+          actived: false
+        },
+        {
+          id: 6,
+          content: "发际线太高？试试女明星最爱的同款刘海",
+          poster: "../../../static/images/bg/bg6.jpg",
+          actived: false
+        },
+        {
+          id: 7,
+          content: "拯救四眼妹！女明星的时髦眼镜妆，3分钟就学会",
+          poster: "../../../static/images/bg/bg7.jpg",
+          actived: false
+        }
+      ],
+      extra: ["", "双法坦组合全场横着走！", "", "", "", "", ""]
     };
   },
-  methods: {}
+  created() {
+    this.items[this.counter].actived = true;
+    this.counter++;
+
+    this.timer = setInterval(() => {
+      if (this.counter > 6) this.counter = 0;
+
+      if (this.counter != 0) this.items[this.counter - 1].actived = false;
+      else this.items[6].actived = false;
+
+      this.items[this.counter].actived = true;
+      this.$refs.carousel.setActiveItem(this.counter);
+      this.counter++;
+    }, 3000);
+  },
+  methods: {
+    pauseCounter(param) {
+      let self = this;
+      this.$nextTick(() => {
+        clearInterval(this.timer);
+        this.items.forEach(item => {
+          self.$set(item, "actived", false);
+        });
+        this.items[param].actived = true;
+        this.$refs.carousel.setActiveItem(param);
+      });
+    },
+    recoverCounter(param) {
+      this.counter = param;
+      this.timer = setInterval(() => {
+        if (this.counter == 7) this.counter = 0;
+
+        if (this.counter != 0) this.items[this.counter - 1].actived = false;
+        else this.items[6].actived = false;
+
+        this.items[this.counter].actived = true;
+        this.$refs.carousel.setActiveItem(this.counter);
+        this.counter++;
+      }, 3000);
+    }
+  }
 };
 </script>
 
 
 <style lang="scss">
+.list-active {
+  width: 100% !important;
+  height: 70px !important;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.span-active {
+  font-size: 20px !important;
+  font-family: MicrosoftYaHei-Bold !important;
+  font-weight: bold !important;
+  color: rgba(255, 85, 0, 0.9) !important;
+}
+
 .home-header {
   width: 100%;
   height: 600px;
@@ -40,14 +217,16 @@ export default {
   }
 
   .el-carousel {
-    position: absolute;
-    top: 0;
     width: 100%;
     height: 600px;
+    position: absolute;
+    top: 0;
     z-index: 1;
+
     .el-carousel__container {
       width: 100%;
-      height: 600px;
+      height: 100%;
+
       .el-carousel__item h3 {
         color: #475669;
         font-size: 18px;
@@ -59,10 +238,41 @@ export default {
   }
 
   .newslist {
+    width: 420px;
+    height: 448px;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 100px;
     right: 0;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    ul {
+      width: 100%;
+      height: 420px;
+      text-align: left;
+
+      li {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        transition: height 0.5s;
+
+        a {
+          span {
+            margin-left: 24px;
+            font-size: 16px;
+            font-family: MicrosoftYaHei;
+            font-weight: 400;
+            color: rgba(153, 153, 153, 1);
+          }
+        }
+      }
+    }
   }
 }
 </style>

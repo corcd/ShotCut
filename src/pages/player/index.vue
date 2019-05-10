@@ -106,9 +106,17 @@ export default {
   created() {
     let videoData = this.$route.params.data;
     console.log(videoData);
+    if (videoData == {}) {
+      videoData = JSON.parse(localStorage.getItem("shotcut_videoData"));
+    }
     this.title = videoData.title;
     this.playerOptions.sources = videoData.source;
     console.log(this.playerOptions);
+    console.log(videoData);
+
+    window.addEventListener("beforeunload", () => {
+      localStorage.setItem("shotcut_videoData", JSON.stringify(videoData));
+    });
   },
   mounted() {
     console.log("this is current player instance object", this.player);

@@ -5,8 +5,9 @@
   >
     <div class="generalbar">
       <div class="logo">
-        <img class="img-logo" alt="logo" src="../../assets/logo.png">
         <img class="img-brand" alt="brand" src="../../assets/brand.png">
+        <img class="img-logo" alt="logo" src="../../assets/logo.png">
+
         <div class="aggergationbar" v-show="btn_visiable">
           <a @click="linkTo('/')">
             <span>首页</span>
@@ -209,12 +210,12 @@ export default {
       .img-logo {
         width: 30px;
         height: 30px;
+        margin-left: 24px;
       }
 
       .img-brand {
         width: 48px;
         height: 30px;
-        margin-left: 24px;
       }
 
       .aggergationbar {
@@ -222,7 +223,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 48px;
+        margin-left: 10%;
 
         a {
           width: 80px;
@@ -259,7 +260,7 @@ export default {
 
     .searchbar {
       width: 24%;
-      min-width: 500px;
+      min-width: 300px;
       height: 40px;
 
       input {
