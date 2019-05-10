@@ -3,13 +3,11 @@
     class="items"
     v-bind:class="{'items-large':isLarge}"
     ref="item"
-    :id="id"
-    :url="url"
-    test="test"
-    @click="linkToPlayer()"
+    :id="data.id"
+    @click="linkToPlayer(data)"
   >
-    <img alt="bmp" :src="src">
-    <p>{{instruction}}</p>
+    <img alt="bmp" :src="data.poster">
+    <p>{{data.title}}</p>
   </div>
 </template>
 
@@ -18,10 +16,7 @@ export default {
   name: "items",
   props: {
     isLarge: Boolean,
-    id: Number,
-    instruction: String,
-    src: String,
-    url: String
+    data: Object
   },
   methods: {
     getDetails(e) {
@@ -31,14 +26,15 @@ export default {
       let ele = this.$refs.item;
       console.log(ele.id + "-" + ele.url);
     },
-    linkToPlayer() {
+    linkToPlayer(obj) {
       let testData = {
-        title: "鸡你太美",
+        title: obj.title,
+        poster: obj.poster,
+        amount: obj.amount,
         source: [
           {
-            type: "video/mp4",
-            src:
-              "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4"
+            type: obj.type,
+            src: obj.video_url
           }
         ]
       };

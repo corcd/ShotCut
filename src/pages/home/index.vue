@@ -8,11 +8,7 @@
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame :title="'怪咖一休哥'">
-        <frame :title="'理娱打挺疼'">
-        <frame :title="'时尚前线'">
-        <frame :title="'电视剧透社'">
-        <frame :title="'剧影侠'">
+        <frame :data="module_data">
       </div>
     </div>
     <div class="footer">
@@ -29,7 +25,9 @@ export default {
     return {
       hot: false,
       activeitem: [true,"","","","","",""],
-      bgdata: [
+      bgdata: this.$store.state.webData.background.data,
+      module_data: this.$store.state.webData.module_data_1,
+      bgdata_old: [
         {
           id: 1,
           title: "",
@@ -67,6 +65,10 @@ export default {
         }
       ]
     };
+  },
+  created() {
+    //console.log(this.$store.state.webData.background.data);
+    //console.log(this.data);
   },
   methods: {}
 };

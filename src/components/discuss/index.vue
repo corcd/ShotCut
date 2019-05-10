@@ -56,7 +56,7 @@ export default {
   },
   watch: {
     inputtext(inputtext) {
-      console.log(inputtext);
+      //console.log(inputtext);
       if (inputtext != "") {
         this.isNotEmpty = true;
       } else {

@@ -1,10 +1,10 @@
 <template>
   <div class="rank-icon">
     <span v-bind:class="{'rank-span-hot':isHot}">{{number}}</span>
-    <dic class="sign">
+    <div class="sign">
       <div class="sign-top" v-bind:class="{'rank-icon-hot-top':isHot}"></div>
       <div class="sign-bottom" v-bind:class="{'rank-icon-hot-bottom':isHot}"></div>
-    </dic>
+    </div>
   </div>
 </template>
 

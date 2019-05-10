@@ -2,8 +2,8 @@
   <div class="frame">
     <div class="title">
       <div class="icon"></div>
-      <span class="title-name">{{title}}</span>
-      <a class="link-more" @click="linkToIndex(title)">更多></a>
+      <span class="title-name">{{data.title}}</span>
+      <a class="link-more" @click="linkToIndex(data.title)">更多></a>
     </div>
     <div class="content">
       <div class="left-content" v-if="isvideo">
@@ -12,12 +12,9 @@
       <div class="right-content">
         <div class="items-row">
           <items
-            v-for="item in testItems"
+            v-for="item in data.data"
             :key="item.id"
-            :instruction="item.title"
-            :src="item.src"
-            :id="item.id"
-            :url="item.source_url"
+            :data="item"
           ></items>
         </div>
       </div>
@@ -30,7 +27,7 @@ export default {
   name: "frame",
   props: {
     title: String,
-    items: Array
+    data: Object
   },
   data() {
     return {

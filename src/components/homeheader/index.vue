@@ -16,9 +16,7 @@
           <a>
             <span
               v-bind:class="{'span-active':items[0].actived}"
-              @mouseover="pauseCounter(0)"
-              @mouseout="recoverCounter(0)"
-            >{{items[0].content}}</span>
+            >{{items[0].title}}</span>
           </a>
         </li>
         <li
@@ -27,7 +25,7 @@
           @mouseout="recoverCounter(1)"
         >
           <a>
-            <span v-bind:class="{'span-active':items[1].actived}">{{items[1].content}}</span>
+            <span v-bind:class="{'span-active':items[1].actived}">{{items[1].title}}</span>
           </a>
         </li>
         <li
@@ -36,7 +34,7 @@
           @mouseout="recoverCounter(2)"
         >
           <a>
-            <span v-bind:class="{'span-active':items[2].actived}">{{items[2].content}}</span>
+            <span v-bind:class="{'span-active':items[2].actived}">{{items[2].title}}</span>
           </a>
         </li>
         <li
@@ -45,7 +43,7 @@
           @mouseout="recoverCounter(3)"
         >
           <a>
-            <span v-bind:class="{'span-active':items[3].actived}">{{items[3].content}}</span>
+            <span v-bind:class="{'span-active':items[3].actived}">{{items[3].title}}</span>
           </a>
         </li>
         <li
@@ -54,7 +52,7 @@
           @mouseout="recoverCounter(4)"
         >
           <a>
-            <span v-bind:class="{'span-active':items[4].actived}">{{items[4].content}}</span>
+            <span v-bind:class="{'span-active':items[4].actived}">{{items[4].title}}</span>
           </a>
         </li>
         <li
@@ -63,7 +61,7 @@
           @mouseout="recoverCounter(5)"
         >
           <a>
-            <span v-bind:class="{'span-active':items[5].actived}">{{items[5].content}}</span>
+            <span v-bind:class="{'span-active':items[5].actived}">{{items[5].title}}</span>
           </a>
         </li>
         <li
@@ -72,7 +70,7 @@
           @mouseout="recoverCounter(6)"
         >
           <a>
-            <span v-bind:class="{'span-active':items[6].actived}">{{items[6].content}}</span>
+            <span v-bind:class="{'span-active':items[6].actived}">{{items[6].title}}</span>
           </a>
         </li>
       </ul>
@@ -97,55 +95,56 @@ export default {
     return {
       counter: 0,
       timer: {},
-      items: [
+      items: this.data,
+      items_old: [
         {
           id: 1,
-          content: "女明星都在用的腮红减龄法 ",
+          title: "女明星都在用的腮红减龄法 ",
           poster: "../../../static/images/bg/bg1.jpg",
           actived: false
         },
         {
           id: 2,
-          content: "东皇加张良plus！",
+          title: "东皇加张良plus！",
           poster: "../../../static/images/bg/bg2.jpg",
           actived: false
         },
         {
           id: 3,
-          content: "震惊！化完妆VS没化妆的差距竟然",
+          title: "震惊！化完妆VS没化妆的差距竟然",
           poster: "../../../static/images/bg/bg3.jpg",
           actived: false
         },
         {
           id: 4,
-          content: "拒绝嘴唇干燥起皮，必备润唇膏实用测评",
+          title: "拒绝嘴唇干燥起皮，必备润唇膏实用测评",
           poster: "../../../static/images/bg/bg4.jpg",
           actived: false
         },
         {
           id: 5,
-          content: "男友习惯性打压你，是什么毛病？看她这样做",
+          title: "男友习惯性打压你，是什么毛病？看她这样做",
           poster: "../../../static/images/bg/bg5.jpg",
           actived: false
         },
         {
           id: 6,
-          content: "发际线太高？试试女明星最爱的同款刘海",
+          title: "发际线太高？试试女明星最爱的同款刘海",
           poster: "../../../static/images/bg/bg6.jpg",
           actived: false
         },
         {
           id: 7,
-          content: "拯救四眼妹！女明星的时髦眼镜妆，3分钟就学会",
+          title: "拯救四眼妹！女明星的时髦眼镜妆，3分钟就学会",
           poster: "../../../static/images/bg/bg7.jpg",
           actived: false
         }
-      ],
-      extra: ["", "双法坦组合全场横着走！", "", "", "", "", ""]
+      ]
     };
   },
   created() {
-    this.items[this.counter].actived = true;
+    //console.log(this.data);
+    this.items[0].actived = true;
     this.counter++;
 
     this.timer = setInterval(() => {
@@ -158,6 +157,11 @@ export default {
       this.$refs.carousel.setActiveItem(this.counter);
       this.counter++;
     }, 3000);
+  },
+  destroyed() {
+    clearInterval(this.timer);
+  },
+  computed: {
   },
   methods: {
     pauseCounter(param) {

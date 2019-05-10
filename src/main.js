@@ -9,6 +9,8 @@ import Vcomp from './components/index'
 import Axios from 'axios'
 import VueVideoPlayer from 'vue-video-player'
 
+import 'videojs-contrib-hls'
+
 import 'element-ui/lib/theme-chalk/index.css'
 import 'video.js/dist/video-js.css'
 import './assets/css/global.scss'

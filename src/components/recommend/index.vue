@@ -2,13 +2,13 @@
   <div class="recommend">
     <h3>推荐视频</h3>
     <div class="recommend-list">
-      <div class="recommend-item" v-for="item in testItems" :key="item.id" @click="linkToPlayer(param)">
+      <div class="recommend-item" v-for="item in data" :key="item.id" @click="linkToPlayer(item)">
         <el-row>
           <el-col :span="12">
-            <img alt="video-picture" :src="item.src">
+            <img alt="video-picture" :src="item.poster">
           </el-col>
           <el-col :span="12">
-            <p>{{item.content}}</p>
+            <p>{{item.title}}</p>
           </el-col>
         </el-row>
       </div>
@@ -19,30 +19,43 @@
 <script>
 export default {
   name: "recommend",
+  inject: ['reload'],
+  props: {
+    data: Array
+  },
   data() {
     return {
       testItems: [
-        { id: 1, src: "../../../static/images/test.png", content: "11111111111111111111111111111" },
-        { id: 2, src: "../../../static/images/test.png", content: "22222222222222222222222222222" }
+        {
+          id: 1,
+          src: "../../../static/images/test.png",
+          content: "11111111111111111111111111111"
+        },
+        {
+          id: 2,
+          src: "../../../static/images/test.png",
+          content: "22222222222222222222222222222"
+        }
       ]
     };
   },
   methods: {
-    linkToPlayer(param) {
+    linkToPlayer(obj) {
+      console.log(obj.id);
       let testData = {
-        title: "鸡你太美",
+        title: obj.title,
+        poster: obj.poster,
+        amount: obj.amount,
         source: [
           {
-            type: "video/mp4",
-            src:
-              "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4"
+            type: obj.type,
+            src: obj.video_url
           }
         ]
       };
-      this.$router.push({
-        name: "player",
-        params: { data: testData }
-      });
+      localStorage.setItem("shotcut_videoData", JSON.stringify(testData));
+      this.reload();
+      window.scrollTo(0, 0);
     }
   }
 };

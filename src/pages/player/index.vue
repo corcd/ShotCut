@@ -36,12 +36,12 @@
               <div class="play-amount">
                 <p>
                   浏览量：
-                  <span>{{pageview}}</span>
+                  <span>{{amount}}</span>
                 </p>
               </div>
             </div>
           </div>
-          <div class="play-ad">
+          <div class="play-ad" @click="testReload()">
             <a>
               <img alt="ad" src="../../assets/ad.png">
             </a>
@@ -58,7 +58,7 @@
             <discuss></discuss>
           </el-col>
           <el-col :span="6">
-            <recommend></recommend>
+            <recommend :data="rcData"></recommend>
           </el-col>
         </el-row>
       </div>
@@ -75,11 +75,13 @@ import "../../assets/css/custom-player.scss";
 
 export default {
   components: {},
+  inject: ['reload'],
   props: {},
   data() {
     return {
       title: "",
       activeitem: ["", "", "", "", "", "", ""],
+      rcData: this.$store.state.webData.SuggestedVideos.data,
       playerOptions: {
         // videojs options
         autoplay: false,
@@ -90,7 +92,7 @@ export default {
         aspectRatio: "16:9",
         fluid: true,
         sources: [],
-        poster: "/static/images/test.png",
+        poster: "",
         notSupportedMessage: "无法播放",
         controlBar: {
           timeDivider: true,
@@ -100,7 +102,7 @@ export default {
         }
       },
       testData: {},
-      pageview: 123456
+      pageview: 0
     };
   },
   created() {
@@ -110,7 +112,10 @@ export default {
       videoData = JSON.parse(localStorage.getItem("shotcut_videoData"));
     }
     this.title = videoData.title;
+    this.amount = videoData.amount;
+    this.playerOptions.poster = videoData.poster;
     this.playerOptions.sources = videoData.source;
+
     console.log(this.playerOptions);
     console.log(videoData);
 
@@ -126,7 +131,11 @@ export default {
       return this.$refs.videoPlayer.player;
     }
   },
-  methods: {}
+  methods: {
+    testReload() {
+      this.reload();
+    }
+  }
 };
 </script>
 

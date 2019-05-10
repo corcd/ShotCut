@@ -8,7 +8,9 @@
 <script>
 export default {
   components: {},
-  created() {}
+  created() {
+    console.log(this.$store.state.webData.background.data);
+  }
 };
 </script>
 
