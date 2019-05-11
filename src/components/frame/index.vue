@@ -26,7 +26,6 @@
 export default {
   name: "frame",
   props: {
-    title: String,
     data: Object
   },
   data() {

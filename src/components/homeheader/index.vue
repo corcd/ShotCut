@@ -14,9 +14,7 @@
           @mouseout="recoverCounter(0)"
         >
           <a>
-            <span
-              v-bind:class="{'span-active':items[0].actived}"
-            >{{items[0].title}}</span>
+            <span v-bind:class="{'span-active':items[0].actived}">{{items[0].title}}</span>
           </a>
         </li>
         <li
@@ -144,6 +142,9 @@ export default {
   },
   created() {
     //console.log(this.data);
+    this.items.forEach(item => {
+      this.$set(item, "actived", false);
+    });
     this.items[0].actived = true;
     this.counter++;
 
@@ -161,8 +162,7 @@ export default {
   destroyed() {
     clearInterval(this.timer);
   },
-  computed: {
-  },
+  computed: {},
   methods: {
     pauseCounter(param) {
       let self = this;

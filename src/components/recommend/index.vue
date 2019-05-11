@@ -19,30 +19,20 @@
 <script>
 export default {
   name: "recommend",
-  inject: ['reload'],
+  inject: ["reload"],
   props: {
-    data: Array
+    data: Array,
+    parentdata: Object
   },
   data() {
     return {
-      testItems: [
-        {
-          id: 1,
-          src: "../../../static/images/test.png",
-          content: "11111111111111111111111111111"
-        },
-        {
-          id: 2,
-          src: "../../../static/images/test.png",
-          content: "22222222222222222222222222222"
-        }
-      ]
+      
     };
   },
   methods: {
     linkToPlayer(obj) {
       console.log(obj.id);
-      let testData = {
+      let recommendData = {
         title: obj.title,
         poster: obj.poster,
         amount: obj.amount,
@@ -53,8 +43,9 @@ export default {
           }
         ]
       };
-      localStorage.setItem("shotcut_videoData", JSON.stringify(testData));
-      this.reload();
+      localStorage.setItem("shotcut_videoData", JSON.stringify(recommendData));
+      //this.$router.go(0);
+      this.$emit('changeVideoData',recommendData);
       window.scrollTo(0, 0);
     }
   }

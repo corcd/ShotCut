@@ -8,7 +8,7 @@
         :extend="false"
         :activeitem="activeitem"
       ></navbar>
-      <div class="play-area">
+      <div class="play-area" v-if="isReload">
         <div class="play-player">
           <video-player
             class="video-player-box vjs-custom-skin"
@@ -58,7 +58,7 @@
             <discuss></discuss>
           </el-col>
           <el-col :span="6">
-            <recommend :data="rcData"></recommend>
+            <recommend :data="rcData" @changeVideoData="changeVideoData"></recommend>
           </el-col>
         </el-row>
       </div>
@@ -75,13 +75,16 @@ import "../../assets/css/custom-player.scss";
 
 export default {
   components: {},
-  inject: ['reload'],
+  inject: ["reload"],
   props: {},
   data() {
     return {
       title: "",
+      amount: 0,
       activeitem: ["", "", "", "", "", "", ""],
       rcData: this.$store.state.webData.SuggestedVideos.data,
+      videoData: {},
+      isReload: true,
       playerOptions: {
         // videojs options
         autoplay: false,
@@ -93,7 +96,7 @@ export default {
         fluid: true,
         sources: [],
         poster: "",
-        notSupportedMessage: "无法播放",
+        notSupportedMessage: "遇到问题，视频无法播放",
         controlBar: {
           timeDivider: true,
           durationDisplay: true,
@@ -101,31 +104,27 @@ export default {
           fullScreenToggle: true
         }
       },
-      testData: {},
       pageview: 0
     };
   },
-  created() {
-    let videoData = this.$route.params.data;
-    console.log(videoData);
-    if (videoData == {}) {
-      videoData = JSON.parse(localStorage.getItem("shotcut_videoData"));
-    }
-    this.title = videoData.title;
-    this.amount = videoData.amount;
-    this.playerOptions.poster = videoData.poster;
-    this.playerOptions.sources = videoData.source;
-
-    console.log(this.playerOptions);
-    console.log(videoData);
-
-    window.addEventListener("beforeunload", () => {
-      localStorage.setItem("shotcut_videoData", JSON.stringify(videoData));
-    });
-  },
+  created() {},
   mounted() {
+    this.videoData = this.$route.params.data;
+    console.log(this.videoData);
+    if (this.videoData == {}) {
+      this.videoData = JSON.parse(localStorage.getItem("shotcut_videoData"));
+    } else {
+      localStorage.setItem("shotcut_videoData", JSON.stringify(this.videoData));
+    }
+    this.title = this.videoData.title;
+    this.amount = this.videoData.amount;
+    this.playerOptions.poster = this.videoData.poster;
+    this.playerOptions.sources = this.videoData.source;
+
     console.log("this is current player instance object", this.player);
+    console.log(this.rcData);
   },
+  destroyed() {},
   computed: {
     player() {
       return this.$refs.videoPlayer.player;
@@ -133,7 +132,32 @@ export default {
   },
   methods: {
     testReload() {
-      this.reload();
+      //this.reload();
+    },
+    changeVideoData(recommendData) {
+      this.videoData = recommendData;
+      localStorage.setItem("shotcut_videoData", JSON.stringify(this.videoData));
+      console.log(this.videoData);
+
+      this.isReload = false;
+      
+      this.$nextTick(() => {
+        this.title = this.videoData.title;
+        this.amount = this.videoData.amount;
+        this.playerOptions.poster = this.videoData.poster;
+        this.playerOptions.sources = this.videoData.source;
+        this.isReload = true;
+      });
+    }
+  },
+  watch: {
+    $route: {
+      handler(val) {
+        let obj = val.params.data;
+        console.log("watch:" + obj);
+      },
+      deep: true,
+      immediate: true
     }
   }
 };
