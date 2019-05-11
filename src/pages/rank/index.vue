@@ -13,12 +13,23 @@
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <div class="hot-title">
-          <div class="hot-icon"></div>
-          <span class="hot-title-name">{{title}}</span>
+        <div>
+          <div class="hot-title">
+            <div class="hot-icon"></div>
+            <span class="hot-title-name">热门短视频</span>
+          </div>
+          <div class="hot-row">
+            <hotitems v-for="item in module_data_1" :hotdata="item" :key="item.id"></hotitems>
+          </div>
         </div>
-        <div class="hot-row">
-          <hotitems v-for="item in testItems" :hotdata="item.data" :key="item.id"></hotitems>
+        <div>
+          <div class="hot-title">
+            <div class="hot-icon"></div>
+            <span class="hot-title-name">短秀君推荐</span>
+          </div>
+          <div class="hot-row">
+            <hotitems v-for="item in module_data_2" :hotdata="item" :key="item.id"></hotitems>
+          </div>
         </div>
       </div>
     </div>
@@ -32,15 +43,11 @@
 <script>
 export default {
   components: {},
-  props: {
-    title: {
-      type: String,
-      default: "热门短视频"
-    }
-  },
+  props: {},
   data() {
     return {
-      testTitle: "热门短视频",
+      module_data_1: this.$store.state.webData.monthly_rank.module_data_1,
+      module_data_2: this.$store.state.webData.monthly_rank.module_data_2,
       activeitem: ["", "", true, "", "", "", ""],
       testItems: [
         {

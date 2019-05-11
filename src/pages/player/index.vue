@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="play-ad" @click="testReload()">
+          <div class="play-ad" @click="googleAd()">
             <a>
               <img alt="ad" src="../../assets/ad.png">
             </a>
@@ -82,7 +82,7 @@ export default {
       title: "",
       amount: 0,
       activeitem: ["", "", "", "", "", "", ""],
-      rcData: this.$store.state.webData.SuggestedVideos.data,
+      rcData: this.$store.state.webData.RecommendedVideos.data,
       videoData: {},
       isReload: true,
       playerOptions: {
@@ -131,8 +131,11 @@ export default {
     }
   },
   methods: {
-    testReload() {
-      //this.reload();
+    googleAd() {
+      window.open(
+        "https://www.google.com/adsense/start/#/?modal_active=none",
+        "_blank"
+      );
     },
     changeVideoData(recommendData) {
       this.videoData = recommendData;
@@ -140,7 +143,7 @@ export default {
       console.log(this.videoData);
 
       this.isReload = false;
-      
+
       this.$nextTick(() => {
         this.title = this.videoData.title;
         this.amount = this.videoData.amount;

@@ -1,14 +1,14 @@
 <template>
-  <div class="home-page">
+  <div class="today-page">
     <div class="header">
-      <homeheader :scroll="true" :style_shade="true" :activeitem="activeitem"></homeheader>
+      <homeheader :scroll="true" :style_shade="true" :activeitem="activeitem" :data="bgdata"></homeheader>
       <hottags :tags="tags"></hottags>
     </div>
     <div class="container">
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame :title="'怪咖一休哥'">
+        <frame>
       </div>
     </div>
     <div class="footer">
@@ -23,7 +23,8 @@ export default {
   components: {},
   data() {
     return {
-      activeitem: ["", true, "", "", "", "", ""],
+      activeitem: ["", true, "", "", "", ""],
+      bgdata: this.$store.state.webData.background.data,
       tags: [
         { id: 1, text: "全部", param: "" },
         { id: 2, text: "美食", param: "" },

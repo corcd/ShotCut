@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="discuss-input" v-if="isLogin">
-      <img class="discuss-input-profile" alt="profile">
+      <img class="discuss-input-profile" alt="profile" src="../../assets/profilephoto.png">
       <el-input
         type="textarea"
         class="discuss-input-inputarea"
@@ -31,7 +31,6 @@
       ></el-input>
     </div>
     <el-button class="discuss-btn" size="mini" v-show="isNotEmpty" round>发布评论</el-button>
-
     <div class="discuss-details">
       <p>暂无评论</p>
     </div>
@@ -150,9 +149,10 @@ export default {
     }
 
     .discuss-input-inputarea {
-      margin-left: 22px;
       width: 100%;
       height: 80px;
+      margin-top: 4px;
+      margin-left: 22px;
 
       .el-input__count {
         margin-bottom: 1px; //修复计数器与边框重叠问题
@@ -161,8 +161,9 @@ export default {
   }
 
   .discuss-btn {
-    width: 18%;
+    width: 16%;
     float: right;
+    margin-top: 5px;
     background: linear-gradient(
       30deg,
       rgba(255, 85, 51, 1) 0%,

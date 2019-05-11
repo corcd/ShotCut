@@ -1,9 +1,9 @@
 <template>
-  <div class="hotitems" ref="hotitem" :id="hotdata.rankid" @click="linkToPlayer()">
-    <img alt="bmp" :src="hotdata.cover">
+  <div class="hotitems" ref="hotitem" :id="hotdata.id" @click="linkToPlayer()">
+    <img alt="bmp" :src="hotdata.poster">
     <div class="hot-info">
-      <rankicon :number="hotdata.rankid"></rankicon>
-      <p>{{hotdata.info}}</p>
+      <rankicon :number="hotdata.id"></rankicon>
+      <p>{{hotdata.title}}</p>
     </div>
   </div>
 </template>
@@ -15,22 +15,7 @@ export default {
     hotdata: Object
   },
   methods: {
-    linkToPlayer() {
-      let testData = {
-        title: "鸡你太美",
-        source: [
-          {
-            type: "video/mp4",
-            src:
-              "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4"
-          }
-        ]
-      };
-      this.$router.push({
-        name: "player",
-        params: { data: testData }
-      });
-    }
+    linkToPlayer() {}
   },
   watch: {}
 };

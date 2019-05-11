@@ -8,7 +8,7 @@ const now = new Date();
 const store = new Vuex.Store({
   state: {
     testData: {
-      content: "hello,Vuex",
+      content: "hello, ShotCut",
       date: now
     },
     webData: {
@@ -21,52 +21,172 @@ const store = new Vuex.Store({
             title: "21你是鱼刺",
             poster: "../../../static/images/bg/bg_1.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/a4264544e2bbf67bb43e46f44fcad517.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/a4264544e2bbf67bb43e46f44fcad517.mp4",
+            amount: 1
           },
           {
             id: 2,
             title: "达摩金黄皮肤教学",
             poster: "../../../static/images/bg/bg_2.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/aec19a6d57c35ce9d604e9577df61df8.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/aec19a6d57c35ce9d604e9577df61df8.mp4",
+            amount: 1
           },
           {
             id: 3,
             title: "玛丽小酥",
             poster: "../../../static/images/bg/bg_3.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/836c100ee855a8e6cc333f0b6b8f046b.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/836c100ee855a8e6cc333f0b6b8f046b.mp4",
+            amount: 1
           },
           {
             id: 4,
             title: "明星拍照姿势",
             poster: "../../../static/images/bg/bg_4.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/0a8eccd7d3e1a38fa9c1547a270bab8f.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/0a8eccd7d3e1a38fa9c1547a270bab8f.mp4",
+            amount: 1
           },
           {
             id: 5,
             title: "男生们 跟你称兄道弟的女生 你可要注意了！",
             poster: "../../../static/images/bg/bg_5.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b0f694479684f2810d5bc9ef32537328.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b0f694479684f2810d5bc9ef32537328.mp4",
+            amount: 1
           },
           {
             id: 6,
             title: "特效师嘟拉舞",
             poster: "../../../static/images/bg/bg_6.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/ff6240b9971a0db06fe6240203949f70.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/ff6240b9971a0db06fe6240203949f70.mp4",
+            amount: 1
           },
           {
             id: 7,
             title: "最强国产跑鞋匹克阿莉塔测评",
             poster: "../../../static/images/bg/bg_7.jpg",
             type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b841edd2e6a7d38a66f3b050e177b8d8.mp4"
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b841edd2e6a7d38a66f3b050e177b8d8.mp4",
+            amount: 1
           }
         ]
       },
+      home: {},
+      hithot: {},
+      monthly_rank: {
+        module_data_1: [{
+            id: 1,
+            title: "1",
+            poster: "../../../static/images/monthly_rank/1/hot_1.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 2,
+            title: "2",
+            poster: "../../../static/images/monthly_rank/1/hot_2.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 3,
+            title: "3",
+            poster: "../../../static/images/monthly_rank/1/hot_3.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 4,
+            title: "4",
+            poster: "../../../static/images/monthly_rank/1/hot_4.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 5,
+            title: "5",
+            poster: "../../../static/images/monthly_rank/1/hot_5.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 6,
+            title: "6",
+            poster: "../../../static/images/monthly_rank/1/hot_6.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 7,
+            title: "7",
+            poster: "../../../static/images/monthly_rank/1/hot_7.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          }
+        ],
+        module_data_2: [{
+            id: 1,
+            title: "1",
+            poster: "../../../static/images/monthly_rank/2/hot_rc_1.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 2,
+            title: "2",
+            poster: "../../../static/images/monthly_rank/2/hot_rc_2.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 3,
+            title: "3",
+            poster: "../../../static/images/monthly_rank/2/hot_rc_3.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 4,
+            title: "4",
+            poster: "../../../static/images/monthly_rank/2/hot_rc_4.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 5,
+            title: "5",
+            poster: "../../../static/images/monthly_rank/2/hot_rc_5.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          },
+          {
+            id: 6,
+            title: "6",
+            poster: "../../../static/images/monthly_rank/2/hot_rc_6.png",
+            type: "",
+            video_url: "",
+            amount: 0
+          }
+        ]
+      },
+      heat_fashion: {},
+      best_punchline: {},
+      youth_playlet: {},
       module_data_1: {
         id: 2,
         name: "shipinlanmu",
@@ -353,14 +473,14 @@ const store = new Vuex.Store({
           }
         ]
       },
-      yandaxiaojie: {
+      module_data_2: {
         id: 3,
         name: "shipinlanmu2",
         title: "晏大小姐Vivi",
         data: [{
             id: 1,
             title: "变废为宝的美妆工具",
-            poster: "vivi_1.jpg",
+            poster: "../../../static/images/module/2/vivi_1.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/ea270c3c10dd57153ac0aaf8a8a4f2ab.m3u8",
             amount: 3824
@@ -368,7 +488,7 @@ const store = new Vuex.Store({
           {
             id: 2,
             title: "超减龄心机腮红",
-            poster: "vivi_2.jpg",
+            poster: "../../../static/images/module/2/vivi_2.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/23247978715c1e26339d5dfb8451817b.m3u8",
             amount: 4928
@@ -376,7 +496,7 @@ const store = new Vuex.Store({
           {
             id: 3,
             title: "超强干货！芒果后台化妆步骤",
-            poster: "vivi_3.jpg",
+            poster: "../../../static/images/module/2/vivi_3.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/de81e6a6517c3869b05fafda2fdb41fb.m3u8",
             amount: 2938
@@ -384,7 +504,7 @@ const store = new Vuex.Store({
           {
             id: 4,
             title: "初一到初七发型",
-            poster: "vivi_4.jpg",
+            poster: "../../../static/images/module/2/vivi_4.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/c8382542783f3c87373fa038c24a9e4f.m3u8",
             amount: 2742
@@ -392,7 +512,7 @@ const store = new Vuex.Store({
           {
             id: 5,
             title: "唇形不完美，口红来补救",
-            poster: "vivi_5.jpg",
+            poster: "../../../static/images/module/2/vivi_5.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/80f0fa0d837c0a6b02dbe34d0d90ddc7.m3u8",
             amount: 3824
@@ -400,7 +520,7 @@ const store = new Vuex.Store({
           {
             id: 6,
             title: "倒贴的爱情要不要坚持",
-            poster: "vivi_6.jpg",
+            poster: "../../../static/images/module/2/vivi_6.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/62f83d1e827932d67be3faa8e2ec3059.m3u8",
             amount: 4928
@@ -408,7 +528,7 @@ const store = new Vuex.Store({
           {
             id: 7,
             title: "抖音-男友大改造25秒",
-            poster: "vivi_7.jpg",
+            poster: "../../../static/images/module/2/vivi_7.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7529fde3464450c6e078be1ca454af82.m3u8",
             amount: 2938
@@ -416,7 +536,7 @@ const store = new Vuex.Store({
           {
             id: 8,
             title: "发财丸子头",
-            poster: "vivi_8.jpg",
+            poster: "../../../static/images/module/2/vivi_8.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/bea0cf61ca8eb1467afc3d26e0a10e1f.m3u8",
             amount: 2742
@@ -424,7 +544,7 @@ const store = new Vuex.Store({
           {
             id: 9,
             title: "高圆圆最爱的军绿色",
-            poster: "vivi_9.jpg",
+            poster: "../../../static/images/module/2/vivi_9.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8707bc44621608524fc5b60e6f2073d6.m3u8",
             amount: 3824
@@ -432,7 +552,7 @@ const store = new Vuex.Store({
           {
             id: 10,
             title: "化妆前的你vs化妆后的你",
-            poster: "vivi_10.jpg",
+            poster: "../../../static/images/module/2/vivi_10.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/79dd38751d1457f11223f2a4cf6a8089.m3u8",
             amount: 4928
@@ -440,7 +560,7 @@ const store = new Vuex.Store({
           {
             id: 11,
             title: "红毯底妆画法",
-            poster: "vivi_11.jpg",
+            poster: "../../../static/images/module/2/vivi_11.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/3fec0a62421bab07eab926d38b49dc2c.m3u8",
             amount: 2938
@@ -448,7 +568,7 @@ const store = new Vuex.Store({
           {
             id: 12,
             title: "会喷香水的姑娘，灵魂自带香气",
-            poster: "vivi_12.jpg",
+            poster: "../../../static/images/module/2/vivi_12.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/4e3fde170746b6fb2a8ceebfba232c8d.m3u8",
             amount: 4928
@@ -456,7 +576,7 @@ const store = new Vuex.Store({
           {
             id: 13,
             title: "鉴表特别篇-男友会鉴",
-            poster: "vivi_13.jpg",
+            poster: "../../../static/images/module/2/vivi_13.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/66a05e07b355ea62a903bf84634868d5.m3u8",
             amount: 2938
@@ -464,7 +584,7 @@ const store = new Vuex.Store({
           {
             id: 14,
             title: "鉴渣之男友习惯性打压我",
-            poster: "vivi_14.jpg",
+            poster: "../../../static/images/module/2/vivi_14.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/cf3d4bf407dcc35e395c23b36cf7f9ff.m3u8",
             amount: 2742
@@ -472,7 +592,7 @@ const store = new Vuex.Store({
           {
             id: 15,
             title: "精灵妆+女王妆拼接",
-            poster: "vivi_15.jpg",
+            poster: "../../../static/images/module/2/vivi_15.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7ad0dfe3487cef21abbfad823b84040f.m3u8",
             amount: 3824
@@ -480,7 +600,7 @@ const store = new Vuex.Store({
           {
             id: 16,
             title: "卷发棒攻略（上）",
-            poster: "vivi_16.jpg",
+            poster: "../../../static/images/module/2/vivi_16.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f9b898a6c013394835e35ecdfee721a4.m3u8",
             amount: 4928
@@ -488,7 +608,7 @@ const store = new Vuex.Store({
           {
             id: 17,
             title: "卷发棒攻略（下）",
-            poster: "vivi_17.jpg",
+            poster: "../../../static/images/module/2/vivi_17.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/c19c03469e38b416ddf0842a47461437.mp4",
             amount: 2938
@@ -496,7 +616,7 @@ const store = new Vuex.Store({
           {
             id: 18,
             title: "绝不脱妆的眼线教程",
-            poster: "vivi_18.jpg",
+            poster: "../../../static/images/module/2/vivi_18.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/37cdff0e1d00a8304356bf31075e92f5.m3u8",
             amount: 2742
@@ -504,7 +624,7 @@ const store = new Vuex.Store({
           {
             id: 19,
             title: "明星拍照姿势",
-            poster: "vivi_19.jpg",
+            poster: "../../../static/images/module/2/vivi_19.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8d34260d2e5dc715a64dfa941c39b584.m3u8",
             amount: 3824
@@ -512,7 +632,7 @@ const store = new Vuex.Store({
           {
             id: 20,
             title: "明星为什么爱去时装周",
-            poster: "vivi_20.jpg",
+            poster: "../../../static/images/module/2/vivi_20.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/fcd335b51eb91f2256b32658265311de.m3u8",
             amount: 4928
@@ -520,7 +640,7 @@ const store = new Vuex.Store({
           {
             id: 21,
             title: "男友异性朋友抖音",
-            poster: "vivi_21.jpg",
+            poster: "../../../static/images/module/2/vivi_21.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6cc3b16c14e2cf9120c892dbfb31f667.m3u8",
             amount: 2938
@@ -528,7 +648,7 @@ const store = new Vuex.Store({
           {
             id: 22,
             title: "女明星的黄金3秒补水法则",
-            poster: "vivi_22.jpg",
+            poster: "../../../static/images/module/2/vivi_22.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6da6300a8e1e8e5149e184442541f047.m3u8",
             amount: 3824
@@ -536,7 +656,7 @@ const store = new Vuex.Store({
           {
             id: 23,
             title: "女明星最怕的法令纹",
-            poster: "vivi_23.jpg",
+            poster: "../../../static/images/module/2/vivi_23.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5c27aa878b696c927ad34d8701fedc14.mp4",
             amount: 4928
@@ -544,7 +664,7 @@ const store = new Vuex.Store({
           {
             id: 24,
             title: "三八妇女节宣言",
-            poster: "vivi_24.jpg",
+            poster: "../../../static/images/module/2/vivi_24.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/073c823450ef570490efa6f79a2687a5.mp4",
             amount: 2938
@@ -552,7 +672,7 @@ const store = new Vuex.Store({
           {
             id: 25,
             title: "三步简单卷发 打造少女心发型",
-            poster: "vivi_25.jpg",
+            poster: "../../../static/images/module/2/vivi_25.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/c807ccbcd415c8c15ea314fd694fc1b5.m3u8",
             amount: 2742
@@ -560,7 +680,7 @@ const store = new Vuex.Store({
           {
             id: 26,
             title: "生僻字",
-            poster: "vivi_26.jpg",
+            poster: "../../../static/images/module/2/vivi_26.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/043096586b75a6933866a08a0e55da40.m3u8",
             amount: 3824
@@ -568,7 +688,7 @@ const store = new Vuex.Store({
           {
             id: 27,
             title: "时尚大片抖音版",
-            poster: "vivi_27.jpg",
+            poster: "../../../static/images/module/2/vivi_27.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/4c5e14b5adf95017884de020dc6bd701.m3u8",
             amount: 4928
@@ -576,7 +696,7 @@ const store = new Vuex.Store({
           {
             id: 28,
             title: "水波纹卷发 ",
-            poster: "vivi_28.jpg",
+            poster: "../../../static/images/module/2/vivi_28.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/dc80d1db50c09bed0620eb8552b24b75.m3u8",
             amount: 2938
@@ -584,7 +704,7 @@ const store = new Vuex.Store({
           {
             id: 29,
             title: "说好的穿厚点你竟然",
-            poster: "vivi_29.jpg",
+            poster: "../../../static/images/module/2/vivi_29.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/dd8459f5db5d8df65b8f3fba0ee0e835.m3u8",
             amount: 4928
@@ -592,7 +712,7 @@ const store = new Vuex.Store({
           {
             id: 30,
             title: "心机腮红",
-            poster: "vivi_30.jpg",
+            poster: "../../../static/images/module/2/vivi_30.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7cf28e5ad8279f7591534ae6610fb8da.m3u8",
             amount: 2938
@@ -600,7 +720,7 @@ const store = new Vuex.Store({
           {
             id: 31,
             title: "学郑秀晶臭脸拍照",
-            poster: "vivi_31.jpg",
+            poster: "../../../static/images/module/2/vivi_31.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/81d503ba18182d305eede095e86ec486.m3u8",
             amount: 2742
@@ -608,7 +728,7 @@ const store = new Vuex.Store({
           {
             id: 32,
             title: "樱花少女妆",
-            poster: "vivi_32.jpg",
+            poster: "../../../static/images/module/2/vivi_32.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a315d0e45b77c2bd4eac79948eb186f0.m3u8",
             amount: 3824
@@ -616,7 +736,7 @@ const store = new Vuex.Store({
           {
             id: 33,
             title: "真假闺蜜之饭局",
-            poster: "vivi_33.jpg",
+            poster: "../../../static/images/module/2/vivi_33.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/792af0a04310a586f35830c7fb426fe9.m3u8",
             amount: 4928
@@ -624,7 +744,7 @@ const store = new Vuex.Store({
           {
             id: 34,
             title: "正确的护肤步骤",
-            poster: "vivi_34.jpg",
+            poster: "../../../static/images/module/2/vivi_34.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/dee0f520ffb3d1b3b58ab498e7dfa872.mp4",
             amount: 2938
@@ -632,21 +752,21 @@ const store = new Vuex.Store({
           {
             id: 35,
             title: "主持人高跟鞋",
-            poster: "vivi_35.jpg",
+            poster: "../../../static/images/module/2/vivi_35.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/835f7d6df78bb2a07852d299a6e0f223.mp4",
             amount: 2742
           }
         ]
       },
-      wangzhepipi: {
+      module_data_3: {
         id: 4,
         name: "shipinlanmu3",
         title: "王者皮皮怪",
         data: [{
             id: 1,
             title: "80锤",
-            poster: "pipi_1.png",
+            poster: "../../../static/images/module/3/pipi_1.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6a23d04068bdb7183250b6897a94e562.mp4",
             amount: 3824
@@ -654,7 +774,7 @@ const store = new Vuex.Store({
           {
             id: 2,
             title: "ad嬴政教学",
-            poster: "pipi_2.png",
+            poster: "../../../static/images/module/3/pipi_2.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/44727ce99db296bc86c60cee1f3a00e0.mp4",
             amount: 4928
@@ -662,7 +782,7 @@ const store = new Vuex.Store({
           {
             id: 3,
             title: "P图2甄家系列",
-            poster: "pipi_3.png",
+            poster: "../../../static/images/module/3/pipi_3.png",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/85fffb771cbf73f35e2fbb3854293c4a.m3u8",
             amount: 2938
@@ -670,7 +790,7 @@ const store = new Vuex.Store({
           {
             id: 4,
             title: "p图君",
-            poster: "pipi_4.png",
+            poster: "../../../static/images/module/3/pipi_4.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/966da4a0095e2b22b0c28d27ff1f8c8c.mp4",
             amount: 2742
@@ -678,7 +798,7 @@ const store = new Vuex.Store({
           {
             id: 5,
             title: "百穿铭文",
-            poster: "pipi_5.png",
+            poster: "../../../static/images/module/3/pipi_5.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8e969f254f522f31dafeef0468e4a6ff.mp4",
             amount: 3824
@@ -686,7 +806,7 @@ const store = new Vuex.Store({
           {
             id: 6,
             title: "打野鱼",
-            poster: "pipi_6.png",
+            poster: "../../../static/images/module/3/pipi_6.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/16c6183f7968f73f3081d6c74c4ea506.mp4",
             amount: 4928
@@ -694,7 +814,7 @@ const store = new Vuex.Store({
           {
             id: 7,
             title: "大人物鲁班被迫杀人",
-            poster: "pipi_7.png",
+            poster: "../../../static/images/module/3/pipi_7.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/cd2b54c371ef3d9a35af82f023cba506.mp4",
             amount: 2938
@@ -702,7 +822,7 @@ const store = new Vuex.Store({
           {
             id: 8,
             title: "狄仁杰教学",
-            poster: "pipi_8.png",
+            poster: "../../../static/images/module/3/pipi_8.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/aec1ec01e084d920f7957a2b85effe86.mp4",
             amount: 2742
@@ -710,7 +830,7 @@ const store = new Vuex.Store({
           {
             id: 9,
             title: "怼儿慢放444",
-            poster: "pipi_9.png",
+            poster: "../../../static/images/module/3/pipi_9.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5714828b5cfee6ff9857938f7bd11918.mp4",
             amount: 3824
@@ -718,7 +838,7 @@ const store = new Vuex.Store({
           {
             id: 10,
             title: "法师铭文",
-            poster: "pipi_10.png",
+            poster: "../../../static/images/module/3/pipi_10.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/50b450a1e79559d1df6b2d4b9b9807af.mp4",
             amount: 4928
@@ -726,7 +846,7 @@ const store = new Vuex.Store({
           {
             id: 11,
             title: "隔壁老王",
-            poster: "pipi_11.png",
+            poster: "../../../static/images/module/3/pipi_11.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/24f40dd470fe0c34cad83f1cf7d785e4.mp4",
             amount: 2938
@@ -734,7 +854,7 @@ const store = new Vuex.Store({
           {
             id: 12,
             title: "宫本教学",
-            poster: "pipi_12.jpg",
+            poster: "../../../static/images/module/3/pipi_12.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/2ece9dc5229f7c816d1046ab427d4eeb.mp4",
             amount: 4928
@@ -742,7 +862,7 @@ const store = new Vuex.Store({
           {
             id: 13,
             title: "鬼畜02雅典娜专场",
-            poster: "pipi_13.jpg",
+            poster: "../../../static/images/module/3/pipi_13.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/c20882e186a4fbcde3e837b6d32b6dc6.mp4",
             amount: 2938
@@ -750,7 +870,7 @@ const store = new Vuex.Store({
           {
             id: 14,
             title: "猴捶鲁班",
-            poster: "pipi_14.jpg",
+            poster: "../../../static/images/module/3/pipi_14.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/cbe6c82684f6862c6a0dfc2535947817.mp4",
             amount: 2742
@@ -758,7 +878,7 @@ const store = new Vuex.Store({
           {
             id: 15,
             title: "猴子新皮肤教学",
-            poster: "pipi_15.jpg",
+            poster: "../../../static/images/module/3/pipi_15.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5d5834bc0c3b917406bd4f35dd628ddc.mp4",
             amount: 3824
@@ -766,7 +886,7 @@ const store = new Vuex.Store({
           {
             id: 16,
             title: "回城飞锤",
-            poster: "pipi_16.jpg",
+            poster: "../../../static/images/module/3/pipi_16.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7aa0fdf3b5b46c5fb8e556aa713a0ccc.mp4",
             amount: 4928
@@ -774,7 +894,7 @@ const store = new Vuex.Store({
           {
             id: 17,
             title: "橘子bug",
-            poster: "pipi_17.jpg",
+            poster: "../../../static/images/module/3/pipi_17.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/05642f78c662b6c03791e405de058aa6.mp4",
             amount: 2938
@@ -782,7 +902,7 @@ const store = new Vuex.Store({
           {
             id: 18,
             title: "铠教程",
-            poster: "pipi_18.jpg",
+            poster: "../../../static/images/module/3/pipi_18.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/96a3e755f5c373aff3675a389a9fe293.m3u8",
             amount: 2742
@@ -790,7 +910,7 @@ const store = new Vuex.Store({
           {
             id: 19,
             title: "克制嫦娥",
-            poster: "pipi_19.jpg",
+            poster: "../../../static/images/module/3/pipi_19.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8ea73116800e83368a74cd0cc45e62b2.mp4",
             amount: 3824
@@ -798,7 +918,7 @@ const store = new Vuex.Store({
           {
             id: 20,
             title: "抠鼻子",
-            poster: "pipi_20.jpg",
+            poster: "../../../static/images/module/3/pipi_20.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/a253c2c259a2c73e3650d8a68e453f57.mp4",
             amount: 4928
@@ -806,7 +926,7 @@ const store = new Vuex.Store({
           {
             id: 21,
             title: "快速取胜",
-            poster: "pipi_21.jpg",
+            poster: "../../../static/images/module/3/pipi_21.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/3c847f6ff43d981cebcb8f9747a145d2.mp4",
             amount: 2938
@@ -814,7 +934,7 @@ const store = new Vuex.Store({
           {
             id: 22,
             title: "李信秒鲁班",
-            poster: "pipi_22.jpg",
+            poster: "../../../static/images/module/3/pipi_22.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/011a3139b6bf8a529328caf64018e9f4.mp4",
             amount: 3824
@@ -822,7 +942,7 @@ const store = new Vuex.Store({
           {
             id: 23,
             title: "鲁班暴毙",
-            poster: "pipi_23.jpg",
+            poster: "../../../static/images/module/3/pipi_23.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/0c90b63fca93f6f297473e5f5a733301.mp4",
             amount: 4928
@@ -830,7 +950,7 @@ const store = new Vuex.Store({
           {
             id: 24,
             title: "木兰教学",
-            poster: "pipi_24.jpg",
+            poster: "../../../static/images/module/3/pipi_24.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/dac198a81739787096d42503722e7e65.mp4",
             amount: 2938
@@ -838,7 +958,7 @@ const store = new Vuex.Store({
           {
             id: 25,
             title: "盘古顺序",
-            poster: "pipi_25.jpg",
+            poster: "../../../static/images/module/3/pipi_25.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/4c49e55ffbda7e6132f118bde08c1e7e.mp4",
             amount: 2742
@@ -846,7 +966,7 @@ const store = new Vuex.Store({
           {
             id: 26,
             title: "全员毒奶流",
-            poster: "pipi_26.jpg",
+            poster: "../../../static/images/module/3/pipi_26.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/c09ac3979c0eacff28cf1ffb146c988f.mp4",
             amount: 2938
@@ -854,7 +974,7 @@ const store = new Vuex.Store({
           {
             id: 27,
             title: "上官婉儿合集",
-            poster: "pipi_27.jpg",
+            poster: "../../../static/images/module/3/pipi_27.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7c6f54098271a334f59b868769dc746e.mp4",
             amount: 4928
@@ -862,7 +982,7 @@ const store = new Vuex.Store({
           {
             id: 28,
             title: "司马懿教学",
-            poster: "pipi_28.jpg",
+            poster: "../../../static/images/module/3/pipi_28.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/c2faa1e5f40a5482ddb8fb5f22660254.mp4",
             amount: 2938
@@ -870,7 +990,7 @@ const store = new Vuex.Store({
           {
             id: 29,
             title: "婉儿连招",
-            poster: "pipi_29.jpg",
+            poster: "../../../static/images/module/3/pipi_29.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5a1c99ec6763d30a81531c9f2309b49b.mp4",
             amount: 2742
@@ -878,7 +998,7 @@ const store = new Vuex.Store({
           {
             id: 30,
             title: "小乔教学",
-            poster: "pipi_30.jpg",
+            poster: "../../../static/images/module/3/pipi_30.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5d5834bc0c3b917406bd4f35dd628ddc.mp4",
             amount: 3824
@@ -886,7 +1006,7 @@ const store = new Vuex.Store({
           {
             id: 31,
             title: "养猪流精髓",
-            poster: "pipi_31.jpg",
+            poster: "../../../static/images/module/3/pipi_31.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/aabf5ed6704d5b2e92653adc6479a3cf.mp4",
             amount: 4928
@@ -894,7 +1014,7 @@ const store = new Vuex.Store({
           {
             id: 32,
             title: "虞姬教学",
-            poster: "pipi_32.jpg",
+            poster: "../../../static/images/module/3/pipi_32.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/a275f9a0100224cf51405bb01749c545.mp4",
             amount: 2938
@@ -902,7 +1022,7 @@ const store = new Vuex.Store({
           {
             id: 33,
             title: "钟男神教学",
-            poster: "pipi_33.jpg",
+            poster: "../../../static/images/module/3/pipi_33.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/287821bb47e9615e1c2b4e9471c94859.mp4",
             amount: 2742
@@ -910,7 +1030,7 @@ const store = new Vuex.Store({
           {
             id: 34,
             title: "庄周边路",
-            poster: "pipi_34.jpg",
+            poster: "../../../static/images/module/3/pipi_34.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/88f856e240efcf232d91404b7965d23f.mp4",
             amount: 3824
@@ -918,7 +1038,7 @@ const store = new Vuex.Store({
           {
             id: 35,
             title: "暴击铭文",
-            poster: "pipi_35.png",
+            poster: "../../../static/images/module/3/pipi_35.png",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/f7df6f18bde9f3be1f9737e593e4b993.mp4",
             amount: 4928
@@ -1211,20 +1331,12 @@ const store = new Vuex.Store({
           }
         ]
       },
-      SuggestedVideos: {
-        id: 1,
+      RecommendedVideos: {
+        id: 6,
         name: "slideshow",
         title: "推荐视频",
         data: [{
             id: 1,
-            title: "小心蝴蝶",
-            poster: "../../../static/images/recommend/tuijian_1.jpg",
-            type: "video/mp4",
-            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/08edca845ad9f51500a83b15e658be29.mp4",
-            amount: 8472
-          },
-          {
-            id: 2,
             title: "全员毒奶流",
             poster: "../../../static/images/recommend/tuijian_2.jpg",
             type: "video/mp4",
@@ -1232,7 +1344,7 @@ const store = new Vuex.Store({
             amount: 7362
           },
           {
-            id: 3,
+            id: 2,
             title: "女友受委屈改",
             poster: "../../../static/images/recommend/tuijian_3.jpg",
             type: "video/mp4",
@@ -1240,7 +1352,7 @@ const store = new Vuex.Store({
             amount: 4739
           },
           {
-            id: 4,
+            id: 3,
             title: "大阪2",
             poster: "../../../static/images/recommend/tuijian_4.jpg",
             type: "video/mp4",

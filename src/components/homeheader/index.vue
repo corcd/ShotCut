@@ -1,9 +1,9 @@
 <template>
   <div class="home-header">
     <navbar :scroll="scroll" :style_shade="style_shade" :activeitem="activeitem"></navbar>
-    <el-carousel :autoplay="false" arrow="never" ref="carousel">
+    <el-carousel :autoplay="false" arrow="never" indicator-position="none" ref="carousel">
       <el-carousel-item v-for="item in items" :key="item.id">
-        <img alt="bg" :src="item.poster">
+        <img alt="bg" :src="item.poster" @click="linkToPlayer(item)">
       </el-carousel-item>
     </el-carousel>
     <div class="newslist" id="newslist">
@@ -12,6 +12,7 @@
           v-bind:class="{'list-active':items[0].actived}"
           @mouseover="pauseCounter(0)"
           @mouseout="recoverCounter(0)"
+          @click="linkToPlayer(items[0])"
         >
           <a>
             <span v-bind:class="{'span-active':items[0].actived}">{{items[0].title}}</span>
@@ -21,6 +22,7 @@
           v-bind:class="{'list-active':items[1].actived}"
           @mouseover="pauseCounter(1)"
           @mouseout="recoverCounter(1)"
+          @click="linkToPlayer(items[1])"
         >
           <a>
             <span v-bind:class="{'span-active':items[1].actived}">{{items[1].title}}</span>
@@ -30,6 +32,7 @@
           v-bind:class="{'list-active':items[2].actived}"
           @mouseover="pauseCounter(2)"
           @mouseout="recoverCounter(2)"
+          @click="linkToPlayer(items[2])"
         >
           <a>
             <span v-bind:class="{'span-active':items[2].actived}">{{items[2].title}}</span>
@@ -39,6 +42,7 @@
           v-bind:class="{'list-active':items[3].actived}"
           @mouseover="pauseCounter(3)"
           @mouseout="recoverCounter(3)"
+          @click="linkToPlayer(items[3])"
         >
           <a>
             <span v-bind:class="{'span-active':items[3].actived}">{{items[3].title}}</span>
@@ -48,6 +52,7 @@
           v-bind:class="{'list-active':items[4].actived}"
           @mouseover="pauseCounter(4)"
           @mouseout="recoverCounter(4)"
+          @click="linkToPlayer(items[4])"
         >
           <a>
             <span v-bind:class="{'span-active':items[4].actived}">{{items[4].title}}</span>
@@ -57,6 +62,7 @@
           v-bind:class="{'list-active':items[5].actived}"
           @mouseover="pauseCounter(5)"
           @mouseout="recoverCounter(5)"
+          @click="linkToPlayer(items[5])"
         >
           <a>
             <span v-bind:class="{'span-active':items[5].actived}">{{items[5].title}}</span>
@@ -66,6 +72,7 @@
           v-bind:class="{'list-active':items[6].actived}"
           @mouseover="pauseCounter(6)"
           @mouseout="recoverCounter(6)"
+          @click="linkToPlayer(items[6])"
         >
           <a>
             <span v-bind:class="{'span-active':items[6].actived}">{{items[6].title}}</span>
@@ -93,51 +100,7 @@ export default {
     return {
       counter: 0,
       timer: {},
-      items: this.data,
-      items_old: [
-        {
-          id: 1,
-          title: "女明星都在用的腮红减龄法 ",
-          poster: "../../../static/images/bg/bg1.jpg",
-          actived: false
-        },
-        {
-          id: 2,
-          title: "东皇加张良plus！",
-          poster: "../../../static/images/bg/bg2.jpg",
-          actived: false
-        },
-        {
-          id: 3,
-          title: "震惊！化完妆VS没化妆的差距竟然",
-          poster: "../../../static/images/bg/bg3.jpg",
-          actived: false
-        },
-        {
-          id: 4,
-          title: "拒绝嘴唇干燥起皮，必备润唇膏实用测评",
-          poster: "../../../static/images/bg/bg4.jpg",
-          actived: false
-        },
-        {
-          id: 5,
-          title: "男友习惯性打压你，是什么毛病？看她这样做",
-          poster: "../../../static/images/bg/bg5.jpg",
-          actived: false
-        },
-        {
-          id: 6,
-          title: "发际线太高？试试女明星最爱的同款刘海",
-          poster: "../../../static/images/bg/bg6.jpg",
-          actived: false
-        },
-        {
-          id: 7,
-          title: "拯救四眼妹！女明星的时髦眼镜妆，3分钟就学会",
-          poster: "../../../static/images/bg/bg7.jpg",
-          actived: false
-        }
-      ]
+      items: this.data
     };
   },
   created() {
@@ -187,6 +150,23 @@ export default {
         this.$refs.carousel.setActiveItem(this.counter);
         this.counter++;
       }, 3000);
+    },
+    linkToPlayer(obj) {
+      let testData = {
+        title: obj.title,
+        poster: obj.poster,
+        amount: obj.amount,
+        source: [
+          {
+            type: obj.type,
+            src: obj.video_url
+          }
+        ]
+      };
+      this.$router.push({
+        name: "player",
+        params: { data: testData }
+      });
     }
   }
 };

@@ -3,19 +3,15 @@
     <div class="title">
       <div class="icon"></div>
       <span class="title-name">{{data.title}}</span>
-      <a class="link-more" @click="linkToIndex(data.title)">更多></a>
+      <a class="link-more" @click="linkToIndex(data)">更多></a>
     </div>
     <div class="content">
-      <div class="left-content" v-if="isvideo">
-        <items></items>
+      <div class="left-content" v-if="exhibition">
+        <items :data="data.data[0]"></items>
       </div>
       <div class="right-content">
         <div class="items-row">
-          <items
-            v-for="item in data.data"
-            :key="item.id"
-            :data="item"
-          ></items>
+          <items v-for="item in data.data.slice(0, limit)" :key="item.id" :data="item"></items>
         </div>
       </div>
     </div>
@@ -26,95 +22,23 @@
 export default {
   name: "frame",
   props: {
-    data: Object
+    exhibition: {
+      type: Boolean,
+      default: false
+    },
+    data: Object,
+    limit: { type: Number, default: -1 }
   },
   data() {
     return {
-      isvideo: false,
-      testItems: [
-        {
-          id: 1,
-          src: "../../../static/images/test.png",
-          title: "11111111",
-          source_url: "#"
-        },
-        {
-          id: 2,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 3,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 4,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 5,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 6,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 7,
-          src: "../../../static/images/test.png",
-          title: "22222222222222222222222222222",
-          source_url: "#"
-        },
-        {
-          id: 8,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 9,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 10,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        }
-      ]
     };
   },
+  created() {},
   methods: {
-    linkToIndex(t) {
-      let temp = t.replace(/\r\n/g, "\n");
-      let utftext = "";
-      for (let n = 0; n < temp.length; n++) {
-        let c = temp.charCodeAt(n);
-        if (c < 128) {
-          utftext += String.fromCharCode(c);
-        } else if (c > 127 && c < 2048) {
-          utftext += String.fromCharCode((c >> 6) | 192);
-          utftext += String.fromCharCode((c & 63) | 128);
-        } else {
-          utftext += String.fromCharCode((c >> 12) | 224);
-          utftext += String.fromCharCode(((c >> 6) & 63) | 128);
-          utftext += String.fromCharCode((c & 63) | 128);
-        }
-      }
+    linkToIndex(d) {
       this.$router.push({
-        name: "index",
-        params: { token: utftext, theme: t }
+        path: "/index",
+        query: { data: d }
       });
     }
   }

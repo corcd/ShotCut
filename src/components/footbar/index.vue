@@ -29,17 +29,17 @@
             <li>
               <h3>关注我们</h3>
             </li>
-            <li>
+            <li @click="toWeibo('https://weibo.com/u/6593200613')">
               <a>
                 <span>宴大小姐Vivi</span>
               </a>
             </li>
-            <li>
+            <li @click="toWeibo('https://weibo.com/u/6481027614')">
               <a>
                 <span>疯狂特效师</span>
               </a>
             </li>
-            <li>
+            <li @click="toWeibo('https://weibo.com/u/6678838554')">
               <a>
                 <span>王者皮皮怪</span>
               </a>
@@ -94,6 +94,9 @@ export default {
   methods: {
     linkTo(path) {
       this.$router.push(path);
+    },
+    toWeibo(path) {
+      window.open(path, "_blank");
     }
   }
 };

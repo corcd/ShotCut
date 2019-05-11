@@ -9,7 +9,7 @@
         :activeitem="activeitem"
       ></navbar>
       <div class="index-title">
-        <p>{{testTitle}}</p>
+        <p>{{data.title}}</p>
       </div>
     </div>
     <div class="container">
@@ -17,23 +17,16 @@
       <div class="right"></div>
       <div class="main">
         <div class="items-row">
-          <items
-            v-for="item in testItems"
-            :key="item.id"
-            :instruction="item.title"
-            :src="item.src"
-            :id="item.id"
-            :url="item.source_url"
-          ></items>
+          <items v-for="item in data.data" :key="item.id" :data="item"></items>
         </div>
         <div class="items-paging">
           <el-pagination
             @size-change="handleSizeChange"
             @current-change="handleCurrentChange"
             :current-page="currentPage1"
-            :page-size="100"
+            :page-size="35"
             layout="total, prev, pager, next, jumper"
-            :total="400"
+            :total="35"
           ></el-pagination>
         </div>
       </div>
@@ -48,85 +41,18 @@
 <script>
 export default {
   components: {},
-  props: {
-    title: String,
-    items: Array
-  },
+  props: {},
   data() {
     return {
-      testTitle: "怪咖一休哥",
+      data: {},
       activeitem: ["", "", "", "", "", "", ""],
-      testItems: [
-        {
-          id: 1,
-          src: "../../../static/images/test.png",
-          title: "11111111",
-          source_url: "#"
-        },
-        {
-          id: 2,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 3,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 4,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 5,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 6,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 7,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 8,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 9,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        },
-        {
-          id: 10,
-          src: "../../../static/images/test.png",
-          title: "22222222",
-          source_url: "#"
-        }
-      ],
-      currentPage1: 1,
-      currentPage2: 5,
-      currentPage3: 5,
-      currentPage4: 4
+      currentPage1: 1
     };
   },
-  created() {
-    let theme = this.$route.params.theme;
-    console.log(theme);
+  created() {},
+  mounted() {
+    this.data = this.$route.query.data;
+    console.log(this.data);
   },
   methods: {
     handleSizeChange(val) {

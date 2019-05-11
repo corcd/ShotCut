@@ -21,13 +21,10 @@ export default {
   name: "recommend",
   inject: ["reload"],
   props: {
-    data: Array,
-    parentdata: Object
+    data: Array
   },
   data() {
-    return {
-      
-    };
+    return {};
   },
   methods: {
     linkToPlayer(obj) {
@@ -45,7 +42,7 @@ export default {
       };
       localStorage.setItem("shotcut_videoData", JSON.stringify(recommendData));
       //this.$router.go(0);
-      this.$emit('changeVideoData',recommendData);
+      this.$emit("changeVideoData", recommendData);
       window.scrollTo(0, 0);
     }
   }

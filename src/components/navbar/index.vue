@@ -29,7 +29,9 @@
         </el-row>
       </div>
       <div class="user">
-        <el-button icon="el-icon-user" circle></el-button>
+        <el-button circle>
+          <i class="icon-user"></i>
+        </el-button>
       </div>
     </div>
     <div class="menubar" v-show="menu_visiable">
@@ -49,17 +51,17 @@
             <span>月度排行</span>
           </a>
         </li>
-        <li @click="linkTo('/')" v-bind:class="{'active':item[3]}">
+        <li @click="linkTo('/fashion')" v-bind:class="{'active':item[3]}">
           <a>
             <span>时尚热度</span>
           </a>
         </li>
-        <li @click="linkTo('/')" v-bind:class="{'active':item[4]}">
+        <li @click="linkTo('/punchline')" v-bind:class="{'active':item[4]}">
           <a>
             <span>最佳笑点</span>
           </a>
         </li>
-        <li @click="linkTo('/')" v-bind:class="{'active':item[5]}">
+        <li @click="linkTo('/playlet')" v-bind:class="{'active':item[5]}">
           <a>
             <span>青春短剧</span>
           </a>
@@ -207,15 +209,16 @@ export default {
       justify-content: center;
       align-items: center;
 
-      .img-logo {
-        width: 30px;
-        height: 30px;
-        margin-left: 24px;
-      }
-
       .img-brand {
         width: 48px;
         height: 30px;
+        margin-right: 24px;
+      }
+
+      .img-logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
       }
 
       .aggergationbar {
@@ -223,7 +226,6 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 10%;
 
         a {
           width: 80px;
@@ -295,6 +297,9 @@ export default {
   .user {
     position: absolute;
     right: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     button {
       width: 40px;
@@ -302,6 +307,15 @@ export default {
       background: rgba(204, 238, 255, 1);
       border-radius: 50%;
       border: 0;
+
+      .icon-user:before  {
+        content: url("../../assets/user.png");
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top:-12px;
+        left:-12px;
+      }
     }
   }
 

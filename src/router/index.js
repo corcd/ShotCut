@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import home from '@/pages/home'
 import today from '@/pages/today'
 import rank from '@/pages/rank'
+import fashion from '@/pages/fashion'
+import punchline from '@/pages/punchline'
+import playlet from '@/pages/playlet'
 import index from '@/pages/index'
 import tagindex from '@/pages/tagindex'
 import player from '@/pages/player'
@@ -31,7 +34,22 @@ export default new Router({
       component: rank
     },
     {
-      path: '/index/:token',
+      path: '/fashion',
+      name: 'fashion',
+      component: fashion
+    },
+    {
+      path: '/punchline',
+      name: 'punchline',
+      component: punchline
+    },
+    {
+      path: '/playlet',
+      name: 'playlet',
+      component: playlet
+    },
+    {
+      path: '/index',
       name: 'index',
       component: index
     },
