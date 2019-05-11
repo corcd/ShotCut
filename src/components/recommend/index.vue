@@ -35,6 +35,7 @@ export default {
         amount: obj.amount,
         source: [
           {
+            withCredentials: false,
             type: obj.type,
             src: obj.video_url
           }

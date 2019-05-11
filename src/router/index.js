@@ -12,6 +12,7 @@ import player from '@/pages/player'
 import aboutus from '@/pages/aboutus'
 import aboutshotcut from '@/pages/aboutshotcut'
 import test from '@/pages/test'
+import testplayer from '@/pages/testplayer'
 
 Vue.use(Router)
 
@@ -77,6 +78,11 @@ export default new Router({
       path: '/test',
       name: 'test',
       component: test
+    },
+    {
+      path: '/testplayer',
+      name: 'testplayer',
+      component: testplayer
     }
   ]
 })

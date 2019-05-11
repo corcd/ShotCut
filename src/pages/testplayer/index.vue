@@ -10,12 +10,9 @@
       ></navbar>
       <div class="play-area" v-if="isReload">
         <div class="play-player">
-          <video-player
-            class="video-player-box vjs-custom-skin"
-            ref="videoPlayer"
-            :options="playerOptions"
-            @ready="playerReadied"
-          ></video-player>
+          <video id="myVideo" class="video-js testplayer">
+            <source :src="this.videoData.source.src" :type="this.videoData.source.type">
+          </video>
         </div>
         <div class="play-info">
           <div class="play-details">
@@ -71,10 +68,6 @@
 
 <script>
 import "../../assets/css/custom-player.scss";
-import videojs from "video.js";
-window.videojs = videojs;
-// hls plugin for videojs6
-require("videojs-contrib-hls/dist/videojs-contrib-hls.js");
 
 export default {
   components: {},
@@ -87,65 +80,33 @@ export default {
       activeitem: ["", "", "", "", "", "", ""],
       rcData: this.$store.state.webData.RecommendedVideos.data,
       videoData: {},
-      isReload: true,
-      playerOptions: {
-        // videojs options
-        autoplay: false,
-        muted: false,
-        loop: false,
-        language: "en",
-        playbackRates: [0.5, 1.0, 1.5, 2.0],
-        aspectRatio: "16:9",
-        fluid: true,
-        sources: [],
-        flash: { hls: { withCredentials: false } },
-        html5: { hls: { withCredentials: false } },
-        poster: "",
-        notSupportedMessage: "遇到问题，视频无法播放",
-        controlBar: {
-          timeDivider: true,
-          durationDisplay: true,
-          remainingTimeDisplay: false,
-          fullScreenToggle: true
-        }
-      },
-      pageview: 0
+      isReload: true
     };
   },
-  created() {},
-  mounted() {
+  created() {
     this.videoData = this.$route.params.data;
     console.log(this.videoData);
-    if (this.videoData == {}) {
+    if (this.videoData == {} || this.videoData == undefined) {
       this.videoData = JSON.parse(localStorage.getItem("shotcut_videoData"));
     } else {
       localStorage.setItem("shotcut_videoData", JSON.stringify(this.videoData));
     }
     this.title = this.videoData.title;
     this.amount = this.videoData.amount;
-    this.playerOptions.poster = this.videoData.poster;
-    this.playerOptions.sources = this.videoData.source;
-
-    console.log("this is current player instance object", this.player);
-    console.log(this.rcData);
+    console.log(this.videoData.source);
   },
-  beforeDestroy() {
-    this.$refs.videojs.dispose();
+  mounted() {
+    let myPlayer = this.$video(myVideo, {
+      controls: true,
+      loop: false,
+      autoplay: false,
+      //建议浏览器是否应在<video>加载元素后立即开始下载视频数据。
+      preload: "auto"
+    });
   },
   destroyed() {},
-  computed: {
-    player() {
-      return this.$refs.videoPlayer.player;
-    }
-  },
+  computed: {},
   methods: {
-    playerReadied(player) {
-      let hls = player.tech({ IWillNotUseThisInPlugins: true }).hls;
-      player.tech_.hls.xhr.beforeRequest = function(options) {
-        // console.log(options)
-        return options;
-      };
-    },
     googleAd() {
       window.open(
         "https://www.google.com/adsense/start/#/?modal_active=none",
@@ -173,5 +134,150 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./index";
+.player-page {
+  width: 100%;
+  height: 100%;
+
+  .header {
+    width: 100%;
+
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 3;
+    }
+
+    .play-area {
+      width: 100%;
+      margin-top: 60px;
+      background: rgba(26, 26, 26, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .play-player {
+        width: 85%;
+        background: #000;
+
+        .testplayer {
+          width: 100%;
+        }
+      }
+
+      .play-info {
+        width: 85%;
+        height: 128px;
+
+        .play-details {
+          float: left;
+
+          .play-title {
+            font: {
+              size: 30px;
+              family: MicrosoftYaHei;
+              weight: 400;
+            }
+
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 1);
+          }
+
+          .play-append {
+            display: flex;
+            justify-content: flex-start;
+
+            p,
+            span {
+              font: {
+                size: 16px;
+                family: MicrosoftYaHei;
+                weight: 400;
+              }
+
+              color: rgba(153, 153, 153, 1);
+              line-height: 42px;
+            }
+
+            .play-share {
+              margin-right: 40px;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              a {
+                img {
+                  width: 22px;
+                  height: 18px;
+                  margin: 5px;
+                  margin-top: 10px;
+                }
+              }
+            }
+
+            .play-amount {
+            }
+          }
+        }
+
+        .play-ad {
+          float: right;
+          margin-top: 14px;
+
+          a {
+            img {
+              width: 480px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+
+    .left,
+    .right {
+      width: 7%;
+      height: 0;
+      position: absolute;
+    }
+
+    .left {
+      left: 0;
+      //background-color: blue;
+      background-color: #fff;
+    }
+
+    .right {
+      right: 0;
+      //background-color: red;
+      background-color: #fff;
+    }
+
+    .main {
+      margin: 35px 7%;
+      height: 100%;
+
+      .blank {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+
+    .line {
+      width: 100%;
+      height: 2px;
+      margin: 0;
+      padding: 0;
+      background: rgba(255, 85, 0, 1);
+    }
+  }
+}
 </style>
