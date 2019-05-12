@@ -13,6 +13,7 @@ import aboutus from '@/pages/aboutus'
 import aboutshotcut from '@/pages/aboutshotcut'
 import test from '@/pages/test'
 import testplayer from '@/pages/testplayer'
+import exportJSON from '@/pages/exportJSON'
 
 Vue.use(Router)
 
@@ -83,6 +84,11 @@ export default new Router({
       path: '/testplayer',
       name: 'testplayer',
       component: testplayer
+    },
+    {
+      path: '/exportJSON',
+      name: 'exportJSON',
+      component: exportJSON
     }
   ]
 })

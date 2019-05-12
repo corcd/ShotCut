@@ -18,12 +18,29 @@ Vue.use(ElementUI)
 Vue.use(VueVideoPlayer)
 Vue.use(Vcomp)
 
-router.afterEach((to, from, next) => {
-  window.scrollTo(0, 0);
-});
-
 Vue.config.productionTip = false
 Vue.prototype.$axios = Axios
+
+
+router.beforeEach((to, from, next) => {
+  Axios
+    .get("../../../static/data/data.json")
+    .then(response => {
+      let res = JSON.parse(JSON.stringify(response));
+      if (res.status == 200) {
+        console.log(res.data);
+        store.state.webData = res.data
+      }
+      next()
+    })
+    .catch(err => {
+      console.log(err.message);
+    })
+})
+
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0)
+})
 
 /* eslint-disable no-new */
 new Vue({
