@@ -4,9 +4,9 @@
       <li>
         <span class="tags-title">#热门标签</span>
       </li>
-      <li v-for="item in tags" :key="item.id">
+      <li v-for="item in tags" :key="item.id" @click="linkToIndex(item)">
         <a>
-          <span>{{item.text}}</span>
+          <span>{{item.name}}</span>
         </a>
       </li>
     </ul>
@@ -21,6 +21,14 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    linkToIndex(d) {
+      this.$router.push({
+        path: "/index",
+        query: { data: d }
+      });
+    }
   }
 };
 </script>

@@ -7,7 +7,8 @@
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame :data="module_data_3" :limit="14">
+        <frame :data="module_data_1" :limit="14">
+        <frame :data="module_data_2" :limit="14">
       </div>
     </div>
     <div class="footer">
@@ -24,7 +25,8 @@ export default {
     return {
       activeitem: ["", "", "", true, "", ""],
       bgdata: this.$store.state.webData.background.data,
-      module_data_3: this.$store.state.webData.module_data_3
+      module_data_1: this.$store.state.webData.module_data_1,
+      module_data_2: this.$store.state.webData.module_data_2
     };
   },
   created() {},

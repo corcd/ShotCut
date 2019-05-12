@@ -42,7 +42,7 @@
           </div>
           <div class="play-ad" @click="googleAd()">
             <a>
-              <img alt="ad" src="../../assets/ad.png">
+              <img alt="ad" src="../../../static/images/ad/ad.png">
             </a>
           </div>
         </div>

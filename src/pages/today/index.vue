@@ -2,13 +2,14 @@
   <div class="today-page">
     <div class="header">
       <homeheader :scroll="true" :style_shade="true" :activeitem="activeitem" :data="bgdata"></homeheader>
-      <hottags :tags="tags"></hottags>
+      <hottags :tags="data.tags_data"></hottags>
     </div>
     <div class="container">
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame>
+        <frame :data="module_data_2" :limit="14">
+        <frame :data="module_data_3" :limit="14">
       </div>
     </div>
     <div class="footer">
@@ -25,19 +26,14 @@ export default {
     return {
       activeitem: ["", true, "", "", "", ""],
       bgdata: this.$store.state.webData.background.data,
-      tags: [
-        { id: 1, text: "全部", param: "" },
-        { id: 2, text: "美食", param: "" },
-        { id: 3, text: "游戏", param: "" },
-        { id: 4, text: "时尚", param: "" },
-        { id: 5, text: "旅游", param: "" },
-        { id: 6, text: "搞笑", param: "" },
-        { id: 7, text: "情感", param: "" },
-        { id: 8, text: "科技", param: "" }
-      ]
+      data: this.$store.state.webData.hithot,
+      module_data_2: this.$store.state.webData.module_data_2,
+      module_data_3: this.$store.state.webData.module_data_3
     };
   },
   created() {},
+  mounted() {},
+  destroyed() {},
   methods: {}
 };
 </script>

@@ -75,7 +75,260 @@ const store = new Vuex.Store({
         ]
       },
       home: {},
-      hithot: {},
+      hithot: {
+        tags_data: [{
+            id: 1,
+            name: " 美食",
+            title: "Nini的厨房",
+            isMulti: false,
+            data: [{
+              id: 1,
+              title: " 自我介绍",
+              poster: "../../../static/images/module/6/nini_1.jpg",
+              type: "video/mp4",
+              video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/284019171f328ce78a0eb975b95954ca.mp4",
+              amount: 3824
+            }]
+          },
+          {
+            id: 2,
+            name: "游戏",
+            title: "王者皮皮怪",
+            isMulti: false,
+            data: [{
+              id: 1,
+              title: "80锤",
+              poster: "../../../static/images/module/3/pipi_1.png",
+              type: "video/mp4",
+              video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6a23d04068bdb7183250b6897a94e562.mp4",
+              amount: 3824
+            }]
+          },
+          {
+            id: 3,
+            name: "时尚",
+            title: "",
+            isMulti: true,
+            data: [{
+                id: 1,
+                name: "shipinlanmu1",
+                title: "斯内克杨",
+                data: [{
+                    id: 1,
+                    title: "AIR MAX DAY_ Moment",
+                    poster: "../../../static/images/module/1/snky_1.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7ef2b7297243a1380673314b21e892d8.m3u8",
+                    amount: 3824
+                  },
+                  {
+                    id: 2,
+                    title: "aj 实战鞋",
+                    poster: "../../../static/images/module/1/snky_2.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1536ee924bb48a1e48c549eee7f3c3ff.m3u8",
+                    amount: 4928
+                  },
+                  {
+                    id: 3,
+                    title: "aj打球",
+                    poster: "../../../static/images/module/1/snky_3.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/23d01c254c87e634127c2f0565097367.m3u8",
+                    amount: 2938
+                  }
+                ]
+              },
+              {
+                id: 2,
+                name: "shipinlanmu2",
+                title: "美人秀秀",
+                data: [{
+                    id: 1,
+                    title: "紫色印度小哥哥",
+                    poster: "../../../static/images/module/4/mrxx_1.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/74c9cd178b1260613f931cb3fa030ff7.m3u8",
+                    amount: 32525
+                  },
+                  {
+                    id: 2,
+                    title: "甜美文艺风",
+                    poster: "../../../static/images/module/4/mrxx_2.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f41e231b07b605babf6f8f876d3706ef.m3u8",
+                    amount: 4325
+                  },
+                  {
+                    id: 3,
+                    title: "牛仔外套小姐姐",
+                    poster: "../../../static/images/module/4/mrxx_3.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d7db4a58ddf3116bb1388c22072e1ac8.m3u8",
+                    amount: 95363
+                  }
+                ]
+              },
+              {
+                id: 3,
+                name: "shipinlanmu3",
+                title: "晏大小姐Vivi",
+                data: [{
+                    id: 1,
+                    title: "变废为宝的美妆工具",
+                    poster: "../../../static/images/module/2/vivi_1.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/ea270c3c10dd57153ac0aaf8a8a4f2ab.m3u8",
+                    amount: 3824
+                  },
+                  {
+                    id: 2,
+                    title: "超减龄心机腮红",
+                    poster: "../../../static/images/module/2/vivi_2.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/23247978715c1e26339d5dfb8451817b.m3u8",
+                    amount: 4928
+                  },
+                  {
+                    id: 3,
+                    title: "超强干货！芒果后台化妆步骤",
+                    poster: "../../../static/images/module/2/vivi_3.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/de81e6a6517c3869b05fafda2fdb41fb.m3u8",
+                    amount: 2938
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 4,
+            name: "旅游",
+            title: "旅游尹淘小玩子",
+            isMulti: false,
+            data: [{
+              id: 1,
+              title: "ck小镇第一条",
+              poster: "../../../static/images/module/5/lvwz_1.png",
+              type: "video/mp4",
+              video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7be00d94032db6d8499dae531bc33394.mp4",
+              amount: 3824
+            }]
+          },
+          {
+            id: 5,
+            name: "搞笑",
+            title: "冷笑话",
+            isMulti: false,
+            data: [{
+              id: 1,
+              title: "冷笑话-1",
+              poster: "../../../static/images/module/7/lxy_1.jpg",
+              type: "application/x-mpegURL",
+              video_url: "",
+              amount: 3824
+            }]
+          },
+          {
+            id: 6,
+            name: "情感",
+            title: "",
+            isMulti: true,
+            data: [{
+                id: 1,
+                name: "",
+                title: "晏炜观点秀",
+                data: [{
+                    id: 1,
+                    title: "什么样的人总是被人挑刺",
+                    poster: "../../../static/images/module/8/gdx_1.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d5596d4afa0f7bfeac168ecc41674c60.m3u8",
+                    amount: 3824
+                  },
+                  {
+                    id: 2,
+                    title: "轻易承诺",
+                    poster: "../../../static/images/module/8/gdx_2.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/01d15ef8c49deb3a7ce029622f70adc0.m3u8",
+                    amount: 4928
+                  },
+                  {
+                    id: 3,
+                    title: "不懂感恩没朋友",
+                    poster: "../../../static/images/module/8/gdx_3.jpg",
+                    type: "application/x-mpegURL",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f9adb73b2d769581509eb73d9d0d2c9e.m3u8",
+                    amount: 2938
+                  }
+                ]
+              },
+              {
+                id: 2,
+                name: "",
+                title: "玛丽小酥",
+                data: [{
+                    id: 1,
+                    title: "带妹高手 第1话",
+                    poster: "../../../static/images/module/9/mlxs_1.jpg",
+                    type: "video/mp4",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4",
+                    amount: 833
+                  },
+                  {
+                    id: 2,
+                    title: "带妹高手 第2话",
+                    poster: "../../../static/images/module/9/mlxs_2.jpg",
+                    type: "video/mp4",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/4c3a18b9cb97f3bdc3d7efc676960133.mp4",
+                    amount: 3414
+                  },
+                  {
+                    id: 3,
+                    title: "带妹高手 第3话",
+                    poster: "../../../static/images/module/9/mlxs_3.jpg",
+                    type: "video/mp4",
+                    video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/753914f31cf9566f12626bcadb35ae37.mp4",
+                    amount: 2616
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 7,
+            name: "特效",
+            title: "疯狂特效师",
+            isMulti: false,
+            data: [{
+              id: 1,
+              title: "变大变小",
+              poster: "../../../static/images/module/10/fktx_1.jpg",
+              type: "application/x-mpegURL",
+              video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/60b7a93c08a529e33be68cc07b5f29af.m3u8",
+              amount: 3824
+            }]
+          },
+          {
+            id: 8,
+            name: "生活",
+            title: "短秀新生活",
+            isMulti: false,
+            data: [{
+              id: 1,
+              title: "冰棒棍玩出新花样",
+              poster: "",
+              type: "application/x-mpegURL",
+              video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/5aa4bd83a0b06431854d36ff589e5543.m3u8",
+              amount: 3824
+            }]
+          }
+        ],
+        content_data: [
+
+        ]
+      },
       monthly_rank: {
         module_data_1: [{
             id: 1,
@@ -1045,14 +1298,494 @@ const store = new Vuex.Store({
           }
         ]
       },
-      fengkuang: {
+      module_data_4: {
         id: 5,
-        name: "shipinlanmu4",
+        name: "",
+        title: "冷笑话",
+        data: [{
+            id: 1,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_1.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 2,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_2.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 3,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_3.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 4,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_4.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 5,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_5.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 6,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_6.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 7,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_7.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 8,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_8.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 9,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_9.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 10,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_10.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 11,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_11.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 12,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_12.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 13,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_13.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 14,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_14.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 15,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_15.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 16,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_16.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 17,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_17.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 18,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_18.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 19,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_19.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 20,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_20.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 21,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_21.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 22,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_22.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          },
+          {
+            id: 23,
+            title: "变大变小",
+            poster: "../../../static/images/module/7/lxy_23.jpg",
+            type: "application/x-mpegURL",
+            video_url: "",
+            amount: 3824
+          }
+        ]
+      },
+      module_data_5: {
+        id: 6,
+        name: "",
+        title: "玛栗小酥",
+        data: [{
+            id: 1,
+            title: "带妹高手 第1话",
+            poster: "../../../static/images/module/9/mlxs_1.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4",
+            amount: 833
+          },
+          {
+            id: 2,
+            title: "带妹高手 第2话",
+            poster: "../../../static/images/module/9/mlxs_2.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/4c3a18b9cb97f3bdc3d7efc676960133.mp4",
+            amount: 3414
+          },
+          {
+            id: 3,
+            title: "带妹高手 第3话",
+            poster: "../../../static/images/module/9/mlxs_3.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/753914f31cf9566f12626bcadb35ae37.mp4",
+            amount: 2616
+          },
+          {
+            id: 4,
+            title: "带妹高手 第4话",
+            poster: "../../../static/images/module/9/mlxs_4.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/fa39e2492c0a7d6bec7caf625ed606d6.m3u8",
+            amount: 2616
+          },
+          {
+            id: 5,
+            title: "霸道男友如何相处",
+            poster: "../../../static/images/module/9/mlxs_5.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/2262d098a1ff14d43b324417779dd678.mp4",
+            amount: 2616
+          },
+          {
+            id: 6,
+            title: "比悲伤更悲伤的故事定",
+            poster: "../../../static/images/module/9/mlxs_6.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/be40145b7e72cbb6e1d8fe7c92ca13c8.m3u8",
+            amount: 2616
+          },
+          {
+            id: 7,
+            title: "分手后还能做朋友吗",
+            poster: "../../../static/images/module/9/mlxs_7.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a4c8fafddc8e04340240e47b11cb1134.m3u8",
+            amount: 2616
+          },
+          {
+            id: 8,
+            title: "猫系男友如何相处",
+            poster: "../../../static/images/module/9/mlxs_8.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/ebe3579e0c0c0f58812903ca67c120d4.mp4",
+            amount: 2616
+          },
+          {
+            id: 9,
+            title: "男生喜欢你的四个表现",
+            poster: "../../../static/images/module/9/mlxs_9.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/f66982b540cd482a14aac0b6f68f04e2.mp4",
+            amount: 2616
+          },
+          {
+            id: 10,
+            title: "喜欢你的人爱意是藏不住的",
+            poster: "../../../static/images/module/9/mlxs_10.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2bd1e9e36c04854529b92d50f6f611fc.m3u8",
+            amount: 2616
+          },
+          {
+            id: 11,
+            title: "尖叫吧！小酥1",
+            poster: "../../../static/images/module/9/mlxs_11.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b4379077d2c11615de978805903eeb94.mp4",
+            amount: 2616
+          },
+          {
+            id: 12,
+            title: "尖叫吧！小酥2",
+            poster: "../../../static/images/module/9/mlxs_12.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8adfb9a5b4fdb8aa08c25a52dbefb501.mp4",
+            amount: 2616
+          },
+          {
+            id: 13,
+            title: "尖叫吧！小酥3",
+            poster: "../../../static/images/module/9/mlxs_13.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6128bb689bfd1b5dcc5e58f11bd4eb49.mp4",
+            amount: 2616
+          },
+          {
+            id: 14,
+            title: "尖叫吧！小酥4",
+            poster: "../../../static/images/module/9/mlxs_14.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f93e517ffae75e1ebc8c4745cd448513.m3u8",
+            amount: 2616
+          },
+          {
+            id: 15,
+            title: "尖叫吧！小酥5",
+            poster: "../../../static/images/module/9/mlxs_15.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/065ea4e843f15d05f286f1d7d7a7ee09.m3u8",
+            amount: 2616
+          },
+          {
+            id: 16,
+            title: "尖叫吧！小酥6",
+            poster: "../../../static/images/module/9/mlxs_16.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1582f2bbef96420ce948d724cc89a184.m3u8",
+            amount: 2616
+          },
+          {
+            id: 17,
+            title: "流星雨 第1话",
+            poster: "../../../static/images/module/9/mlxs_17.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/2681aa600c4df09278119d262b910a78.mp4",
+            amount: 2616
+          },
+          {
+            id: 18,
+            title: "流星雨 第2话",
+            poster: "../../../static/images/module/9/mlxs_18.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/132b415ae8e41546c48a4d867f9e3fc6.m3u8",
+            amount: 2616
+          },
+          {
+            id: 19,
+            title: "流星雨 第3话",
+            poster: "../../../static/images/module/9/mlxs_19.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a185926281c27e9c2aad65e416a84e6c.m3u8",
+            amount: 2616
+          },
+          {
+            id: 20,
+            title: "流星雨 第4话",
+            poster: "../../../static/images/module/9/mlxs_20.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a32f2f62511841c381fb11ef1347ac5b.m3u8",
+            amount: 2616
+          },
+          {
+            id: 21,
+            title: "流星雨 第5话",
+            poster: "../../../static/images/module/9/mlxs_21.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/828e216064c9c42d127eff2dba59fa3e.m3u8",
+            amount: 2616
+          },
+          {
+            id: 22,
+            title: "流星雨 第6话",
+            poster: "../../../static/images/module/9/mlxs_22.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7e659124ffd58614c932433b753c9c40.m3u8",
+            amount: 2616
+          },
+          {
+            id: 23,
+            title: "流星雨 第7话",
+            poster: "../../../static/images/module/9/mlxs_23.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d2ec359f194a492b828d68a5395e6f64.m3u8",
+            amount: 2616
+          },
+          {
+            id: 24,
+            title: "流星雨 第8话",
+            poster: "../../../static/images/module/9/mlxs_24.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/09e510870dd687c52346e01665378d44.m3u8",
+            amount: 2616
+          },
+          {
+            id: 25,
+            title: "流星雨 第9话",
+            poster: "../../../static/images/module/9/mlxs_25.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/3ba7b927c7a373cefc5baedd71a9e26f.mp4",
+            amount: 2616
+          },
+          {
+            id: 26,
+            title: "流星雨 结局1",
+            poster: "../../../static/images/module/9/mlxs_26.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/12e5ae5fcc74aa16cd20ad6709eb30ea.mp4",
+            amount: 2616
+          },
+          {
+            id: 27,
+            title: "流星雨 结局2",
+            poster: "../../../static/images/module/9/mlxs_27.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/113296b18b66b5da4173ff7f87ab3279.mp4",
+            amount: 2616
+          },
+          {
+            id: 28,
+            title: "仙人掌女孩 第1话",
+            poster: "../../../static/images/module/9/mlxs_28.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/994f847005c88948e27407c5c5a77e49.m3u8",
+            amount: 2616
+          },
+          {
+            id: 29,
+            title: "仙人掌女孩 第2话",
+            poster: "../../../static/images/module/9/mlxs_29.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/aaac6f85e92d84fd84dae30044c80c31.m3u8",
+            amount: 2616
+          },
+          {
+            id: 30,
+            title: "仙人掌女孩 第3话",
+            poster: "../../../static/images/module/9/mlxs_30.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2e23bbcbcf29ee582142663b1cc522f2.m3u8",
+            amount: 2616
+          },
+          {
+            id: 31,
+            title: "仙人掌女孩 第4话",
+            poster: "../../../static/images/module/9/mlxs_31.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6603e59433108be081e2535f495a6b20.m3u8",
+            amount: 2616
+          },
+          {
+            id: 32,
+            title: "仙人掌女孩 第5话",
+            poster: "../../../static/images/module/9/mlxs_32.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8cf4bf2f220bd2020a4893348094ae25.m3u8",
+            amount: 2616
+          },
+          {
+            id: 33,
+            title: "仙人掌女孩 第6话",
+            poster: "../../../static/images/module/9/mlxs_33.jpg",
+            type: "application/x-mpegURL",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/96120f2bdf9da8499d1caad8c3f73a90.m3u8",
+            amount: 2616
+          },
+          {
+            id: 34,
+            title: "仙人掌女孩 第7话",
+            poster: "../../../static/images/module/9/mlxs_34.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b8ae3ea2ba36dc229426e9adce6c2e76.mp4",
+            amount: 2616
+          },
+          {
+            id: 35,
+            title: "仙人掌女孩 第8话",
+            poster: "../../../static/images/module/9/mlxs_35.jpg",
+            type: "video/mp4",
+            video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7eed0168a941415786b0803ba84bb392.mp4",
+            amount: 2616
+          }
+        ]
+      },
+      module_data_6: {},
+      module_data_7: {},
+      module_data_8: {},
+      module_data_9: {},
+      module_data_10: {
+        id: 11,
+        name: "",
         title: "疯狂特效师",
         data: [{
             id: 1,
             title: "变大变小",
-            poster: "fktx_1.jpg",
+            poster: "../../../static/images/module/10/fktx_1.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/60b7a93c08a529e33be68cc07b5f29af.m3u8",
             amount: 3824
@@ -1060,7 +1793,7 @@ const store = new Vuex.Store({
           {
             id: 2,
             title: "彩虹豆跳舞",
-            poster: "fktx_2.jpg",
+            poster: "../../../static/images/module/10/fktx_2.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/418687347c556a07f7fe2b0365da80c6.m3u8",
             amount: 4928
@@ -1068,7 +1801,7 @@ const store = new Vuex.Store({
           {
             id: 3,
             title: "插队",
-            poster: "fktx_3.jpg",
+            poster: "../../../static/images/module/10/fktx_3.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/88ecb886c10c0aa0d97ab28786bbe1d7.m3u8",
             amount: 2938
@@ -1076,7 +1809,7 @@ const store = new Vuex.Store({
           {
             id: 4,
             title: "大黄蜂买买买",
-            poster: "fktx_4.jpg",
+            poster: "../../../static/images/module/10/fktx_4.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/e482d103d9bea210d46f7528e74c5e67.m3u8",
             amount: 2742
@@ -1084,7 +1817,7 @@ const store = new Vuex.Store({
           {
             id: 5,
             title: "大黄蜂汽车变形",
-            poster: "fktx_5.jpg",
+            poster: "../../../static/images/module/10/fktx_5.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/e5542840150002c0cb33e26fc9711c14.m3u8",
             amount: 3824
@@ -1092,7 +1825,7 @@ const store = new Vuex.Store({
           {
             id: 6,
             title: "大黄蜂水冰月跳舞",
-            poster: "fktx_6.jpg",
+            poster: "../../../static/images/module/10/fktx_6.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/bea7c2812118cc61f17c2866166cf2b2.m3u8",
             amount: 4928
@@ -1100,7 +1833,7 @@ const store = new Vuex.Store({
           {
             id: 7,
             title: "大楼变气球撩妹",
-            poster: "fktx_7.jpg",
+            poster: "../../../static/images/module/10/fktx_7.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/76e5260631fc544d8705c7aac47964d3.m3u8",
             amount: 2938
@@ -1108,7 +1841,7 @@ const store = new Vuex.Store({
           {
             id: 8,
             title: "大楼变气球撩妹·合拍版",
-            poster: "fktx_8.jpg",
+            poster: "../../../static/images/module/10/fktx_8.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/10c4bba84fe69c77c23731f39695bbfa.m3u8",
             amount: 2742
@@ -1116,7 +1849,7 @@ const store = new Vuex.Store({
           {
             id: 9,
             title: "懂车帝 第六版",
-            poster: "fktx_9.jpg",
+            poster: "../../../static/images/module/10/fktx_9.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/ece866caadc1f762d7da35815108b622.m3u8",
             amount: 3824
@@ -1124,7 +1857,7 @@ const store = new Vuex.Store({
           {
             id: 10,
             title: "嘟啦舞",
-            poster: "fktx_10.jpg",
+            poster: "../../../static/images/module/10/fktx_10.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/32f0fb5dcec40a564c955f865e352d96.m3u8",
             amount: 4928
@@ -1132,7 +1865,7 @@ const store = new Vuex.Store({
           {
             id: 11,
             title: "oppo手机抢车位",
-            poster: "fktx_11.jpg",
+            poster: "../../../static/images/module/10/fktx_11.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2334e5fb608be0c5c4939c56462e59ba.m3u8",
             amount: 2938
@@ -1140,7 +1873,7 @@ const store = new Vuex.Store({
           {
             id: 12,
             title: "多力多滋薯片",
-            poster: "fktx_12.jpg",
+            poster: "../../../static/images/module/10/fktx_12.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f199d658673b8e83c0a9d87d2f188283.m3u8",
             amount: 4928
@@ -1148,7 +1881,7 @@ const store = new Vuex.Store({
           {
             id: 13,
             title: "乐事大波浪薯片",
-            poster: "fktx_13.jpg",
+            poster: "../../../static/images/module/10/fktx_13.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/c7f99b40289d24d6f459e076d76ecf9e.m3u8",
             amount: 2938
@@ -1156,7 +1889,7 @@ const store = new Vuex.Store({
           {
             id: 14,
             title: "陆风汽车",
-            poster: "fktx_14.jpg",
+            poster: "../../../static/images/module/10/fktx_14.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a42b4287d8ea06e88614635798d3617b.m3u8",
             amount: 2742
@@ -1164,7 +1897,7 @@ const store = new Vuex.Store({
           {
             id: 15,
             title: "喜力啤酒",
-            poster: "fktx_15.jpg",
+            poster: "../../../static/images/module/10/fktx_15.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9a2f01d825833b83e5b2d19e8bf56de3.m3u8",
             amount: 3824
@@ -1172,7 +1905,7 @@ const store = new Vuex.Store({
           {
             id: 16,
             title: "肌肉男pk绿巨人",
-            poster: "fktx_16.jpg",
+            poster: "../../../static/images/module/10/fktx_16.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/608b6dbe2200dda5500707900e47b6e4.m3u8",
             amount: 4928
@@ -1180,7 +1913,7 @@ const store = new Vuex.Store({
           {
             id: 17,
             title: "肌肉男pk小奶狗",
-            poster: "fktx_17.jpg",
+            poster: "../../../static/images/module/10/fktx_17.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6bcaa2e01b42b8841a48494a9a32b1cf.m3u8",
             amount: 2938
@@ -1188,7 +1921,7 @@ const store = new Vuex.Store({
           {
             id: 18,
             title: "禁烟",
-            poster: "fktx_18.jpg",
+            poster: "../../../static/images/module/10/fktx_18.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9b7b360ce7d471a9efb5a383c7962004.m3u8",
             amount: 2742
@@ -1196,7 +1929,7 @@ const store = new Vuex.Store({
           {
             id: 19,
             title: "卡车变形",
-            poster: "fktx_19.jpg",
+            poster: "../../../static/images/module/10/fktx_19.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/077ff7087e5f783fc9430efe84da05be.m3u8",
             amount: 3824
@@ -1204,7 +1937,7 @@ const store = new Vuex.Store({
           {
             id: 20,
             title: "开车舞",
-            poster: "fktx_20.jpg",
+            poster: "../../../static/images/module/10/fktx_20.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/84cf23f60b39e7aa5f1e6a1096df85c3.m3u8",
             amount: 4928
@@ -1212,7 +1945,7 @@ const store = new Vuex.Store({
           {
             id: 21,
             title: "拉飞机",
-            poster: "fktx_21.jpg",
+            poster: "../../../static/images/module/10/fktx_21.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/aa37cfb24634cc049ad9678357b541e7.m3u8",
             amount: 2938
@@ -1220,7 +1953,7 @@ const store = new Vuex.Store({
           {
             id: 22,
             title: "漫威雷神壁纸",
-            poster: "fktx_22.jpg",
+            poster: "../../../static/images/module/10/fktx_22.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/80ce017c93a1f506cc2d82d5399cf5c8.m3u8",
             amount: 3824
@@ -1228,7 +1961,7 @@ const store = new Vuex.Store({
           {
             id: 23,
             title: "玫瑰花墙",
-            poster: "fktx_23.jpg",
+            poster: "../../../static/images/module/10/fktx_23.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7a2650d16dae5830c140d808a82591fa.mp4",
             amount: 4928
@@ -1236,7 +1969,7 @@ const store = new Vuex.Store({
           {
             id: 24,
             title: "世界杯酒杯撩妹",
-            poster: "fktx_24.jpg",
+            poster: "../../../static/images/module/10/fktx_24.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/642c9755e736bd53d721e33ec07a11c8.mp4",
             amount: 2938
@@ -1244,7 +1977,7 @@ const store = new Vuex.Store({
           {
             id: 25,
             title: "世界杯足球",
-            poster: "fktx_25.jpg",
+            poster: "../../../static/images/module/10/fktx_25.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5f274b65b3833942158dd0f719054606.mp4",
             amount: 2742
@@ -1252,7 +1985,7 @@ const store = new Vuex.Store({
           {
             id: 26,
             title: "双十一口红",
-            poster: "fktx_26.jpg",
+            poster: "../../../static/images/module/10/fktx_26.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6872fe7af2a0b7ff9706409a3be52570.mp4",
             amount: 2938
@@ -1260,7 +1993,7 @@ const store = new Vuex.Store({
           {
             id: 27,
             title: "水龙",
-            poster: "fktx_27.jpg",
+            poster: "../../../static/images/module/10/fktx_27.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/4eae0d7db3d9b3ff14e42e7346303c3f.mp4",
             amount: 4928
@@ -1268,7 +2001,7 @@ const store = new Vuex.Store({
           {
             id: 28,
             title: "泰坦尼克号女友分手",
-            poster: "fktx_28.jpg",
+            poster: "../../../static/images/module/10/fktx_28.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f61f89d9c90d6f9235fe4b45a8bb41d9.m3u8",
             amount: 2938
@@ -1276,7 +2009,7 @@ const store = new Vuex.Store({
           {
             id: 29,
             title: "铁皮系列片二 停车场被打",
-            poster: "fktx_29.jpg",
+            poster: "../../../static/images/module/10/fktx_29.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1e112c6b40cc180ff31dd8f62615a6ea.m3u8",
             amount: 2938
@@ -1284,7 +2017,7 @@ const store = new Vuex.Store({
           {
             id: 30,
             title: "铁皮系列片三 篮球樱木",
-            poster: "fktx_30.jpg",
+            poster: "../../../static/images/module/10/fktx_30.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9d86a5c1b56dcf7f786f28e8db1f8861.m3u8",
             amount: 4928
@@ -1292,7 +2025,7 @@ const store = new Vuex.Store({
           {
             id: 31,
             title: "铁皮系列片一 铁皮变车",
-            poster: "fktx_31.jpg",
+            poster: "../../../static/images/module/10/fktx_31.jpg",
             type: "application/x-mpegURL",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/28028bdfef2f793113fed6f723171d0f.m3u8",
             amount: 2938
@@ -1300,7 +2033,7 @@ const store = new Vuex.Store({
           {
             id: 32,
             title: "万圣节南瓜灯",
-            poster: "fktx_32.jpg",
+            poster: "../../../static/images/module/10/fktx_32.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8f94d32125d40c73df69800ee09cceaa.mp4",
             amount: 4928
@@ -1308,7 +2041,7 @@ const store = new Vuex.Store({
           {
             id: 33,
             title: "微博-挑战舞蹈",
-            poster: "fktx_33.jpg",
+            poster: "../../../static/images/module/10/fktx_33.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/88d1134c1467b846d0d1a75729001aa4.mp4",
             amount: 2938
@@ -1316,7 +2049,7 @@ const store = new Vuex.Store({
           {
             id: 34,
             title: "下掉-教师节",
-            poster: "fktx_34.jpg",
+            poster: "../../../static/images/module/10/fktx_34.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/00725def97bfcd22350d0815dcc8ef46.mp4",
             amount: 2742
@@ -1324,7 +2057,7 @@ const store = new Vuex.Store({
           {
             id: 35,
             title: "一百个足球",
-            poster: "fktx_35.jpg",
+            poster: "../../../static/images/module/10/fktx_35.jpg",
             type: "video/mp4",
             video_url: "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/f20f526ae0299ebf7961197d8d811fa9.mp4",
             amount: 3824

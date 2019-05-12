@@ -46,6 +46,7 @@ export default {
       position: relative;
       top: -20px;
       margin-right: 8px;
+      cursor: pointer;
     }
 
     p {
@@ -64,6 +65,7 @@ export default {
       }
       color: rgba(102, 102, 102, 1);
       line-height: 21px;
+      cursor: pointer;
     }
   }
 }
