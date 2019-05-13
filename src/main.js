@@ -22,6 +22,12 @@ Vue.use(Vcomp)
 Vue.config.productionTip = false
 Vue.prototype.$axios = Axios
 
+Vue.directive('title', {
+  inserted: function (el, binding) {
+    document.title = el.dataset.title
+  }
+})
+
 
 router.beforeEach((to, from, next) => {
   Axios

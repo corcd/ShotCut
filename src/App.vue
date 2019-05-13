@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-title data-title="天择短秀">
     <router-view v-if="isRouterAlive"/>
   </div>
 </template>

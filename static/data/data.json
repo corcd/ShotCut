@@ -98,20 +98,158 @@
           "type": "application/x-mpegURL",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7ef2b7297243a1380673314b21e892d8.m3u8",
           "amount": 3824
-        }, {
+        },
+        {
           "id": 2,
           "title": "aj 实战鞋",
           "poster": "../../../static/images/module/1/snky_2.jpg",
           "type": "application/x-mpegURL",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1536ee924bb48a1e48c549eee7f3c3ff.m3u8",
           "amount": 4928
-        }, {
+        },
+        {
           "id": 3,
           "title": "aj打球",
           "poster": "../../../static/images/module/1/snky_3.jpg",
           "type": "application/x-mpegURL",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/23d01c254c87e634127c2f0565097367.m3u8",
           "amount": 2938
+        },
+        {
+          "id": 4,
+          "title": "灌篮高手赤木刚宪最终版",
+          "poster": "../../../static/images/module/1/snky_4.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/ef63181459025cf0d7850b189d529211.m3u8",
+          "amount": 2742
+        },
+        {
+          "id": 5,
+          "title": "灌篮高手宫城良田最终版",
+          "poster": "../../../static/images/module/1/snky_5.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d6884c9d2fb07444aa0ced95cfd94a14.m3u8",
+          "amount": 3824
+        },
+        {
+          "id": 6,
+          "title": "灌篮高手流川枫最终版",
+          "poster": "../../../static/images/module/1/snky_6.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/ff2ad291486a67d056e8835ee1f377ef.m3u8",
+          "amount": 4928
+        },
+        {
+          "id": 7,
+          "title": "灌篮高手三井寿最终版",
+          "poster": "../../../static/images/module/1/snky_7.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9b3a2d246ae2e3bb6ee5ccf0e2e586a9.m3u8",
+          "amount": 2938
+        },
+        {
+          "id": 8,
+          "title": "灌篮高手樱木花道最终版",
+          "poster": "../../../static/images/module/1/snky_8.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d9f35ae0d1fc111fa385852b8283e04c.m3u8",
+          "amount": 2742
+        },
+        {
+          "id": 9,
+          "title": "价格低颜值起飞",
+          "poster": "../../../static/images/module/1/snky_9.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/11ef87f1de63d483bb9ca0cf01735332.m3u8",
+          "amount": 3824
+        },
+        {
+          "id": 10,
+          "title": "价格起飞的球鞋有哪些特点，知道了能省不少",
+          "poster": "../../../static/images/module/1/snky_10.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/60c1b7452ad89a0c9cd0ba6cfcfe1018.m3u8",
+          "amount": 4928
+        },
+        {
+          "id": 11,
+          "title": "欧文上改",
+          "poster": "../../../static/images/module/1/snky_11.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/527a1f1c43fb04452213afd87c62b041.m3u8",
+          "amount": 2938
+        },
+        {
+          "id": 12,
+          "title": "欧文下改",
+          "poster": "../../../static/images/module/1/snky_12.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8a4338cef8cd5302b4ccb5b9dc8bb218.m3u8",
+          "amount": 2742
+        },
+        {
+          "id": 13,
+          "title": "勤工俭学",
+          "poster": "../../../static/images/module/1/snky_13.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a1b9066a80de6f87be72ba21693861eb.m3u8",
+          "amount": 4928
+        },
+        {
+          "id": 14,
+          "title": "球鞋恋爱",
+          "poster": "../../../static/images/module/1/snky_14.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8f49f35e9e9277b131bfaeb0899ff5dd.m3u8",
+          "amount": 2938
+        },
+        {
+          "id": 15,
+          "title": "水泥地杀手",
+          "poster": "../../../static/images/module/1/snky_15.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/07cb4027784e367da59b4b1c284125e1.m3u8",
+          "amount": 2742
+        },
+        {
+          "id": 16,
+          "title": "同框买鞋子",
+          "poster": "../../../static/images/module/1/snky_16.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/332bbb218405959675d97d512c8957d6.m3u8",
+          "amount": 3824
+        },
+        {
+          "id": 17,
+          "title": "兔八哥",
+          "poster": "../../../static/images/module/1/snky_17.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/b07b9d0690d60827a62e1019eb8156a1.m3u8",
+          "amount": 4928
+        },
+        {
+          "id": 18,
+          "title": "压到脚",
+          "poster": "../../../static/images/module/1/snky_18.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/69a82e23681edc931ca014b6c481fd90.m3u8",
+          "amount": 2938
+        },
+        {
+          "id": 19,
+          "title": "压岁鞋",
+          "poster": "../../../static/images/module/1/snky_19.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/69a82e23681edc931ca014b6c481fd90.m3u8",
+          "amount": 2742
+        },
+        {
+          "id": 20,
+          "title": "一不小心就飘了，再也不在这种人面前比鞋多了",
+          "poster": "../../../static/images/module/1/snky_20.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/de418407de75042454f5302b7212274f.m3u8",
+          "amount": 3824
         }]
       }, {
         "id": 2,
@@ -178,7 +316,246 @@
         "type": "video/mp4",
         "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7be00d94032db6d8499dae531bc33394.mp4",
         "amount": 3824
-      }]
+      },{
+        "id": 2,
+        "title": "ck小镇第二条",
+        "poster": "../../../static/images/module/5/lvwz_2.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/9f138597ca918099198d6f627931c646.mp4",
+        "amount": 3824
+      },{
+        "id": 3,
+        "title": "ck小镇第三条",
+        "poster": "../../../static/images/module/5/lvwz_3.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/a5f4db42d0aaf8f8bdca13d3f8532dc2.mp4",
+        "amount": 3824
+      },{
+        "id": 4,
+        "title": "大阪1",
+        "poster": "../../../static/images/module/5/lvwz_4.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/45318ac0f86af3cba0734d4d5bef7619.m3u8",
+        "amount": 3824
+      },{
+        "id": 5,
+        "title": "大阪2",
+        "poster": "../../../static/images/module/5/lvwz_5.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7be00d94032db6d8499dae531bc33394.mp4",
+        "amount": 3824
+      },{
+        "id": 6,
+        "title": "大阪3",
+        "poster": "../../../static/images/module/5/lvwz_6.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a36b98109f20979ba101afd4a8707f7a.m3u8",
+        "amount": 3824
+      },{
+        "id": 7,
+        "title": "大阪4",
+        "poster": "../../../static/images/module/5/lvwz_7.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/58f1a25367091465c5150328e9f4a1f1.m3u8",
+        "amount": 3824
+      },{
+        "id": 8,
+        "title": "大阪5",
+        "poster": "../../../static/images/module/5/lvwz_8.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/fa633098218d77779b7e97baf040633b.mp4",
+        "amount": 3824
+      },{
+        "id": 9,
+        "title": "大阪6",
+        "poster": "../../../static/images/module/5/lvwz_9.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/06f8a8de13c6e44176466978f14ababb.mp4",
+        "amount": 3824
+      },{
+        "id": 10,
+        "title": "大阪7",
+        "poster": "../../../static/images/module/5/lvwz_10.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9974b75657ba38e175c7353e338fd9ee.m3u8",
+        "amount": 3824
+      },{
+        "id": 11,
+        "title": "第八条心斋桥最新",
+        "poster": "../../../static/images/module/5/lvwz_11.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/0c61150bc87317f1fb8df6b4e677cf26.m3u8",
+        "amount": 3824
+      },{
+        "id": 12,
+        "title": "第九条烤肉",
+        "poster": "../../../static/images/module/5/lvwz_12.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/36531672f61a0dbab22266394af0e4c1.mp4",
+        "amount": 3824
+      },{
+        "id": 13,
+        "title": "第十二条加板子",
+        "poster": "../../../static/images/module/5/lvwz_13.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6a236f737bf8d74d462697e99531d8aa.mp4",
+        "amount": 3824
+      },{
+        "id": 14,
+        "title": "第十六条",
+        "poster": "../../../static/images/module/5/lvwz_14.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/cd38fd88b7135a1c329c69763d8a70b6.mp4",
+        "amount": 3824
+      },{
+        "id": 15,
+        "title": "第十三条",
+        "poster": "../../../static/images/module/5/lvwz_15.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/899d6f5a27317317e40b86e0edcc4db2.m3u8",
+        "amount": 3824
+      },{
+        "id": 16,
+        "title": "第十四条",
+        "poster": "../../../static/images/module/5/lvwz_16.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1284f49d939b047577e7ec80b99a4580.m3u8",
+        "amount": 3824
+      },{
+        "id": 17,
+        "title": "第十条",
+        "poster": "../../../static/images/module/5/lvwz_17.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/aba5cade6ba37823659a5da630d12fbe.m3u8",
+        "amount": 3824
+      },{
+        "id": 18,
+        "title": "第十五条",
+        "poster": "../../../static/images/module/5/lvwz_18.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/828af21e59a6c00f661fa873b21ea998.m3u8",
+        "amount": 3824
+      },{
+        "id": 19,
+        "title": "第十一条",
+        "poster": "../../../static/images/module/5/lvwz_19.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/74691e03cab51684749cd89b51f183f8.mp4",
+        "amount": 3824
+      },{
+        "id": 20,
+        "title": "韩国1",
+        "poster": "../../../static/images/module/5/lvwz_20.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8d662a25c57e431862c1e9d8185a64d7.m3u8",
+        "amount": 3824
+      },{
+        "id": 21,
+        "title": "韩国3",
+        "poster": "../../../static/images/module/5/lvwz_21.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/d94c3a46522452364a0a9fc4e240cfc9.mp4",
+        "amount": 3824
+      },{
+        "id": 22,
+        "title": "韩国4",
+        "poster": "../../../static/images/module/5/lvwz_22.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/1f1ea019b65889fba2f15f3bd25b0660.mp4",
+        "amount": 3824
+      },{
+        "id": 23,
+        "title": "韩国6",
+        "poster": "../../../static/images/module/5/lvwz_23.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/30a0f9ab02ef9a924a1db268d28c2026.m3u8",
+        "amount": 3824
+      },{
+        "id": 24,
+        "title": "韩国7",
+        "poster": "../../../static/images/module/5/lvwz_24.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/22be5d30c85c188c4ff4a3dfa5d1dd9c.m3u8",
+        "amount": 3824
+      },{
+        "id": 25,
+        "title": "韩国8",
+        "poster": "../../../static/images/module/5/lvwz_25.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6ae9d9ec8e998a3d78f7a81aa9ea3c99.mp4",
+        "amount": 3824
+      },{
+        "id": 26,
+        "title": "韩国shopping5",
+        "poster": "../../../static/images/module/5/lvwz_26.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/18ad5b6e704a8e9dc879367956b4cc2b.m3u8",
+        "amount": 3824
+      },{
+        "id": 27,
+        "title": "韩国攻略上",
+        "poster": "../../../static/images/module/5/lvwz_27.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/862344f660bbd1863ae60f1e5f06577a.mp4",
+        "amount": 3824
+      },{
+        "id": 28,
+        "title": "韩国攻略下",
+        "poster": "../../../static/images/module/5/lvwz_28.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/55bf11580a8e37e31139324cffc0f763.m3u8",
+        "amount": 3824
+      },{
+        "id": 29,
+        "title": "一分钟布拉格1",
+        "poster": "../../../static/images/module/5/lvwz_29.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/d1557d216df942416eea4c94d8936f86.mp4",
+        "amount": 3824
+      },{
+        "id": 30,
+        "title": "一分钟布拉格2",
+        "poster": "../../../static/images/module/5/lvwz_30.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/e1e11778587f4015083fc9ab24b528ee.mp4",
+        "amount": 3824
+      },{
+        "id": 31,
+        "title": "一分钟布拉格3",
+        "poster": "../../../static/images/module/5/lvwz_31.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/aa2647349d0ba820a27c506f84dcfaa9.mp4",
+        "amount": 3824
+      },{
+        "id": 32,
+        "title": "攻略上",
+        "poster": "../../../static/images/module/5/lvwz_32.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b7af716585678b04d7d053f2cccf9399.mp4",
+        "amount": 3824
+      },{
+        "id": 33,
+        "title": "攻略下",
+        "poster": "../../../static/images/module/5/lvwz_33.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/bdcbabfd1b3f503ec8eee351f6221a90.mp4",
+        "amount": 3824
+      },{
+        "id": 34,
+        "title": "香港出行篇",
+        "poster": "../../../static/images/module/5/lvwz_34.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/ba8532194316f5cfa8d0c611bc674f9e.mp4",
+        "amount": 3824
+      },{
+        "id": 35,
+        "title": "韩国222",
+        "poster": "../../../static/images/module/5/lvwz_35.jpg",
+        "type": "video/mp4",
+        "video_url": "hhttps://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/f95c5a7368192f0e04511f600ed6adf7.mp4",
+        "amount": 3824
+      }
+    ]
     }, {
       "id": 5,
       "name": "搞笑",
@@ -186,10 +563,164 @@
       "isMulti": false,
       "data": [{
         "id": 1,
-        "title": "冷笑话-1",
+        "title": "东京西京",
         "poster": "../../../static/images/module/7/lxy_1.jpg",
         "type": "application/x-mpegURL",
-        "video_url": "",
+        "video_url": "https://38917.longvod.cdn.aodianyun.com/u/38917/m3u8/adaptive/64f7e9f22715bb9ce74b856a63c1f543.m3u8",
+        "amount": 3824
+      },{
+        "id": 2,
+        "title": "麋鹿迷路",
+        "poster": "../../../static/images/module/7/lxy_2.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/b12eb6b6f12a65fce315fbb901588652.m3u8",
+        "amount": 3824
+      },{
+        "id": 3,
+        "title": "小叮当",
+        "poster": "../../../static/images/module/7/lxy_3.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9326e0157ece4e3df8b79424e2773a12.m3u8",
+        "amount": 3824
+      },{
+        "id": 4,
+        "title": "小猪佩奇",
+        "poster": "../../../static/images/module/7/lxy_4.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.longvod.cdn.aodianyun.com/u/38917/m3u8/adaptive/64f7e9f22715bb9ce74b856a63c1f543.m3u8",
+        "amount": 3824
+      },{
+        "id": 5,
+        "title": "鸦雀无声",
+        "poster": "../../../static/images/module/7/lxy_5.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/60331496df5c6f84643439a6fff02a69.mp4",
+        "amount": 3824
+      },{
+        "id": 6,
+        "title": "姜将将将",
+        "poster": "../../../static/images/module/7/lxy_6.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/36d7ab47f23ba71ace19f7342924390e.m3u8",
+        "amount": 3824
+      },{
+        "id": 7,
+        "title": "朋友医生一起走",
+        "poster": "../../../static/images/module/7/lxy_7.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9e96ab841579d1cab140ee9a906a8e4f.m3u8",
+        "amount": 3824
+      },{
+        "id": 8,
+        "title": "变鸭器定定",
+        "poster": "../../../static/images/module/7/lxy_8.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6878bc21c8144f058ac2d435f357673b.m3u8",
+        "amount": 3824
+      },{
+        "id": 9,
+        "title": "地铁狼吃羊",
+        "poster": "../../../static/images/module/7/lxy_9.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/90a1a98518c61815d8d04634ae2a6f31.m3u8",
+        "amount": 3824
+      },{
+        "id": 10,
+        "title": "蚕宝宝",
+        "poster": "../../../static/images/module/7/lxy_10.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1c1827b16d4ece8bbf509a3184ea5e6c.m3u8",
+        "amount": 3824
+      },{
+        "id": 11,
+        "title": "牛排",
+        "poster": "../../../static/images/module/7/lxy_11.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/531187ac4f26184be27150d386fd1d4c.m3u8",
+        "amount": 3824
+      },{
+        "id": 12,
+        "title": "地铁美爆了",
+        "poster": "../../../static/images/module/7/lxy_12.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6e2fd72d31f0c7049758462454998507.m3u8",
+        "amount": 3824
+      },{
+        "id": 13,
+        "title": "小白兔",
+        "poster": "../../../static/images/module/7/lxy_13.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/859852489619af5b507c2443938ebee1.m3u8",
+        "amount": 3824
+      },{
+        "id": 14,
+        "title": "秘籍恐惧症",
+        "poster": "../../../static/images/module/7/lxy_14.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/0cdba6f4707a451c074bb0e6fd2614b6.m3u8",
+        "amount": 3824
+      },{
+        "id": 15,
+        "title": "汽水",
+        "poster": "../../../static/images/module/7/lxy_15.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/b7affc83544c59953a51692e95658c5b.m3u8",
+        "amount": 3824
+      },{
+        "id": 16,
+        "title": "蛋糕店",
+        "poster": "../../../static/images/module/7/lxy_16.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/0310dfbf7ef22c5b42fe00ecdadd713a.m3u8",
+        "amount": 3824
+      },{
+        "id": 17,
+        "title": "小鱼大鱼",
+        "poster": "../../../static/images/module/7/lxy_17.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/27a08c835f9c85f32655c0e7c3d884cc.m3u8",
+        "amount": 3824
+      },{
+        "id": 18,
+        "title": "咚咚咚咚锵",
+        "poster": "../../../static/images/module/7/lxy_18.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.longvod.cdn.aodianyun.com/u/38917/m3u8/adaptive/fc9bb43f541da8e3260ea2fa6de9ded9.m3u8",
+        "amount": 3824
+      },{
+        "id": 19,
+        "title": "水手关灯定",
+        "poster": "../../../static/images/module/7/lxy_19.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.longvod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8a46f71a1d1966747fa81634b75bdc0c.m3u8",
+        "amount": 3824
+      },{
+        "id": 20,
+        "title": "踩到柠檬",
+        "poster": "../../../static/images/module/7/lxy_20.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/b65b2861cec47566408dcdf834053e7c.m3u8",
+        "amount": 3824
+      },{
+        "id": 21,
+        "title": "有一只骆驼",
+        "poster": "../../../static/images/module/7/lxy_2.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d46668156d12e8bbdcfadde30b5108fc.m3u8",
+        "amount": 3824
+      },{
+        "id": 22,
+        "title": "ABCD",
+        "poster": "../../../static/images/module/7/lxy_3.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a1819069ea8394558a1ae92d8d64cba2.m3u8",
+        "amount": 3824
+      },{
+        "id": 23,
+        "title": "鸽子藏在哪",
+        "poster": "../../../static/images/module/7/lxy_4.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/812a7a7bc76aa859d6850ccc32c7c0f5.m3u8",
         "amount": 3824
       }]
     }, {
@@ -222,6 +753,223 @@
           "type": "application/x-mpegURL",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f9adb73b2d769581509eb73d9d0d2c9e.m3u8",
           "amount": 2938
+        },{
+          "id": 4,
+          "title": "乞丐还怀疑动机",
+          "poster": "../../../static/images/module/8/gdx_4.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/56a006e4b539215933e1c47e4e3a37de.m3u8",
+          "amount": 3824
+        }, {
+          "id": 5,
+          "title": "不要阴影要阳光",
+          "poster": "../../../static/images/module/8/gdx_5.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7530b151d1ee3c5f5a579601ad71741e.m3u8",
+          "amount": 4928
+        }, {
+          "id": 6,
+          "title": "孩子最害怕的是什么？",
+          "poster": "../../../static/images/module/8/gdx_6.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/e103b3ed774835b55eadd9c110b0a373.m3u8",
+          "amount": 2938
+        },{
+          "id": 7,
+          "title": "如果你恨一个人",
+          "poster": "../../../static/images/module/8/gdx_7.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/81f3d276faa01a7897e412a99abee26f.mp4",
+          "amount": 3824
+        }, {
+          "id": 8,
+          "title": "前任2",
+          "poster": "../../../static/images/module/8/gdx_8.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1ee85d34687b2e5b76b71c6216c94919.m3u8",
+          "amount": 4928
+        }, {
+          "id": 9,
+          "title": "前任3",
+          "poster": "../../../static/images/module/8/gdx_9.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/5588800ef63485919b65185963462d15.m3u8",
+          "amount": 2938
+        },{
+          "id": 10,
+          "title": "前任4",
+          "poster": "../../../static/images/module/8/gdx_10.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/04f434a11048f9d863af4029738b37dd.m3u8",
+          "amount": 3824
+        }, {
+          "id": 11,
+          "title": "曙光",
+          "poster": "../../../static/images/module/8/gdx_11.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a091447b84cdf04f30d2cbbd23923a88.m3u8",
+          "amount": 4928
+        }, {
+          "id": 12,
+          "title": "痛苦有价值",
+          "poster": "../../../static/images/module/8/gdx_12.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7f93090e117abff9ff9b15027e3a6673.m3u8",
+          "amount": 2938
+        }, {
+          "id": 13,
+          "title": "承受打击",
+          "poster": "../../../static/images/module/8/gdx_13.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d9f207a481e499a8e5240f2e5d8674ac.m3u8",
+          "amount": 2938
+        },{
+          "id": 14,
+          "title": "小心蝴蝶",
+          "poster": "../../../static/images/module/8/gdx_14.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/08edca845ad9f51500a83b15e658be29.mp4",
+          "amount": 3824
+        }, {
+          "id": 15,
+          "title": "时间用完了",
+          "poster": "../../../static/images/module/8/gdx_15.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/595ade5fc8975634990f6da75cf0332d.m3u8",
+          "amount": 4928
+        }, {
+          "id": 16,
+          "title": "难能可贵",
+          "poster": "../../../static/images/module/8/gdx_16.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/33673090f468498e2c29755995a6a9a0.m3u8",
+          "amount": 2938
+        },{
+          "id": 17,
+          "title": "做自己",
+          "poster": "../../../static/images/module/8/gdx_17.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/b23f89a993cf57f6ba0c486142018936.m3u8",
+          "amount": 3824
+        }, {
+          "id": 18,
+          "title": "你是鱼刺",
+          "poster": "../../../static/images/module/8/gdx_18.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2304e9c5935a1f6e761411eebcda4db0.m3u8",
+          "amount": 4928
+        }, {
+          "id": 19,
+          "title": "为你亮灯的人",
+          "poster": "../../../static/images/module/8/gdx_19.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/adffba8f77baaf9be2dd5d4b778e29c8.m3u8",
+          "amount": 2938
+        },{
+          "id": 20,
+          "title": "苏格拉底",
+          "poster": "../../../static/images/module/8/gdx_20.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/bc2d439f209f867505f260de7ea126fe.m3u8",
+          "amount": 3824
+        },{
+          "id": 21,
+          "title": "给你教训的人",
+          "poster": "../../../static/images/module/8/gdx_21.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f2af69c20c3decdb5f3e8298fb3845ae.m3u8",
+          "amount": 3824
+        }, {
+          "id": 22,
+          "title": "是糖不是药",
+          "poster": "../../../static/images/module/8/gdx_22.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/c50fe20d3623aab1a7e42db9b97f54e0.m3u8",
+          "amount": 4928
+        }, {
+          "id": 23,
+          "title": "岁钱归谁",
+          "poster": "../../../static/images/module/8/gdx_23.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/3dd7b3074b20e95cb54c0fb7b4467c96.m3u8",
+          "amount": 2938
+        },{
+          "id": 24,
+          "title": "好瓜 坏瓜",
+          "poster": "../../../static/images/module/8/gdx_24.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d13e4085400c4143cf1724512403ecee.m3u8",
+          "amount": 3824
+        }, {
+          "id": 25,
+          "title": "正的强者",
+          "poster": "../../../static/images/module/8/gdx_25.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f24b2180b9036d77466f735c1595a0c8.m3u8",
+          "amount": 4928
+        }, {
+          "id": 26,
+          "title": "真爱对方",
+          "poster": "../../../static/images/module/8/gdx_26.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7bda67f123df0c4350fa34f85e134280.m3u8",
+          "amount": 2938
+        },{
+          "id": 27,
+          "title": "去前女友父母家拜年",
+          "poster": "../../../static/images/module/8/gdx_27.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/00eafc83fa11289369f26c822f57a370.m3u8",
+          "amount": 3824
+        }, {
+          "id": 28,
+          "title": "年夜饭",
+          "poster": "../../../static/images/module/8/gdx_28.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/046eebcc6e75799dc12e6414d46f2a68.m3u8",
+          "amount": 4928
+        }, {
+          "id":29,
+          "title": "告诉对方",
+          "poster": "../../../static/images/module/8/gdx_29.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/037692f7f6f1ced5f217ce0fa4469d0a.m3u8",
+          "amount": 2938
+        },{
+          "id": 30,
+          "title": "耐心了解别人想法",
+          "poster": "../../../static/images/module/8/gdx_30.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8e660614cc2dd39fe23c66acc151dc08.m3u8",
+          "amount": 3824
+        },{
+          "id": 31,
+          "title": "厉害的老外3",
+          "poster": "../../../static/images/module/8/gdx_31.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/00eafc83fa11289369f26c822f57a370.m3u8",
+          "amount": 3824
+        }, {
+          "id": 32,
+          "title": "夫妻相处",
+          "poster": "../../../static/images/module/8/gdx_32.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8bd956ad165bad2e35ecea461abf236f.m3u8",
+          "amount": 4928
+        }, {
+          "id":33,
+          "title": "去前女友父母家拜年",
+          "poster": "../../../static/images/module/8/gdx_33.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/3e2cc63571e2837d8724848b6e76c4c2.m3u8",
+          "amount": 2938
+        },{
+          "id": 34,
+          "title": "羊“敢动不敢动”",
+          "poster": "../../../static/images/module/8/gdx_34.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/481d103391d0a7d2190618192ad5e2aa.m3u8",
+          "amount": 3824
         }]
       }, {
         "id": 2,
@@ -234,19 +982,243 @@
           "type": "video/mp4",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/35652b3879534d41320a1282c7a20fed.mp4",
           "amount": 833
-        }, {
+        },{
           "id": 2,
           "title": "带妹高手 第2话",
           "poster": "../../../static/images/module/9/mlxs_2.jpg",
           "type": "video/mp4",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/4c3a18b9cb97f3bdc3d7efc676960133.mp4",
           "amount": 3414
-        }, {
+        },{
           "id": 3,
           "title": "带妹高手 第3话",
           "poster": "../../../static/images/module/9/mlxs_3.jpg",
           "type": "video/mp4",
           "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/753914f31cf9566f12626bcadb35ae37.mp4",
+          "amount": 2616
+        },{
+          "id": 4,
+          "title": "带妹高手 第4话",
+          "poster": "../../../static/images/module/9/mlxs_4.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/fa39e2492c0a7d6bec7caf625ed606d6.m3u8",
+          "amount": 833
+        },{
+          "id": 5,
+          "title": "霸道男友如何相处",
+          "poster": "../../../static/images/module/9/mlxs_5.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/2262d098a1ff14d43b324417779dd678.mp4",
+          "amount": 3414
+        },{
+          "id": 6,
+          "title": "比悲伤更悲伤的故事",
+          "poster": "../../../static/images/module/9/mlxs_6.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/be40145b7e72cbb6e1d8fe7c92ca13c8.m3u8",
+          "amount": 2616
+        },{
+          "id": 7,
+          "title": "分手后还能做朋友吗",
+          "poster": "../../../static/images/module/9/mlxs_7.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a4c8fafddc8e04340240e47b11cb1134.m3u8",
+          "amount": 833
+        },{
+          "id": 8,
+          "title": "猫系男友如何相处",
+          "poster": "../../../static/images/module/9/mlxs_8.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/ebe3579e0c0c0f58812903ca67c120d4.mp4",
+          "amount": 3414
+        },{
+          "id": 9,
+          "title": "男生喜欢你的四个表现",
+          "poster": "../../../static/images/module/9/mlxs_9.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/f66982b540cd482a14aac0b6f68f04e2.mp4",
+          "amount": 2616
+        },{
+          "id": 10,
+          "title": "喜欢你的人爱意是藏不住的",
+          "poster": "../../../static/images/module/9/mlxs_10.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2bd1e9e36c04854529b92d50f6f611fc.m3u8",
+          "amount": 833
+        },{
+          "id": 11,
+          "title": "尖叫吧！小酥1",
+          "poster": "../../../static/images/module/9/mlxs_11.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b4379077d2c11615de978805903eeb94.mp4",
+          "amount": 3414
+        },{
+          "id": 12,
+          "title": "尖叫吧！小酥2",
+          "poster": "../../../static/images/module/9/mlxs_12.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8adfb9a5b4fdb8aa08c25a52dbefb501.mp4",
+          "amount": 2616
+        },{
+          "id": 13,
+          "title": "尖叫吧！小酥3",
+          "poster": "../../../static/images/module/9/mlxs_13.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6128bb689bfd1b5dcc5e58f11bd4eb49.mp4",
+          "amount": 2616
+        },{
+          "id": 14,
+          "title": "尖叫吧！小酥4",
+          "poster": "../../../static/images/module/9/mlxs_14.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f93e517ffae75e1ebc8c4745cd448513.m3u8",
+          "amount": 833
+        },{
+          "id": 15,
+          "title": "尖叫吧！小酥5",
+          "poster": "../../../static/images/module/9/mlxs_15.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/065ea4e843f15d05f286f1d7d7a7ee09.m3u8",
+          "amount": 3414
+        },{
+          "id": 16,
+          "title": "尖叫吧！小酥6",
+          "poster": "../../../static/images/module/9/mlxs_16.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1582f2bbef96420ce948d724cc89a184.m3u8",
+          "amount": 2616
+        },{
+          "id": 17,
+          "title": "流星雨 第1话",
+          "poster": "../../../static/images/module/9/mlxs_17.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/2681aa600c4df09278119d262b910a78.mp4",
+          "amount": 833
+        },{
+          "id": 18,
+          "title": "流星雨 第2话",
+          "poster": "../../../static/images/module/9/mlxs_18.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/132b415ae8e41546c48a4d867f9e3fc6.m3u8",
+          "amount": 3414
+        },{
+          "id": 19,
+          "title": "流星雨 第3话",
+          "poster": "../../../static/images/module/9/mlxs_19.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a185926281c27e9c2aad65e416a84e6c.m3u8",
+          "amount": 2616
+        },{
+          "id": 20,
+          "title": "流星雨 第4话",
+          "poster": "../../../static/images/module/9/mlxs_20.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a32f2f62511841c381fb11ef1347ac5b.m3u8",
+          "amount": 833
+        },{
+          "id": 21,
+          "title": "流星雨 第5话",
+          "poster": "../../../static/images/module/9/mlxs_21.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/828e216064c9c42d127eff2dba59fa3e.m3u8",
+          "amount": 3414
+        },{
+          "id": 22,
+          "title": "流星雨 第6话",
+          "poster": "../../../static/images/module/9/mlxs_22.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7e659124ffd58614c932433b753c9c40.m3u8",
+          "amount": 2616
+        },{
+          "id": 23,
+          "title": "流星雨 第7话",
+          "poster": "../../../static/images/module/9/mlxs_23.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d2ec359f194a492b828d68a5395e6f64.m3u8",
+          "amount": 2616
+        },{
+          "id": 24,
+          "title": "流星雨 第8话",
+          "poster": "../../../static/images/module/9/mlxs_24.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/09e510870dd687c52346e01665378d44.m3u8",
+          "amount": 833
+        },{
+          "id": 25,
+          "title": "流星雨 第9话",
+          "poster": "../../../static/images/module/9/mlxs_25.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/3ba7b927c7a373cefc5baedd71a9e26f.mp4",
+          "amount": 3414
+        },{
+          "id": 26,
+          "title": "流星雨 结局1",
+          "poster": "../../../static/images/module/9/mlxs_26.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/12e5ae5fcc74aa16cd20ad6709eb30ea.mp4",
+          "amount": 2616
+        },{
+          "id": 27,
+          "title": "流星雨 结局2",
+          "poster": "../../../static/images/module/9/mlxs_27.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/113296b18b66b5da4173ff7f87ab3279.mp4",
+          "amount": 833
+        },{
+          "id": 28,
+          "title": "仙人掌女孩 第1话",
+          "poster": "../../../static/images/module/9/mlxs_28.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/994f847005c88948e27407c5c5a77e49.m3u8",
+          "amount": 3414
+        },{
+          "id": 29,
+          "title": "仙人掌女孩 第2话",
+          "poster": "../../../static/images/module/9/mlxs_29.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/aaac6f85e92d84fd84dae30044c80c31.m3u8",
+          "amount": 2616
+        },{
+          "id": 30,
+          "title": "仙人掌女孩 第3话",
+          "poster": "../../../static/images/module/9/mlxs_30.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2e23bbcbcf29ee582142663b1cc522f2.m3u8",
+          "amount": 833
+        },{
+          "id": 31,
+          "title": "仙人掌女孩 第4话",
+          "poster": "../../../static/images/module/9/mlxs_31.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6603e59433108be081e2535f495a6b20.m3u8",
+          "amount": 3414
+        },{
+          "id": 32,
+          "title": "仙人掌女孩 第5话",
+          "poster": "../../../static/images/module/9/mlxs_32.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8cf4bf2f220bd2020a4893348094ae25.m3u8",
+          "amount": 2616
+        },{
+          "id": 33,
+          "title": "仙人掌女孩 第6话",
+          "poster": "../../../static/images/module/9/mlxs_33.jpg",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/96120f2bdf9da8499d1caad8c3f73a90.m3u8",
+          "amount": 833
+        },{
+          "id": 34,
+          "title": "仙人掌女孩 第7话",
+          "poster": "../../../static/images/module/9/mlxs_34.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/b8ae3ea2ba36dc229426e9adce6c2e76.mp4",
+          "amount": 3414
+        },{
+          "id": 35,
+          "title": "仙人掌女孩 第8话",
+          "poster": "../../../static/images/module/9/mlxs_35.jpg",
+          "type": "video/mp4",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7eed0168a941415786b0803ba84bb392.mp4",
           "amount": 2616
         }]
       }]
@@ -262,6 +1234,244 @@
         "type": "application/x-mpegURL",
         "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/60b7a93c08a529e33be68cc07b5f29af.m3u8",
         "amount": 3824
+      },{
+        "id": 2,
+        "title": "彩虹豆跳舞",
+        "poster": "../../../static/images/module/10/fktx_2.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/418687347c556a07f7fe2b0365da80c6.m3u8",
+        "amount": 3824
+      },{
+        "id": 3,
+        "title": "插队",
+        "poster": "../../../static/images/module/10/fktx_3.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/88ecb886c10c0aa0d97ab28786bbe1d7.m3u8",
+        "amount": 3824
+      },{
+        "id": 4,
+        "title": "大黄蜂买买买",
+        "poster": "../../../static/images/module/10/fktx_4.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/e482d103d9bea210d46f7528e74c5e67.m3u8",
+        "amount": 3824
+      },{
+        "id": 5,
+        "title": "大黄蜂汽车变形",
+        "poster": "../../../static/images/module/10/fktx_5.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/e5542840150002c0cb33e26fc9711c14.m3u8",
+        "amount": 3824
+      },{
+        "id": 6,
+        "title": "大黄蜂水冰月跳舞",
+        "poster": "../../../static/images/module/10/fktx_6.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/bea7c2812118cc61f17c2866166cf2b2.m3u8",
+        "amount": 3824
+      },{
+        "id": 7,
+        "title": "大楼变气球撩妹",
+        "poster": "../../../static/images/module/10/fktx_7.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/76e5260631fc544d8705c7aac47964d3.m3u8",
+        "amount": 3824
+      },{
+        "id": 8,
+        "title": "大楼变气球撩妹·合拍版",
+        "poster": "../../../static/images/module/10/fktx_8.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/10c4bba84fe69c77c23731f39695bbfa.m3u8",
+        "amount": 3824
+      },{
+        "id": 9,
+        "title": "懂车帝 第六版",
+        "poster": "../../../static/images/module/10/fktx_9.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/ece866caadc1f762d7da35815108b622.m3u8",
+        "amount": 3824
+      },{
+        "id": 10,
+        "title": "嘟啦舞",
+        "poster": "../../../static/images/module/10/fktx_10.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/32f0fb5dcec40a564c955f865e352d96.m3u8",
+        "amount": 3824
+      },{
+        "id": 11,
+        "title": "oppo手机抢车位",
+        "poster": "../../../static/images/module/10/fktx_11.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2334e5fb608be0c5c4939c56462e59ba.m3u8",
+        "amount": 3824
+      },{
+        "id": 12,
+        "title": "多力多滋薯片",
+        "poster": "../../../static/images/module/10/fktx_12.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f199d658673b8e83c0a9d87d2f188283.m3u8",
+        "amount": 3824
+      },{
+        "id": 13,
+        "title": "乐事大波浪薯片",
+        "poster": "../../../static/images/module/10/fktx_13.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/c7f99b40289d24d6f459e076d76ecf9e.m3u8",
+        "amount": 3824
+      },{
+        "id": 14,
+        "title": "陆风汽车",
+        "poster": "../../../static/images/module/10/fktx_14.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a42b4287d8ea06e88614635798d3617b.m3u8",
+        "amount": 3824
+      },{
+        "id": 15,
+        "title": "喜力啤酒",
+        "poster": "../../../static/images/module/10/fktx_15.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9a2f01d825833b83e5b2d19e8bf56de3.m3u8",
+        "amount": 3824
+      },{
+        "id": 16,
+        "title": "肌肉男pk绿巨人",
+        "poster": "../../../static/images/module/10/fktx_16.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/608b6dbe2200dda5500707900e47b6e4.m3u8",
+        "amount": 3824
+      },{
+        "id": 17,
+        "title": "肌肉男pk小奶狗",
+        "poster": "../../../static/images/module/10/fktx_17.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/6bcaa2e01b42b8841a48494a9a32b1cf.m3u8",
+        "amount": 3824
+      },{
+        "id": 18,
+        "title": "禁烟",
+        "poster": "../../../static/images/module/10/fktx_18.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9b7b360ce7d471a9efb5a383c7962004.m3u8",
+        "amount": 3824
+      },{
+        "id": 19,
+        "title": "卡车变形",
+        "poster": "../../../static/images/module/10/fktx_19.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/077ff7087e5f783fc9430efe84da05be.m3u8",
+        "amount": 3824
+      },{
+        "id": 20,
+        "title": "开车舞",
+        "poster": "../../../static/images/module/10/fktx_20.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/84cf23f60b39e7aa5f1e6a1096df85c3.m3u8",
+        "amount": 3824
+      },{
+        "id": 21,
+        "title": "拉飞机",
+        "poster": "../../../static/images/module/10/fktx_21.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/aa37cfb24634cc049ad9678357b541e7.m3u8",
+        "amount": 3824
+      },{
+        "id": 22,
+        "title": "漫威雷神壁纸",
+        "poster": "../../../static/images/module/10/fktx_22.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/80ce017c93a1f506cc2d82d5399cf5c8.m3u8",
+        "amount": 3824
+      },{
+        "id": 23,
+        "title": "玫瑰花墙",
+        "poster": "../../../static/images/module/10/fktx_23.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/7a2650d16dae5830c140d808a82591fa.mp4",
+        "amount": 3824
+      },{
+        "id": 24,
+        "title": "世界杯酒杯撩妹",
+        "poster": "../../../static/images/module/10/fktx_24.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/642c9755e736bd53d721e33ec07a11c8.mp4",
+        "amount": 3824
+      },{
+        "id": 25,
+        "title": "世界杯足球",
+        "poster": "../../../static/images/module/10/fktx_25.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/5f274b65b3833942158dd0f719054606.mp4",
+        "amount": 3824
+      },{
+        "id": 26,
+        "title": "双十一口红",
+        "poster": "../../../static/images/module/10/fktx_26.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/6872fe7af2a0b7ff9706409a3be52570.mp4",
+        "amount": 3824
+      },{
+        "id": 27,
+        "title": "水龙",
+        "poster": "../../../static/images/module/10/fktx_27.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/4eae0d7db3d9b3ff14e42e7346303c3f.mp4",
+        "amount": 3824
+      },{
+        "id": 28,
+        "title": "泰坦尼克号女友分手",
+        "poster": "../../../static/images/module/10/fktx_28.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f61f89d9c90d6f9235fe4b45a8bb41d9.m3u8",
+        "amount": 3824
+      },{
+        "id": 29,
+        "title": "铁皮系列片二 停车场被打",
+        "poster": "../../../static/images/module/10/fktx_29.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/1e112c6b40cc180ff31dd8f62615a6ea.m3u8",
+        "amount": 3824
+      },{
+        "id": 30,
+        "title": "铁皮系列片三 篮球樱木",
+        "poster": "../../../static/images/module/10/fktx_30.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/32f0fb5dcec40a564c955f865e352d96.m3u8",
+        "amount": 3824
+      },{
+        "id": 31,
+        "title": "铁皮系列片一 铁皮变车",
+        "poster": "../../../static/images/module/10/fktx_31.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/28028bdfef2f793113fed6f723171d0f.m3u8",
+        "amount": 3824
+      },{
+        "id": 32,
+        "title": "铁皮系列片三 篮球樱木",
+        "poster": "../../../static/images/module/10/fktx_32.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/32f0fb5dcec40a564c955f865e352d96.m3u8",
+        "amount": 3824
+      },{
+        "id": 33,
+        "title": "万圣节南瓜灯",
+        "poster": "../../../static/images/module/10/fktx_33.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8f94d32125d40c73df69800ee09cceaa.mp4",
+        "amount": 3824
+      },{
+        "id": 34,
+        "title": "微博 挑战舞蹈",
+        "poster": "../../../static/images/module/10/fktx_34.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/88d1134c1467b846d0d1a75729001aa4.mp4",
+        "amount": 3824
+      },{
+        "id": 35,
+        "title": "下掉 教师节",
+        "poster": "../../../static/images/module/10/fktx_35.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/00725def97bfcd22350d0815dcc8ef46.mp4",
+        "amount": 3824
       }]
     }, {
       "id": 8,
@@ -271,9 +1481,247 @@
       "data": [{
         "id": 1,
         "title": "冰棒棍玩出新花样",
-        "poster": "",
+        "poster": "../../../static/images/module/12/dxxsh_1.jpg",
         "type": "application/x-mpegURL",
-        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/5aa4bd83a0b06431854d36ff589e5543.m3u8",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/9a3958f1321f06413b32eccd15793d20.m3u8",
+        "amount": 3824
+      },{
+        "id": 2,
+        "title": "橙子的花样吃法",
+        "poster": "../../../static/images/module/12/dxxsh_2.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a646198e9c507ed7334489a7a6a54930.m3u8",
+        "amount": 3824
+      },{
+        "id": 3,
+        "title": "吃大闸蟹的妙招",
+        "poster": "../../../static/images/module/12/dxxsh_3.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/a646198e9c507ed7334489a7a6a54930.m3u8",
+        "amount": 3824
+      },{
+        "id": 4,
+        "title": "短秀新生活（川味鸡丝凉面）",
+        "poster": "../../../static/images/module/12/dxxsh_4.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/20392ffd82c9329a0582cdf8d189940b.m3u8",
+        "amount": 3824
+      },{
+        "id": 5,
+        "title": "短秀新生活（废旧矿泉水瓶做高脚杯）",
+        "poster": "../../../static/images/module/12/dxxsh_5.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/dbdfd8cec1c89d9c6be9ed2279497125.m3u8",
+        "amount": 3824
+      },{
+        "id": 6,
+        "title": "短秀新生活（废旧啤酒瓶盖的妙用）",
+        "poster": "../../../static/images/module/12/dxxsh_6.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/11077ebed1451102043163ccb7bc5212.m3u8",
+        "amount": 3824
+      },{
+        "id": 7,
+        "title": "短秀新生活（废旧丝袜的妙用）",
+        "poster": "../../../static/images/module/12/dxxsh_7.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/0c4a15aa1a862d9d639942bdfc9116d4.m3u8",
+        "amount": 3824
+      },{
+        "id": 8,
+        "title": "短秀新生活（关于手机的妙招）",
+        "poster": "../../../static/images/module/12/dxxsh_8.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/3a6ab8dcf324cb5cf87fb9718fcc5267.m3u8",
+        "amount": 3824
+      },{
+        "id": 9,
+        "title": "短秀新生活（锅盖收纳法）",
+        "poster": "../../../static/images/module/12/dxxsh_9.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/082ed1598ea5969d79485ec9268192fb.m3u8",
+        "amount": 3824
+      },{
+        "id": 10,
+        "title": "短秀新生活（行李箱收纳妙招）",
+        "poster": "../../../static/images/module/12/dxxsh_10.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/08b3a43d9bf14e9313a7452bc8986a31.m3u8",
+        "amount": 3824
+      },{
+        "id": 11,
+        "title": "短秀新生活（饺子皮鸡蛋饼）",
+        "poster": "../../../static/images/module/12/dxxsh_11.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/0e6ccdcd0f7eea241f6b78688b2b3111.m3u8",
+        "amount": 3824
+      },{
+        "id": 12,
+        "title": "短秀新生活（饺子皮做网红扯面）",
+        "poster": "../../../static/images/module/12/dxxsh_12.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/142d8a6203b6a61550c6c88a622c6115.m3u8",
+        "amount": 3824
+      },{
+        "id": 13,
+        "title": "短秀新生活（教练教学，如何训练心肺功能）",
+        "poster": "../../../static/images/module/12/dxxsh_13.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2e5a2c6fd59860f900ef771ce065fdcb.m3u8",
+        "amount": 3824
+      },{
+        "id": 14,
+        "title": "短秀新生活（教学如何纠正圆肩驼背）",
+        "poster": "../../../static/images/module/12/dxxsh_14.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/4bcb5a23e4088eebd75e0af291a9fcba.m3u8",
+        "amount": 3824
+      },{
+        "id": 15,
+        "title": "短秀新生活（旧衣改造，短裙变露肩上衣）",
+        "poster": "../../../static/images/module/12/dxxsh_15.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/d7ae5d68f85ae7a1417be5133b7dadd4.m3u8",
+        "amount": 3824
+      },{
+        "id": 16,
+        "title": "短秀新生活（可乐鸡翅）",
+        "poster": "../../../static/images/module/12/dxxsh_16.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/bae38bdefe4a394253cc08c0842a9a4c.m3u8",
+        "amount": 3824
+      },{
+        "id": 17,
+        "title": "短秀新生活（凉拌香菇根）",
+        "poster": "../../../static/images/module/12/dxxsh_17.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/62a8b2650e9c90f19981d2f6c67d0987.m3u8",
+        "amount": 3824
+      },{
+        "id": 18,
+        "title": "短秀新生活（巧开可乐罐）",
+        "poster": "../../../static/images/module/12/dxxsh_18.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/022a20d0715f27717bddfba1d49fd5ce.m3u8",
+        "amount": 3824
+      },{
+        "id": 19,
+        "title": "短秀新生活（青瓜玉露）",
+        "poster": "../../../static/images/module/12/dxxsh_19.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/b3311fb1e951fb230794cd876b3fbd41.m3u8",
+        "amount": 3824
+      },{
+        "id": 20,
+        "title": "短秀新生活（清洁小白鞋的方法+鞋底黏口香糖去除法）",
+        "poster": "../../../static/images/module/12/dxxsh_20.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7194c37e08229dfce8b6c7ebed464d49.m3u8",
+        "amount": 3824
+      },{
+        "id": 21,
+        "title": "短秀新生活（如何烹饪大鸽饭）",
+        "poster": "../../../static/images/module/12/dxxsh_21.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/83b0ad982c5d1ff107a5d8ec01f537e6.m3u8",
+        "amount": 3824
+      },{
+        "id": 22,
+        "title": "短秀新生活（用瓶盖做微距镜头）",
+        "poster": "../../../static/images/module/12/dxxsh_22.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/8522f3ea0a644752a938faa6edcc7a3c.m3u8",
+        "amount": 3824
+      },{
+        "id": 23,
+        "title": "短秀新生活（运动健身时的小妙招）",
+        "poster": "../../../static/images/module/12/dxxsh_23.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/f9f393258e03f4cf8ef4fc6587774560.m3u8",
+        "amount": 3824
+      },{
+        "id": 24,
+        "title": "短秀新生活（自制傣味甜品泡鲁达）",
+        "poster": "../../../static/images/module/12/dxxsh_24.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/091dbde28be2d5d111cd57911753beea.m3u8",
+        "amount": 3824
+      },{
+        "id": 25,
+        "title": "短秀新生活（自制干花手镯）",
+        "poster": "../../../static/images/module/12/dxxsh_25.jpg",
+        "type": "application/x-mpegURL",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/7c0b2bb05e6eadbcd6de90e301ba44cb.m3u8",
+        "amount": 3824
+      },{
+        "id": 26,
+        "title": "短秀新生活（自制海苔吐司卷）",
+        "poster": "../../../static/images/module/12/dxxsh_26.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/0c4a15aa1a862d9d639942bdfc9116d4.m3u8",
+        "amount": 3824
+      },{
+        "id": 27,
+        "title": "短秀新生活（自制蝴蝶结发夹）",
+        "poster": "../../../static/images/module/12/dxxsh_27.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/2ff583825f787f51bbdff3ae2c64b784.mp4",
+        "amount": 3824
+      },{
+        "id": 28,
+        "title": "短秀新生活（自制颈部护肤霜）",
+        "poster": "../../../static/images/module/12/dxxsh_28.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/e9f7ed9ebeb098bcaa44fc217d87a6f3.mp4",
+        "amount": 3824
+      },{
+        "id": 29,
+        "title": "短秀新生活（自制蜜桃奶昔）",
+        "poster": "../../../static/images/module/12/dxxsh_29.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/f32aa016c707a58dee21a6ed515e0d0d.mp4",
+        "amount": 3824
+      },{
+        "id": 30,
+        "title": "短秀新生活（自制皮蛋火腿鸡蛋糕）",
+        "poster": "../../../static/images/module/12/dxxsh_30.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/88a375901d1ce7b7507768296cdb3277.mp4",
+        "amount": 3824
+      },{
+        "id": 31,
+        "title": "短秀新生活（自制清洁羽绒服清洗液）",
+        "poster": "../../../static/images/module/12/dxxsh_31.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/acfac3e307cbc7a513991aaa4420b366.mp4",
+        "amount": 3824
+      },{
+        "id": 32,
+        "title": "短秀新生活（自制生姜奶茶）",
+        "poster": "../../../static/images/module/12/dxxsh_32.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/84640fd60ece25b3b69ee94d946fe43f.mp4",
+        "amount": 3824
+      },{
+        "id": 33,
+        "title": "短秀新生活（自制清洁羽绒服清洗液）",
+        "poster": "../../../static/images/module/12/dxxsh_33.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/ee60b5b7275e7b8caf9bbb3b0a8b1753.mp4",
+        "amount": 3824
+      },{
+        "id": 34,
+        "title": "短秀新生活（自制网红鸡爪）",
+        "poster": "../../../static/images/module/12/dxxsh_34.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/70084c866b585e6960ecffc653ee8378.mp4",
+        "amount": 3824
+      },{
+        "id": 35,
+        "title": "短秀新生活（自制网红星空饮料）",
+        "poster": "../../../static/images/module/12/dxxsh_35.jpg",
+        "type": "video/mp4",
+        "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/bcc6d92a9dc0ba139e17790da4d527c7.mp4",
         "amount": 3824
       }]
     }],

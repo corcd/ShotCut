@@ -1,7 +1,10 @@
 <template>
   <div class="discuss">
     <h3>评论</h3>
-    <div class="discuss-login" v-if="!isLogin">
+    <div class="discuss-void">
+      <p>评论功能暂未开放</p>
+    </div>
+    <!-- <div class="discuss-login" v-if="!isLogin">
       <p>
         点击此处
         <a @click="setLoginStatus()">
@@ -29,7 +32,7 @@
         v-model="inputtext"
         show-word-limit
       ></el-input>
-    </div>
+    </div> -->
     <el-button class="discuss-btn" size="mini" v-show="isNotEmpty" round>发布评论</el-button>
     <div class="discuss-details">
       <p>暂无评论</p>
@@ -79,6 +82,28 @@ export default {
     }
     color: rgba(51, 51, 51, 1);
     line-height: 42px;
+  }
+
+  .discuss-void {
+    height: 80px;
+    margin-left: 68px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 2px;
+
+    p {
+      font: {
+        size: 16px;
+        family: MicrosoftYaHei;
+        weight: 400;
+      }
+      color: rgba(128, 128, 128, 1);
+      line-height: 20px;
+    }
   }
 
   .discuss-login {

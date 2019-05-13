@@ -18,7 +18,7 @@
           </a>
         </div>
       </div>
-      <div class="searchbar">
+      <div class="searchbar" v-if="false">
         <el-row>
           <el-col :span="20">
             <el-input v-model="searchContent" prefix-icon="el-icon-search" placeholder="请输入关键字"></el-input>
@@ -28,7 +28,8 @@
           </el-col>
         </el-row>
       </div>
-      <div class="user">
+      <!-- 隐藏模块 -->
+      <div class="user" v-if="false"> 
         <el-button circle>
           <i class="icon-user"></i>
         </el-button>
