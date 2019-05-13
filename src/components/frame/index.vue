@@ -107,12 +107,12 @@ export default {
 
   .content {
     .left-content {
-      width: 28%;
+      width: 30%;
       float: left;
     }
 
     .right-content-min {
-      width: 72%;
+      width: 70%;
       float: right;
     }
 

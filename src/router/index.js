@@ -10,6 +10,7 @@ import index from '@/pages/index'
 import player from '@/pages/player'
 import aboutus from '@/pages/aboutus'
 import about from '@/pages/about'
+import search from '@/pages/search'
 import test from '@/pages/test'
 import testplayer from '@/pages/testplayer'
 import exportJSON from '@/pages/exportJSON'
@@ -70,19 +71,9 @@ export default new Router({
       component: about
     },
     {
-      path: '/test',
-      name: 'test',
-      component: test
-    },
-    {
-      path: '/testplayer',
-      name: 'testplayer',
-      component: testplayer
-    },
-    {
-      path: '/exportJSON',
-      name: 'exportJSON',
-      component: exportJSON
+      path: '/search',
+      name: 'search',
+      component: search
     }
   ]
 })

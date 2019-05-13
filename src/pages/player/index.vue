@@ -93,6 +93,7 @@ export default {
         autoplay: false,
         muted: false,
         loop: false,
+        preload: "auto",
         language: "en",
         playbackRates: [0.5, 1.0, 1.5, 2.0],
         aspectRatio: "16:9",
@@ -170,9 +171,7 @@ export default {
         this.isReload = true;
       });
     },
-    changeTitleWidth(e) {
-
-    }
+    changeTitleWidth(e) {}
   },
   watch: {}
 };

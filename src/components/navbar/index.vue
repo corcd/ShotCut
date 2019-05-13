@@ -18,18 +18,23 @@
           </a>
         </div>
       </div>
-      <div class="searchbar" v-if="false">
+      <div class="searchbar" v-if="search">
         <el-row>
           <el-col :span="20">
-            <el-input v-model="searchContent" prefix-icon="el-icon-search" placeholder="请输入关键字"></el-input>
+            <el-input
+              v-model="keyWord"
+              prefix-icon="el-icon-search"
+              placeholder="请输入关键字"
+              maxlength="10"
+            ></el-input>
           </el-col>
           <el-col :span="4">
-            <el-button :click="getSearch()" round>搜索</el-button>
+            <el-button @click="getSearch()" round>搜索</el-button>
           </el-col>
         </el-row>
       </div>
       <!-- 隐藏模块 -->
-      <div class="user" v-if="false"> 
+      <div class="user" v-if="false">
         <el-button circle>
           <i class="icon-user"></i>
         </el-button>
@@ -81,8 +86,13 @@ export default {
     btn_v: Boolean, //上栏附加按钮
     style_shade: Boolean, //背景渐变
     scroll: Boolean, //滚动响应
-    extend: Boolean //扩展型
+    extend: Boolean, //扩展型
+    search: {
+      type: Boolean,
+      default: true
+    }
   },
+  inject: ["reload"],
   data() {
     return {
       item: this.activeitem,
@@ -90,9 +100,10 @@ export default {
       btn_visiable: this.btn_v,
       shade_visiable: this.style_shade,
       btn_selected: false,
-      searchContent: ""
+      keyWord: ""
     };
   },
+  created() {},
   mounted() {
     console.log(this.scroll);
     if (this.scroll) {
@@ -116,7 +127,7 @@ export default {
   },
   methods: {
     linkTo(path) {
-      this.$router.push({name: path});
+      this.$router.push({ name: path });
     },
     handleScroll() {
       let scrollTop =
@@ -145,8 +156,11 @@ export default {
     },
     getSearch() {
       //搜索
-      if (this.searchContent) {
-        //...
+      if (this.keyWord) {
+        this.$router.push({
+          path: "/search",
+          query: { keyWord: this.keyWord }
+        });
       }
     }
   },
@@ -309,13 +323,13 @@ export default {
       border-radius: 50%;
       border: 0;
 
-      .icon-user:before  {
+      .icon-user:before {
         content: url("../../assets/user.png");
         width: 40px;
         height: 40px;
         position: relative;
-        top:-12px;
-        left:-12px;
+        top: -12px;
+        left: -12px;
       }
     }
   }

@@ -7,7 +7,7 @@
     @click="linkToPlayer(data)"
   >
     <img alt="bmp" :src="data.poster" v-if="!isLarge">
-    <img alt="bmp" src="../../assets/test.png" v-if="isLarge">
+    <img alt="bmp" :src="data.cover" v-if="isLarge">
     <p>{{data.title}}</p>
   </div>
 </template>
@@ -60,7 +60,7 @@ export default {
 
 .items-small {
   width: 17% !important;
-  margin-bottom: 2.1% !important;
+  margin-bottom: 1% !important;
   margin-right: 1.4% !important;
   margin-left: 1.4% !important;
 }
@@ -83,17 +83,19 @@ export default {
   p {
     width: 100%;
     height: 42px;
+    margin-top: 4px;
     word-break: normal;
     white-space: pre-wrap;
     word-wrap: break-word;
     text-align: left;
     font: {
-      size: 60%;
+      size: 13px;
       family: MicrosoftYaHei;
       weight: 400;
     }
-    color: rgba(102, 102, 102, 1);
-    line-height: 20px;
+    color: rgb(80, 79, 79);
+    line-height: 18px;
+    letter-spacing: 1px;
     cursor: pointer;
   }
 }
