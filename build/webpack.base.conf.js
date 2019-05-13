@@ -13,7 +13,7 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: ['babel-polyfill', './src/main.js']
   },
   output: {
     path: config.build.assetsRoot,
@@ -30,6 +30,7 @@ module.exports = {
     }
   },
   module: {
+    noParse: [/videojs-contrib-hls/],
     rules: [
       {
         test: /\.vue$/,

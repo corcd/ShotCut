@@ -165,8 +165,8 @@ export default {
         ]
       };
       this.$router.push({
-        name: "player",
-        params: { data: testData }
+        path: "/player",
+        query: { data: testData }
       });
     }
   }

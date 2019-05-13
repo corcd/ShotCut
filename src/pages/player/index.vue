@@ -20,7 +20,7 @@
         <div class="play-info">
           <div class="play-details">
             <div class="play-title">
-              <p>{{title}}</p>
+              <p ref="playTitle">{{title}}</p>
             </div>
             <div class="play-append">
               <div class="play-share">
@@ -114,7 +114,7 @@ export default {
   },
   created() {},
   mounted() {
-    this.videoData = this.$route.params.data;
+    this.videoData = this.$route.query.data;
     console.log(this.videoData);
     if (this.videoData == {}) {
       this.videoData = JSON.parse(localStorage.getItem("shotcut_videoData"));
@@ -122,16 +122,17 @@ export default {
       localStorage.setItem("shotcut_videoData", JSON.stringify(this.videoData));
     }
     this.title = this.videoData.title;
+    if (this.title.length > 12) {
+      this.title = this.title.slice(0, 12) + "...";
+    }
     this.amount = this.videoData.amount;
     this.playerOptions.poster = this.videoData.poster;
     this.playerOptions.sources = this.videoData.source;
 
-    console.log("this is current player instance object", this.player);
-    console.log(this.rcData);
+    //console.log("this is current player instance object", this.player);
+    //console.log(this.rcData);
   },
-  beforeDestroy() {
-    this.$refs.videojs.dispose();
-  },
+  beforeDestroy() {},
   destroyed() {},
   computed: {
     player() {
@@ -140,11 +141,13 @@ export default {
   },
   methods: {
     playerReadied(player) {
-      let hls = player.tech({ IWillNotUseThisInPlugins: true }).hls;
-      player.tech_.hls.xhr.beforeRequest = function(options) {
-        // console.log(options)
-        return options;
-      };
+      if (this.videoData.source.type == "application/x-mpegURL") {
+        let hls = player.tech({ IWillNotUseThisInPlugins: true }).hls;
+        player.tech_.hls.xhr.beforeRequest = function(options) {
+          // console.log(options)
+          return options;
+        };
+      }
     },
     googleAd() {
       window.open(
@@ -155,7 +158,7 @@ export default {
     changeVideoData(recommendData) {
       this.videoData = recommendData;
       localStorage.setItem("shotcut_videoData", JSON.stringify(this.videoData));
-      console.log(this.videoData);
+      //console.log(this.videoData);
 
       this.isReload = false;
 
@@ -166,6 +169,9 @@ export default {
         this.playerOptions.sources = this.videoData.source;
         this.isReload = true;
       });
+    },
+    changeTitleWidth(e) {
+
     }
   },
   watch: {}

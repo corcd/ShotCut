@@ -7,7 +7,6 @@ import navbar from './navbar'
 import newslist from './newslist'
 import aboutframe from './aboutframe'
 import hottags from './hottags'
-import videoitem from './videoitem'
 import discuss from './discuss'
 import recommend from './recommend'
 import rankicon from './rankicon'
@@ -22,7 +21,6 @@ const components = {
   newslist,
   aboutframe,
   hottags,
-  videoitem,
   discuss,
   recommend,
   rankicon

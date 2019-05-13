@@ -12,7 +12,7 @@
                 <span>关于我们</span>
               </a>
             </li>
-            <li @click="linkTo('/aboutshotcut')">
+            <li @click="linkTo('/about')">
               <a>
                 <span>关于短秀</span>
               </a>

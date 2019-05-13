@@ -7,7 +7,7 @@
       <div class="left"></div>
       <div class="right"></div>
       <div class="main">
-        <frame :data="module_data_1" :limit="14">
+        <frame :data="module_data_1" :limit="11" :exhibition="true">
         <frame :data="module_data_2" :limit="14">
         <frame :data="module_data_3" :limit="14">
       </div>

@@ -9,7 +9,7 @@
         <img class="img-logo" alt="logo" src="../../assets/logo.png">
 
         <div class="aggergationbar" v-show="btn_visiable">
-          <a @click="linkTo('/')">
+          <a @click="linkTo('home')">
             <span>首页</span>
           </a>
           <a @click="toggleMenu()" v-bind:class="{'a_selected':btn_selected}">
@@ -36,32 +36,32 @@
     </div>
     <div class="menubar" v-show="menu_visiable">
       <ul class="menu">
-        <li @click="linkTo('/')" v-bind:class="{'active':item[0]}">
+        <li @click="linkTo('home')" v-bind:class="{'active':item[0]}">
           <a>
             <span>首页</span>
           </a>
         </li>
-        <li @click="linkTo('/today')" v-bind:class="{'active':item[1]}">
+        <li @click="linkTo('today')" v-bind:class="{'active':item[1]}">
           <a>
             <span>今日热门</span>
           </a>
         </li>
-        <li @click="linkTo('/rank')" v-bind:class="{'active':item[2]}">
+        <li @click="linkTo('rank')" v-bind:class="{'active':item[2]}">
           <a>
             <span>月度排行</span>
           </a>
         </li>
-        <li @click="linkTo('/fashion')" v-bind:class="{'active':item[3]}">
+        <li @click="linkTo('fashion')" v-bind:class="{'active':item[3]}">
           <a>
             <span>时尚热度</span>
           </a>
         </li>
-        <li @click="linkTo('/punchline')" v-bind:class="{'active':item[4]}">
+        <li @click="linkTo('punchline')" v-bind:class="{'active':item[4]}">
           <a>
             <span>最佳笑点</span>
           </a>
         </li>
-        <li @click="linkTo('/playlet')" v-bind:class="{'active':item[5]}">
+        <li @click="linkTo('playlet')" v-bind:class="{'active':item[5]}">
           <a>
             <span>青春短剧</span>
           </a>
@@ -115,7 +115,7 @@ export default {
   },
   methods: {
     linkTo(path) {
-      this.$router.push(path);
+      this.$router.push({name: path});
     },
     handleScroll() {
       let scrollTop =

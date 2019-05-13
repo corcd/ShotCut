@@ -7,10 +7,9 @@ import fashion from '@/pages/fashion'
 import punchline from '@/pages/punchline'
 import playlet from '@/pages/playlet'
 import index from '@/pages/index'
-import tagindex from '@/pages/tagindex'
 import player from '@/pages/player'
 import aboutus from '@/pages/aboutus'
-import aboutshotcut from '@/pages/aboutshotcut'
+import about from '@/pages/about'
 import test from '@/pages/test'
 import testplayer from '@/pages/testplayer'
 import exportJSON from '@/pages/exportJSON'
@@ -56,12 +55,7 @@ export default new Router({
       component: index
     },
     {
-      path: '/tagindex/:token',
-      name: 'tagindex',
-      component: tagindex
-    },
-    {
-      path: '/player/:data',
+      path: '/player',
       name: 'player',
       component: player
     },
@@ -71,9 +65,9 @@ export default new Router({
       component: aboutus
     },
     {
-      path: '/aboutshotcut',
-      name: 'aboutshotcut',
-      component: aboutshotcut
+      path: '/about',
+      name: 'about',
+      component: about
     },
     {
       path: '/test',

@@ -1,12 +1,13 @@
 <template>
   <div
     class="items"
-    v-bind:class="{'items-large':isLarge}"
+    v-bind:class="{'items-large':isLarge,'items-small':isSmall}"
     ref="item"
     :id="data.id"
     @click="linkToPlayer(data)"
   >
-    <img alt="bmp" :src="data.poster">
+    <img alt="bmp" :src="data.poster" v-if="!isLarge">
+    <img alt="bmp" src="../../assets/test.png" v-if="isLarge">
     <p>{{data.title}}</p>
   </div>
 </template>
@@ -15,7 +16,8 @@
 export default {
   name: "items",
   props: {
-    isLarge: Boolean,
+    isLarge: { type: Boolean, default: false },
+    isSmall: { type: Boolean, default: false },
     data: Object
   },
   methods: {
@@ -40,8 +42,8 @@ export default {
         ]
       };
       this.$router.push({
-        name: "player",
-        params: { data: testData }
+        path: "/player",
+        query: { data: testData }
       });
     }
   },
@@ -51,13 +53,16 @@ export default {
 
 <style lang="scss">
 .items-large {
-  width: 454px !important;
-  height: 320px !important;
+  width: 100% !important;
+  margin-right: 1.1% !important;
+  margin-left: 1.1% !important;
+}
 
-  img {
-    width: 454px !important;
-    height: 310px !important;
-  }
+.items-small {
+  width: 17% !important;
+  margin-bottom: 2.1% !important;
+  margin-right: 1.4% !important;
+  margin-left: 1.4% !important;
 }
 
 .items {
@@ -88,7 +93,7 @@ export default {
       weight: 400;
     }
     color: rgba(102, 102, 102, 1);
-    line-height: 21px;
+    line-height: 20px;
     cursor: pointer;
   }
 }

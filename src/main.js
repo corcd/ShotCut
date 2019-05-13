@@ -10,6 +10,7 @@ import Axios from 'axios'
 import VueVideoPlayer from 'vue-video-player'
 
 
+import "babel-polyfill"
 import 'video.js/dist/video-js.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/global.scss'

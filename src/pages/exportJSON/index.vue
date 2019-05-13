@@ -1,5 +1,8 @@
 <template>
-  <div></div>
+  <div>
+    <p>数据导出 JSON</p>
+    <el-button @click="exportJSON()">export</el-button>
+  </div>
 </template>
 
 <script>
@@ -2328,14 +2331,16 @@ export default {
     };
   },
   created() {},
-  mounted() {
-    let blob = new Blob([JSON.stringify(this.webData)], {
-      type: "text/plain;charset=utf-8"
-    });
+  mounted() {},
+  methods: {
+    exportJSON() {
+      let blob = new Blob([JSON.stringify(this.webData)], {
+        type: "text/plain;charset=utf-8"
+      });
 
-    saveAs(blob, "data.json");
-    alert("All Ready");
-  },
-  methods: {}
+      saveAs(blob, "data.json");
+      alert("All Ready");
+    }
+  }
 };
 </script>

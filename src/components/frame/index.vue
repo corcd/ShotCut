@@ -6,12 +6,23 @@
       <a class="link-more" @click="linkToIndex(data)">更多></a>
     </div>
     <div class="content">
-      <div class="left-content" v-if="exhibition">
-        <items :data="data.data[0]"></items>
+      <div v-if="exhibition">
+        <div class="left-content">
+          <div class="items-left-row">
+            <items :data="data.data[0]" :isLarge="true"></items>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="items-right-row">
+            <items v-for="item in data.data.slice(1, limit)" :key="item.id" :data="item" :isSmall="true"></items>
+          </div>
+        </div>
       </div>
-      <div class="right-content">
-        <div class="items-row">
-          <items v-for="item in data.data.slice(0, limit)" :key="item.id" :data="item"></items>
+      <div v-if="!exhibition">
+        <div class="right-content">
+          <div class="items-row">
+            <items v-for="item in data.data.slice(0, limit)" :key="item.id" :data="item"></items>
+          </div>
         </div>
       </div>
     </div>
@@ -30,8 +41,7 @@ export default {
     limit: { type: Number, default: -1 }
   },
   data() {
-    return {
-    };
+    return {};
   },
   created() {},
   methods: {
@@ -96,11 +106,36 @@ export default {
   }
 
   .content {
+    .left-content {
+      width: 28%;
+      float: left;
+    }
+
+    .right-content-min {
+      width: 72%;
+      float: right;
+    }
+
     .left-content,
     .right-content {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .items-left-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .items-right-row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+      }
 
       .items-row {
         display: flex;
