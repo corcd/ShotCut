@@ -46,10 +46,30 @@ export default {
     limit: { type: Number, default: -1 }
   },
   data() {
-    return {};
+    return {
+      reactiveHeight: 0,
+      reactiveWidth: 0
+    };
   },
   created() {},
+  mounted() {
+    this.reactiveElement();
+    window.onresize = () => {
+      return (() => {
+        this.reactiveElement();
+      })();
+    };
+  },
+  updated() {
+    this.reactiveElement();
+  },
   methods: {
+    reactiveElement() {
+      this.reactiveHeight = document.getElementsByClassName(
+        "right-content"
+      )[0].clientHeight-10;
+      console.log(this.reactiveHeight);
+    },
     linkToIndex(d) {
       this.$router.push({
         path: "/index",

@@ -1,18 +1,26 @@
 <template>
   <div
     class="items"
-    v-bind:class="{'items-large':isLarge,'items-small':isSmall}"
     ref="item"
     :id="data.id"
+    v-bind:class="{'items-large':isLarge,'items-small':isSmall}"
     @click="linkToPlayer(data)"
     @mouseover="mouseIn()"
     @mouseout="mouseOut()"
   >
-    <div class="items-cover">
-      <img alt="bmp" :src="data.poster" v-if="!isLarge">
-      <img alt="bmp" :src="data.cover" v-if="isLarge">
+    <div class="items-bg" v-if="isLarge">
+      <div class="items-cover">
+        <img alt="bmp" :src="data.cover">
+      </div>
+      <p v-bind:class="{'items-selected':isHover}">{{data.title}}</p>
     </div>
-    <p v-bind:class="{'items-selected':isHover}">{{data.title}}</p>
+
+    <div class="items-bg" v-if="!isLarge">
+      <div class="items-cover">
+        <img alt="bmp" :src="data.poster">
+      </div>
+      <p v-bind:class="{'items-selected':isHover}">{{data.title}}</p>
+    </div>
   </div>
 </template>
 
@@ -22,7 +30,9 @@ export default {
   props: {
     isLarge: { type: Boolean, default: false },
     isSmall: { type: Boolean, default: false },
-    data: Object
+    data: Object,
+    rheight: Number,
+    rwidth: Number
   },
   data() {
     return {
@@ -68,14 +78,15 @@ export default {
 
 <style lang="scss">
 .items-large {
-  width: 100% !important;
+  width: 88% !important;
+  min-height: 230px !important;
+  margin-bottom: 0 !important;
   margin-right: 1.1% !important;
   margin-left: 1.1% !important;
 }
 
 .items-small {
   width: 17% !important;
-  margin-bottom: 1% !important;
   margin-right: 1.4% !important;
   margin-left: 1.4% !important;
 }
@@ -89,51 +100,49 @@ export default {
   height: auto;
   margin-right: 1.1%;
   margin-left: 1.1%;
+  margin-bottom: 10px !important;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   cursor: pointer;
 
-  .items-cover {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+  .items-bg {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
 
-    &:after {
-      position: absolute;
-      content: "";
+    .items-cover {
       width: 100%;
       height: 100%;
-      top: 0;
-      left: 0;
-      box-shadow: 0 0 3px 3px #ffffff inset;
+
+      img {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
     }
 
-    img {
+    p {
       width: 100%;
-      background-color: gray;
+      height: 42px;
+      padding-left: 5px;
+      padding-right: 5px;
+      word-break: normal;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      text-align: left;
+      font: {
+        size: 14px;
+        family: MicrosoftYaHei;
+        weight: 400;
+      }
+      color: rgb(20, 20, 20);
+      line-height: 18px;
+      //letter-spacing: 1px;
+      cursor: pointer;
     }
-  }
-
-  p {
-    width: 100%;
-    height: 42px;
-    margin-top: 1%;
-    word-break: normal;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    text-align: left;
-    font: {
-      size: 13px;
-      family: MicrosoftYaHei;
-      weight: 400;
-    }
-    color: rgb(80, 79, 79);
-    line-height: 18px;
-    letter-spacing: 1px;
-    cursor: pointer;
   }
 }
 </style>

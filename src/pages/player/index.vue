@@ -123,9 +123,9 @@ export default {
       localStorage.setItem("shotcut_videoData", JSON.stringify(this.videoData));
     }
     this.title = this.videoData.title;
-    if (this.title.length > 12) {
-      this.title = this.title.slice(0, 12) + "...";
-    }
+    // if (this.title.length > 12) {
+    //   this.title = this.title.slice(0, 12) + "...";
+    // }
     this.amount = this.videoData.amount;
     this.playerOptions.poster = this.videoData.poster;
     this.playerOptions.sources = this.videoData.source;

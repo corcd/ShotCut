@@ -41,9 +41,11 @@
       .play-info {
         width: 85%;
         height: 128px;
+        display: -webkit-box;
+        -webkit-box-pack: justify;
 
         .play-details {
-          float: left;
+          height: 100%;
 
           .play-title {
             font: {
@@ -54,6 +56,15 @@
 
             margin-top: 30px;
             color: rgba(255, 255, 255, 1);
+
+            p {
+              display: -webkit-box;
+              min-width: 300px;
+              text-overflow: ellipsis;
+              -webkit-line-clamp:1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
           }
 
           .play-append {
@@ -93,7 +104,7 @@
         }
 
         .play-ad {
-          float: right;
+          height: 100%;
           margin-top: 14px;
           z-index: 1;
 

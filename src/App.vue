@@ -1,6 +1,8 @@
 <template>
-  <div id="app" v-title data-title="天择短秀">
-    <router-view v-if="isRouterAlive"/>
+  <div id="app" ref="app" v-title data-title="天择短秀">
+    <keep-alive>
+      <router-view v-if="isRouterAlive"/>
+    </keep-alive>
   </div>
 </template>
 
@@ -14,7 +16,8 @@ export default {
   },
   data() {
     return {
-      isRouterAlive: true
+      isRouterAlive: true,
+      scroll: 0
     };
   },
   methods: {

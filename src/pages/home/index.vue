@@ -26,6 +26,7 @@ export default {
   data() {
     return {
       activeitem: [true,"","","","",""],
+      scroll: 0,
       bgdata: this.$store.state.webData.background.data,
       module_data_10: this.$store.state.webData.module_data_10,
       module_data_2: this.$store.state.webData.module_data_2,
@@ -36,6 +37,10 @@ export default {
   created() {
     //console.log(this.$store.state.webData.background.data);
     //console.log(this.data);
+  },
+  mounted() {
+  },
+  destroyed() {
   },
   methods: {}
 };

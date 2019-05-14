@@ -19,8 +19,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: "history",
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
       component: home
@@ -75,5 +74,18 @@ export default new Router({
       name: 'search',
       component: search
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      if (from.meta.keepAlive) {
+        from.meta.savedPosition = document.body.scrollTop
+      }
+      return {
+        x: 0,
+        y: to.meta.savedPosition || 0
+      }
+    }
+  }
 })

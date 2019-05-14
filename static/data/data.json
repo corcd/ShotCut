@@ -1812,8 +1812,8 @@
           "id": 12,
           "title": "尖叫吧！小酥2",
           "poster": "../../../static/images/module/9/mlxs_12.jpg",
-          "type": "video/mp4",
-          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8adfb9a5b4fdb8aa08c25a52dbefb501.mp4",
+          "type": "application/x-mpegURL",
+          "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2dfbd0d72d39c25ac2408a58d57ea335.m3u8",
           "amount": 2616
         }, {
           "id": 13,
@@ -3637,8 +3637,8 @@
       "id": 12,
       "title": "尖叫吧！小酥2",
       "poster": "../../../static/images/module/9/mlxs_12.jpg",
-      "type": "video/mp4",
-      "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/mp4/0x0/8adfb9a5b4fdb8aa08c25a52dbefb501.mp4",
+      "type": "application/x-mpegURL",
+      "video_url": "https://38917.long-vod.cdn.aodianyun.com/u/38917/m3u8/adaptive/2dfbd0d72d39c25ac2408a58d57ea335.m3u8",
       "amount": 2616
     }, {
       "id": 13,

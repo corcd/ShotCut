@@ -9,7 +9,9 @@
       :height="reactiveHeight+'px'"
     >
       <el-carousel-item v-for="item in items" :key="item.id">
-        <img alt="bg" :src="item.poster" @click="linkToPlayer(item)">
+        <div class="cover">
+          <img alt="bg" :src="item.poster" @click="linkToPlayer(item)">
+        </div>
       </el-carousel-item>
     </el-carousel>
     <div
@@ -250,9 +252,26 @@ export default {
         height: 100%;
         margin: 0;
 
-        img {
+        .cover {
           width: 100%;
           height: 100%;
+          overflow: hidden;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 50px 30px rgba(0, 0, 0, 0.4) inset;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
