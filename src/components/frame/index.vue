@@ -14,7 +14,12 @@
         </div>
         <div class="right-content">
           <div class="items-right-row">
-            <items v-for="item in data.data.slice(1, limit)" :key="item.id" :data="item" :isSmall="true"></items>
+            <items
+              v-for="item in data.data.slice(1, limit)"
+              :key="item.id"
+              :data="item"
+              :isSmall="true"
+            ></items>
           </div>
         </div>
       </div>
@@ -102,6 +107,10 @@ export default {
       }
       color: rgba(153, 153, 153, 1);
       line-height: 42px;
+
+      &:hover {
+        color: rgba(255, 186, 116, 1) !important;
+      }
     }
   }
 

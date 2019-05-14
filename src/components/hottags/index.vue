@@ -4,9 +4,16 @@
       <li>
         <span class="tags-title">#热门标签</span>
       </li>
-      <li v-for="item in tags" :key="item.id" @click="linkToIndex(item)">
+      <li
+        class="tages-items"
+        v-for="item in tags"
+        :key="item.id"
+        @click="linkToIndex(item)"
+        @mouseover="mouseIn(item.id)"
+        @mouseout="mouseOut(item.id)"
+      >
         <a>
-          <span>{{item.name}}</span>
+          <span v-bind:class="{'tags-selected':(isHoverId == item.id)}">{{item.name}}</span>
         </a>
       </li>
     </ul>
@@ -20,9 +27,17 @@ export default {
     tags: Array
   },
   data() {
-    return {};
+    return {
+      isHoverId: 0
+    };
   },
   methods: {
+    mouseIn(n) {
+      this.isHoverId = n;
+    },
+    mouseOut(n) {
+      this.isHoverId = 0;
+    },
     linkToIndex(d) {
       this.$router.push({
         path: "/index",
@@ -34,6 +49,10 @@ export default {
 </script>
 
 <style lang="scss">
+.tags-selected {
+  color: rgba(255, 186, 116, 1) !important;
+}
+
 .hottags {
   width: 100%;
   height: 60px;
@@ -50,6 +69,7 @@ export default {
     li {
       margin-left: 20px;
       margin-right: 20px;
+      cursor: pointer;
 
       .tags-title {
         font: {
@@ -63,7 +83,7 @@ export default {
         line-height: 19px;
       }
 
-      .tags-item {
+      .tags-items {
         font: {
           size: 16px;
           family: MicrosoftYaHei;
@@ -72,6 +92,13 @@ export default {
         height: 15px;
         color: rgba(51, 51, 51, 1);
         line-height: 19px;
+
+        a,
+        span {
+          &:hover {
+            color: rgba(255, 186, 116, 1) !important;
+          }
+        }
       }
     }
   }

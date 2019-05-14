@@ -1,12 +1,22 @@
 <template>
-  <div class="home-header">
+  <div class="home-header" v-bind:style="{height: reactiveHeight + 'px'}">
     <navbar :scroll="scroll" :style_shade="style_shade" :activeitem="activeitem"></navbar>
-    <el-carousel :autoplay="false" arrow="never" indicator-position="none" ref="carousel">
+    <el-carousel
+      :autoplay="false"
+      arrow="never"
+      indicator-position="none"
+      ref="carousel"
+      :height="reactiveHeight+'px'"
+    >
       <el-carousel-item v-for="item in items" :key="item.id">
         <img alt="bg" :src="item.poster" @click="linkToPlayer(item)">
       </el-carousel-item>
     </el-carousel>
-    <div class="newslist" id="newslist">
+    <div
+      class="newslist"
+      id="newslist"
+      v-bind:style="{height:reactiveHeight*0.8+'px',width:reactiveWidth*0.3+'px',top:90*(reactiveHeight/600)+'px'}"
+    >
       <ul>
         <li
           v-bind:class="{'list-active':items[0].actived}"
@@ -100,7 +110,9 @@ export default {
     return {
       counter: 0,
       timer: {},
-      items: this.data
+      items: this.data,
+      reactiveWidth: 0,
+      reactiveHeight: 0
     };
   },
   created() {
@@ -121,12 +133,30 @@ export default {
       this.$refs.carousel.setActiveItem(this.counter);
       this.counter++;
     }, 3000);
+    this.reactiveElement();
+  },
+  mounted() {
+    window.onresize = () => {
+      return (() => {
+        this.reactiveElement();
+      })();
+    };
   },
   destroyed() {
     clearInterval(this.timer);
   },
   computed: {},
   methods: {
+    reactiveElement() {
+      if (document.body.clientWidth >= 1050) {
+        this.reactiveWidth = document.body.clientWidth;
+        this.reactiveHeight = (document.body.clientWidth / 1920) * 600;
+      } else {
+        this.reactiveWidth = 1050;
+        this.reactiveHeight = (1050 / 1920) * 600;
+      }
+      console.log(this.reactiveWidth + "-" + this.reactiveHeight);
+    },
     pauseCounter(param) {
       let self = this;
       this.$nextTick(() => {
@@ -169,7 +199,8 @@ export default {
         query: { data: testData }
       });
     }
-  }
+  },
+  watch: {}
 };
 </script>
 
@@ -177,11 +208,12 @@ export default {
 <style lang="scss">
 .list-active {
   width: 100% !important;
-  height: 70px !important;
+  height: 18% !important;
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
+  z-index: 5;
 }
 
 .span-active {
@@ -203,49 +235,58 @@ export default {
 
   .el-carousel {
     width: 100%;
-    height: 600px;
+    min-width: 1050px;
     position: absolute;
     top: 0;
     z-index: 1;
+    cursor: pointer;
 
     .el-carousel__container {
       width: 100%;
       height: 100%;
 
-      .el-carousel__item h3 {
-        color: #475669;
-        font-size: 18px;
-        opacity: 0.75;
-        line-height: 600px;
+      .el-carousel__item {
+        width: 100%;
+        height: 100%;
         margin: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
 
   .newslist {
-    width: 420px;
-    height: 448px;
-    display: flex;
-    align-items: center;
+    //width: 420px;
+    //width: 40%;
+    //height: 448px;
     position: absolute;
-    top: 100px;
     right: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.6);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    z-index: 4;
 
     ul {
       width: 100%;
-      height: 420px;
+      min-width: 360px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: left;
 
       li {
         width: 100%;
-        height: 60px;
+        height: 12%;
         display: flex;
         align-items: center;
         transition: height 0.5s;
+        cursor: pointer;
 
         a {
           span {
@@ -253,6 +294,7 @@ export default {
             font-size: 16px;
             font-family: MicrosoftYaHei;
             font-weight: 400;
+            line-height: 10px;
             color: rgba(153, 153, 153, 1);
           }
         }

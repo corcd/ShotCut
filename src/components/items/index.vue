@@ -5,10 +5,14 @@
     ref="item"
     :id="data.id"
     @click="linkToPlayer(data)"
+    @mouseover="mouseIn()"
+    @mouseout="mouseOut()"
   >
-    <img alt="bmp" :src="data.poster" v-if="!isLarge">
-    <img alt="bmp" :src="data.cover" v-if="isLarge">
-    <p>{{data.title}}</p>
+    <div class="items-cover">
+      <img alt="bmp" :src="data.poster" v-if="!isLarge">
+      <img alt="bmp" :src="data.cover" v-if="isLarge">
+    </div>
+    <p v-bind:class="{'items-selected':isHover}">{{data.title}}</p>
   </div>
 </template>
 
@@ -20,7 +24,18 @@ export default {
     isSmall: { type: Boolean, default: false },
     data: Object
   },
+  data() {
+    return {
+      isHover: false
+    };
+  },
   methods: {
+    mouseIn() {
+      this.isHover = true;
+    },
+    mouseOut() {
+      this.isHover = false;
+    },
     getDetails(e) {
       console.log(e.target.getAttribute("test"));
       console.log(e.target.getAttribute("url"));
@@ -65,25 +80,47 @@ export default {
   margin-left: 1.4% !important;
 }
 
+.items-selected {
+  color: rgba(255, 186, 116, 1) !important;
+}
+
 .items {
   width: 12%;
+  height: auto;
   margin-right: 1.1%;
   margin-left: 1.1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  cursor: pointer;
 
-  img {
+  .items-cover {
     width: 100%;
-    background-color: gray;
-    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 3px 3px #ffffff inset;
+    }
+
+    img {
+      width: 100%;
+      background-color: gray;
+    }
   }
 
   p {
     width: 100%;
     height: 42px;
-    margin-top: 4px;
+    margin-top: 1%;
     word-break: normal;
     white-space: pre-wrap;
     word-wrap: break-word;

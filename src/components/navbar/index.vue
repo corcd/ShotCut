@@ -18,7 +18,7 @@
           </a>
         </div>
       </div>
-      <div class="searchbar" v-if="search">
+      <div class="searchbar" v-if="false">
         <el-row>
           <el-col :span="20">
             <el-input

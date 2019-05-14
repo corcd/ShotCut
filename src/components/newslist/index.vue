@@ -9,7 +9,9 @@ export default {
     actived: {
       type: Number,
       default: 1
-    }
+    },
+    height: Number,
+    width: Number
   },
   data() {
     return {

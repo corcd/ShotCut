@@ -70,6 +70,7 @@ export default {
       justify-content: center;
       align-items: center;
       margin-right: 29px;
+      cursor: pointer;
 
       a {
         span {

@@ -9,17 +9,17 @@
             </li>
             <li @click="linkTo('/aboutus')">
               <a>
-                <span>关于我们</span>
+                <span class="span-link">关于我们</span>
               </a>
             </li>
             <li @click="linkTo('/about')">
               <a>
-                <span>关于短秀</span>
+                <span class="span-link">关于短秀</span>
               </a>
             </li>
             <li>
               <a>
-                <span>加入我们</span>
+                <span class="span-link">加入我们</span>
               </a>
             </li>
           </ul>
@@ -31,17 +31,17 @@
             </li>
             <li @click="toWeibo('https://weibo.com/u/6593200613')">
               <a>
-                <span>宴大小姐Vivi</span>
+                <span class="span-link">晏大小姐Vivi</span>
               </a>
             </li>
             <li @click="toWeibo('https://weibo.com/u/6481027614')">
               <a>
-                <span>疯狂特效师</span>
+                <span class="span-link">疯狂特效师</span>
               </a>
             </li>
             <li @click="toWeibo('https://weibo.com/u/6678838554')">
               <a>
-                <span>王者皮皮怪</span>
+                <span class="span-link">王者皮皮怪</span>
               </a>
             </li>
           </ul>
@@ -52,19 +52,19 @@
               <h3>联系我们</h3>
             </li>
             <li>
-              <a>
+              <label>
                 <span>商务部 13077339188</span>
-              </a>
+              </label>
             </li>
             <li>
-              <a>
+              <label>
                 <span>运营部 18033860808</span>
-              </a>
+              </label>
             </li>
             <li>
-              <a>
+              <label>
                 <span>发行部 13337317601</span>
-              </a>
+              </label>
             </li>
           </ul>
         </el-col>
@@ -141,6 +141,11 @@ export default {
           text-decoration: none;
           color: rgba(102, 102, 102, 1);
           line-height: 36px;
+        }
+        .span-link {
+          &:hover {
+            color: rgba(255, 186, 116, 0.8);
+          }
         }
 
         .QRcode {
