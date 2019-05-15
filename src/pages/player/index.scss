@@ -41,8 +41,6 @@
       .play-info {
         width: 85%;
         height: 128px;
-        display: -webkit-box;
-        -webkit-box-pack: justify;
 
         .play-details {
           height: 100%;
@@ -61,8 +59,11 @@
               display: -webkit-box;
               min-width: 300px;
               text-overflow: ellipsis;
-              -webkit-line-clamp:1;
+              -webkit-line-clamp: 1;
+              white-space: nowrap;
+              /*! autoprefixer: off */
               -webkit-box-orient: vertical;
+              /* autoprefixer: on */
               overflow: hidden;
             }
           }
@@ -106,6 +107,8 @@
         .play-ad {
           height: 100%;
           margin-top: 14px;
+          position: absolute;
+          right: 0;
           z-index: 1;
 
           a {

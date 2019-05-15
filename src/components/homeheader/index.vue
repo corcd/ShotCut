@@ -135,9 +135,9 @@ export default {
       this.$refs.carousel.setActiveItem(this.counter);
       this.counter++;
     }, 3000);
-    this.reactiveElement();
   },
   mounted() {
+    this.reactiveElement();
     window.onresize = () => {
       return (() => {
         this.reactiveElement();
@@ -146,6 +146,7 @@ export default {
   },
   destroyed() {
     clearInterval(this.timer);
+    window.onresize = "";
   },
   computed: {},
   methods: {
@@ -228,6 +229,7 @@ export default {
 .home-header {
   width: 100%;
   height: 600px;
+  //position: relative;
 
   .navbar {
     position: fixed;

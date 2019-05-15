@@ -18,7 +18,7 @@
           </a>
         </div>
       </div>
-      <div class="searchbar" v-if="false">
+      <div class="searchbar" v-if="search">
         <el-row>
           <el-col :span="20">
             <el-input
@@ -26,6 +26,7 @@
               prefix-icon="el-icon-search"
               placeholder="请输入关键字"
               maxlength="10"
+              clearable
             ></el-input>
           </el-col>
           <el-col :span="4">

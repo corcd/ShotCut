@@ -1,8 +1,6 @@
 <template>
   <div id="app" ref="app" v-title data-title="天择短秀">
-    <keep-alive>
       <router-view v-if="isRouterAlive"/>
-    </keep-alive>
   </div>
 </template>
 

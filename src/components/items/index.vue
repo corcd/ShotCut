@@ -76,19 +76,19 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .items-large {
-  width: 88% !important;
+  width: 92% !important;
   min-height: 230px !important;
   margin-bottom: 0 !important;
-  margin-right: 1.1% !important;
-  margin-left: 1.1% !important;
+  margin-right: 0.64% !important;
+  margin-left: 0.64% !important;
 }
 
 .items-small {
-  width: 17% !important;
-  margin-right: 1.4% !important;
-  margin-left: 1.4% !important;
+  width: 18% !important;
+  margin-right: 1% !important;
+  margin-left: 1% !important;
 }
 
 .items-selected {
@@ -96,10 +96,10 @@ export default {
 }
 
 .items {
-  width: 12%;
+  width: 13%;
   height: auto;
-  margin-right: 1.1%;
-  margin-left: 1.1%;
+  margin-right: 0.64%;
+  margin-left: 0.64%;
   margin-bottom: 10px !important;
 
   display: flex;

@@ -18,33 +18,39 @@
           ></video-player>
         </div>
         <div class="play-info">
-          <div class="play-details">
-            <div class="play-title">
-              <p ref="playTitle">{{title}}</p>
-            </div>
-            <div class="play-append">
-              <div class="play-share">
-                <span>分享：</span>
+          <el-row>
+            <el-col :span="12">
+              <div class="play-details">
+                <div class="play-title">
+                  <p ref="playTitle">{{title}}</p>
+                </div>
+                <div class="play-append">
+                  <div class="play-share">
+                    <span>分享：</span>
+                    <a>
+                      <img alt="wechat" src="../../assets/wechat.png">
+                    </a>
+                    <a>
+                      <img alt="sina" src="../../assets/weibo.png">
+                    </a>
+                  </div>
+                  <div class="play-amount">
+                    <p>
+                      浏览量：
+                      <span>{{amount}}</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </el-col>
+            <el-col :span="12">
+              <div class="play-ad" @click="googleAd()">
                 <a>
-                  <img alt="wechat" src="../../assets/wechat.png">
-                </a>
-                <a>
-                  <img alt="sina" src="../../assets/weibo.png">
+                  <img alt="ad" src="../../../static/images/ad/ad.png">
                 </a>
               </div>
-              <div class="play-amount">
-                <p>
-                  浏览量：
-                  <span>{{amount}}</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="play-ad" @click="googleAd()">
-            <a>
-              <img alt="ad" src="../../../static/images/ad/ad.png">
-            </a>
-          </div>
+            </el-col>
+          </el-row>
         </div>
       </div>
     </div>
@@ -177,6 +183,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "./index";
 </style>
