@@ -79,8 +79,9 @@
 import "../../assets/css/custom-player.scss";
 import videojs from "video.js";
 window.videojs = videojs;
-// hls plugin for videojs6
-require("videojs-contrib-hls/dist/videojs-contrib-hls.js");
+
+// hls plugin for videojs6 (replaced by VHS)
+// require("videojs-contrib-hls/dist/videojs-contrib-hls.js");
 
 export default {
   components: {},

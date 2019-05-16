@@ -25,17 +25,10 @@
       align-items: center;
 
       .play-player {
-        width: 85%;
+        width: 85% !important;
         background: #000;
 
         .video-js .vjs-big-play-button {}
-
-        .vjs-poster {
-          -webkit-filter: blur(5px);
-          -moz-filter: blur(5px);
-          -ms-filter: blur(5px);
-          filter: blur(5px);
-        }
       }
 
       .play-info {

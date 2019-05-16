@@ -9,7 +9,7 @@
         </el-col>
         <el-col :span="18">
           <div class="search-info">
-            <p>
+            <p class="search-info-title">
               <span>No.{{data.id}}:</span>
               {{data.data.title}}
             </p>
@@ -78,6 +78,8 @@ export default {
 
       .search-cover {
         img {
+          max-width: 218px;
+          max-height: 122px;
         }
       }
 
@@ -88,6 +90,11 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        .search-info-title {
+          font-size: 22px;
+          font-weight: bold;
+        }
       }
     }
   }

@@ -14,6 +14,7 @@ import search from '@/pages/search'
 import test from '@/pages/test'
 import testplayer from '@/pages/testplayer'
 import exportJSON from '@/pages/exportJSON'
+import { resolve } from 'url';
 
 Vue.use(Router)
 
@@ -22,57 +23,57 @@ export default new Router({
   routes: [{
       path: '/',
       name: 'home',
-      component: home
+      component: resolve => require(['@/pages/home'],resolve)
     },
     {
       path: '/today',
       name: 'today',
-      component: today
+      component: resolve => require(['@/pages/today'],resolve)
     },
     {
       path: '/rank',
       name: 'rank',
-      component: rank
+      component: resolve => require(['@/pages/rank'],resolve)
     },
     {
       path: '/fashion',
       name: 'fashion',
-      component: fashion
+      component: resolve => require(['@/pages/fashion'],resolve)
     },
     {
       path: '/punchline',
       name: 'punchline',
-      component: punchline
+      component: resolve => require(['@/pages/punchline'],resolve)
     },
     {
       path: '/playlet',
       name: 'playlet',
-      component: playlet
+      component: resolve => require(['@/pages/playlet'],resolve)
     },
     {
       path: '/index',
       name: 'index',
-      component: index
+      component: resolve => require(['@/pages/index'],resolve)
     },
     {
       path: '/player',
       name: 'player',
-      component: player
+      component: resolve => require(['@/pages/player'],resolve)
     },
     {
       path: '/aboutus',
       name: 'aboutus',
-      component: aboutus
+      component: resolve => require(['@/pages/aboutus'],resolve)
     },
     {
       path: '/about',
       name: 'about',
-      component: about
+      component: resolve => require(['@/pages/about'],resolve)
     },
     {
       path: '/search',
       name: 'search',
-      component: search
+      component: resolve => require(['@/pages/search'],resolve)
     }
   ],
   scrollBehavior(to, from, savedPosition) {

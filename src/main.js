@@ -9,6 +9,7 @@ import Vcomp from './components/index'
 import Axios from 'axios'
 import VueVideoPlayer from 'vue-video-player'
 
+import '@videojs/http-streaming'
 
 import "babel-polyfill"
 import 'video.js/dist/video-js.css'

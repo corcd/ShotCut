@@ -12,12 +12,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "@videojs/http-streaming": "^1.10.1",
+    "@videojs/http-streaming": "^1.10.2",
     "ajv": "^6.10.0",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
+    "dplayer": "^1.25.0",
     "element-ui": "^2.8.2",
     "file-saver": "^2.0.1",
+    "hls.js": "^0.12.4",
     "jsonp": "^0.2.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
@@ -25,6 +27,7 @@
     "videojs-contrib-hls": "^5.15.0",
     "videojs-flash": "^2.2.0",
     "vue": "^2.5.2",
+    "vue-dplayer": "^0.0.10",
     "vue-router": "^3.0.1",
     "vue-video-player": "^5.0.2",
     "vuex": "^3.1.1",
