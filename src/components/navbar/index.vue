@@ -181,6 +181,7 @@ export default {
 }
 
 .navbar_shade {
+  width: 100%;
   height: 120px !important;
   background: linear-gradient(
     0deg,
@@ -194,6 +195,7 @@ export default {
 }
 
 .navbar_default {
+  width: 100%;
   height: 60px;
 }
 .navbar_extend {

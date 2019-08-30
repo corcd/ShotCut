@@ -96,6 +96,21 @@
 </template>
 
 <script>
+function todo(func, delay) {
+  let timer = null;
+  return function() {
+    let _this = this;
+    let argsArray = arguments;
+
+    clearTimeout(timer);
+
+    timer = (() => {
+      func.apply(_this, argsArray);
+    },
+    delay);
+  };
+}
+
 export default {
   name: "homeheader",
   props: {
@@ -111,7 +126,7 @@ export default {
   data() {
     return {
       counter: 0,
-      timer: {},
+      timer: null,
       items: this.data,
       reactiveWidth: 0,
       reactiveHeight: 0
@@ -122,7 +137,8 @@ export default {
     this.items.forEach(item => {
       this.$set(item, "actived", false);
     });
-    this.items[0].actived = true;
+    this.counter = 0;
+    this.items[this.counter].actived = true;
     this.counter++;
 
     this.timer = setInterval(() => {
@@ -135,18 +151,21 @@ export default {
       this.$refs.carousel.setActiveItem(this.counter);
       this.counter++;
     }, 3000);
+    this.$once("hook:beforeDestroy", () => {
+      clearInterval(this.timer);
+      this.timer = null;
+    });
   },
   mounted() {
     this.reactiveElement();
-    window.onresize = () => {
-      return (() => {
-        this.reactiveElement();
-      })();
-    };
+
+    window.addEventListener("resize", this.reactiveElement);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.reactiveElement);
   },
   destroyed() {
-    clearInterval(this.timer);
-    window.onresize = "";
+    console.log(window);
   },
   computed: {},
   methods: {
@@ -283,7 +302,8 @@ export default {
     //width: 420px;
     //width: 40%;
     //height: 448px;
-    position: absolute;
+    min-width: 360px;
+    position: fixed;
     right: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.6);

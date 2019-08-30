@@ -54,20 +54,18 @@ export default {
   created() {},
   mounted() {
     this.reactiveElement();
-    window.onresize = () => {
-      return (() => {
-        this.reactiveElement();
-      })();
-    };
+    window.addEventListener("resize", this.reactiveElement);
   },
   updated() {
     this.reactiveElement();
   },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.reactiveElement);
+  },
   methods: {
     reactiveElement() {
-      this.reactiveHeight = document.getElementsByClassName(
-        "right-content"
-      )[0].clientHeight-10;
+      this.reactiveHeight =
+        document.getElementsByClassName("right-content")[0].clientHeight - 10;
       console.log(this.reactiveHeight);
     },
     linkToIndex(d) {

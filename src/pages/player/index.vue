@@ -116,8 +116,7 @@ export default {
           remainingTimeDisplay: false,
           fullScreenToggle: true
         }
-      },
-      pageview: 0
+      }
     };
   },
   created() {},

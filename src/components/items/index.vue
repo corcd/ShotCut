@@ -83,6 +83,13 @@ export default {
   margin-bottom: 0 !important;
   margin-right: 0.64% !important;
   margin-left: 0.64% !important;
+
+  .items-bg {
+    p {
+      font-size: 20px !important;
+      font-weight: bold !important;
+    }
+  }
 }
 
 .items-small {

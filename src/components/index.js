@@ -31,7 +31,7 @@ const install = (Vue, options = {}) => {
   Object.keys(components).forEach(component => {
     Vue.component(components[component].name, components[component])
   })
-  Vue.prototype.$notice = Notification
+  //Vue.prototype.$notice = Notification
   // Vue.prototype.$message = Message
   install.installed = true
 }

@@ -1,0 +1,38 @@
+branches:
+  only:
+    - master
+
+language: node_js
+
+sudo: false
+
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_25e713513946_key -iv $encrypted_25e713513946_iv
+  -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+
+addons:
+  ssh_known_hosts: "$IP"
+
+install:
+  - npm install
+
+before_script:
+
+script:
+  - npm run build
+
+after_success:
+  - pwd
+  - scp -o StrictHostKeyChecking=no -r dist/  root@$IP:/opt/nginx/
+
+# Note: you should set Environment Variables here or 'Settings' on travis-ci.org
+env:
+  global:
+    - GH_REF: github.com/corcd/ShotCut.git
